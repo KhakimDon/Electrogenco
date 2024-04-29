@@ -14,8 +14,9 @@ export default {
     <div class="max-w-[1250px] mx-auto">
       <div class="text-sm breadcrumbs mt-[15px]">
         <ul>
-          <li @click="$router.push('/')" class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">{{
-            $t("header.home") }}</li>
+          <li @click="$router.push('/')"
+            class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">{{
+              $t("header.home") }}</li>
           <li class="roboto-medium text-[#1A85FF]">About electrogen</li>
         </ul>
       </div>
@@ -63,25 +64,41 @@ export default {
         WE ARE MOVING IN CREATIVITY AND EVOLVING DIRECTION
       </h3>
       <p class="max-w-[500px]  pb-[15px] mt-[50px] roboto-medium font-[700] text-[18px] leading-[35px]">
-        Improving the living standards of consumers is a crucial objective for any production group as it forms the basis for growth and success. To attain this goal, it is necessary to leverage the knowledge and expertise of industry professionals, implement innovative ideas, and excel in various aspects of the industry.
+        Improving the living standards of consumers is a crucial objective for any production group as it forms the
+        basis for growth and success. To attain this goal, it is necessary to leverage the knowledge and expertise of
+        industry professionals, implement innovative ideas, and excel in various aspects of the industry.
       </p>
       <p class="max-w-[500px]  pb-[15px] mt-[10px] roboto-medium font-[700] text-[18px] leading-[35px]">
-        Electrogen, with its unwavering commitment to past accomplishments and future aspirations, is constantly exploring new approaches and practical product development strategies. This dedication has propelled Electrogen towards a path of sustained progress and expansion.
+        Electrogen, with its unwavering commitment to past accomplishments and future aspirations, is constantly
+        exploring new approaches and practical product development strategies. This dedication has propelled Electrogen
+        towards a path of sustained progress and expansion.
       </p>
     </section>
 
     <!-- photos  -->
     <section class="max-w-[1200px] mx-auto flex flex-wrap justify-between">
-      <img class="w-[390px] rounded-[15px]" src="https://electrogenco.com/en/wp-content/uploads/2024/03/Small-banners-02_EN.jpg" alt="image">
-      <img class="w-[390px] rounded-[15px]" src="https://electrogenco.com/en/wp-content/uploads/2024/03/Small-banners-01_EN.jpg" alt="image">
-      <img class="w-[390px] rounded-[15px]" src="https://electrogenco.com/en/wp-content/uploads/2024/03/Small-banners-04_En.jpg" alt="image">
+      <img class="w-[390px] rounded-[15px]"
+        src="https://electrogenco.com/en/wp-content/uploads/2024/03/Small-banners-02_EN.jpg" alt="image">
+      <img class="w-[390px] rounded-[15px]"
+        src="https://electrogenco.com/en/wp-content/uploads/2024/03/Small-banners-01_EN.jpg" alt="image">
+      <img class="w-[390px] rounded-[15px]"
+        src="https://electrogenco.com/en/wp-content/uploads/2024/03/Small-banners-04_En.jpg" alt="image">
     </section>
 
     <!-- map  -->
     <section class="max-w-[1200px] mx-auto mt-[150px]">
-      <h3 class="w-[max-content] mx-auto border-b-[1px] text-[#0F3A77] mb-[50px] pb-[20px] border-[#BFCBDB] text-[26px] font-[600]">In the Path Advancement ...</h3>
-
+      <h3
+        class="w-[max-content] mx-auto border-b-[1px] text-[#0F3A77] mb-[50px] pb-[20px] border-[#BFCBDB] text-[26px] font-[600]">
+        In the Path Advancement ...
+      </h3>
       <img class="w-[100%]" src="../assets/map.png" alt="map">
+    </section>
+
+    <!-- grades  -->
+    <section class="flex flex-col items-center">
+      <img src="https://electrogenco.com/en/wp-content/uploads/2024/03/WhatsApp-Image-2024-02-19-at-11.01.37.jpeg" alt="image">
+      <img class="my-[50px]" src="https://electrogenco.com/en/wp-content/uploads/2024/03/stat_Resized.jpg" alt="image">
+      <img src="https://electrogenco.com/en/wp-content/uploads/2024/03/Certifications-02.jpg" alt="image">
     </section>
 
 
@@ -89,7 +106,6 @@ export default {
 </template>
 
 <style scoped>
-
 .bg {
   background-image: url('https://electrogenco.com/en/wp-content/uploads/2024/03/About-1.jpg');
   background-size: cover;
