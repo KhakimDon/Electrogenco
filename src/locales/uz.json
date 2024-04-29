@@ -1,0 +1,49 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "products": "mahsulotlar",
+    "blog": "blog",
+    "branches": "filiallar",
+    "customer": "MIJOZLAR PORTALI"
+  },
+  "second": {
+    "title": "ELECTROGEN, KELAJAKGA YO'L",
+    "text": "Hozirgi vaqtda biz umumiy bilimimiz va texnologik imkoniyatlarimiz tufayli Eronda sanoat va maishiy elektr motorlarini ishlab chiqaruvchi eng yirik ishlab chiqaruvchimiz. Bizning vazifamiz sanoatimizda standartni o'rnatish va o'zimizni mintaqadagi elektr motorlarining etakchi ishlab chiqaruvchisi sifatida ko'rsatishdir.",
+    "subtext": "Biz har doim innovatsiyalar va rivojlanishning oldingi saflaridamiz."
+  },
+  "fourth": {
+    "title": "title_uz",
+    "subtitle": "subtitle_uz",
+    "text": "MAHSULOT TOIFASI"
+  },
+  "fiveth": "Bizning asosiy maqsadimiz – yaqin va uzoq jamoalar farovonligiga samarali hissa qo‘shishi mumkin bo‘lgan innovatsion mahsulotlarni ishlab chiqish. Biz bu maqsadga erishish faqat yangicha nuqtai nazar va yangi fikrlash orqali mumkinligiga qat'iy ishonamiz. Biz hamma uchun hayot sifatini oshirishni maqsad qilganmiz.",
+  "sixth": {
+    "text": "CHEKSIZ HARAKAT",
+    "title": "title_uz",
+    "subtitle": "subtitle_uz"
+  },
+  "eight": {
+    "text": "BIR KO'RISHDA ELEKTROD",
+    "title": "title_uz"
+  },
+  "ten": "BIZNING BA'ZI MIJOLARIMIZ",
+  "eleven": {
+    "suptitle": "BLOG",
+    "title": "BLOG",
+    "read": "Ko'proq ma'lumot",
+    "blog_title": "text_uz",
+    "blog_subtitle": "subtext_uz"
+  },
+  "footer": {
+    "address1": "No22, Guliston Som, Ahmadobod Mostofi, Azadegan shossesi, Tehron, Eron",
+    "address2": "Eron, Tehron, Saadat Abad, Kaj maydoni, Gʻarbiy Saro bulvari, 17-uy.",
+    "sublogo": "Elektrogen ish vaqti, shanbadan chorshanbagacha",
+    "time": "7:30 dan 17:00 gacha",
+    "list1_title": "MAHSULOT VA XIZMATLAR",
+    "list2_title": "QO'SHIMCHA MA'LUMOT",
+    "contact": "BIZ BILAN BOG'LANISH",
+    "faq": "TSS",
+    "copy": "Mualliflik huquqi. Barcha huquqlar himoyalangan"
+  }
+}

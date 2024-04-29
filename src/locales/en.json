@@ -1,0 +1,49 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "about us",
+    "products": "PRODUCT’S",
+    "blog": "blog",
+    "branches": "branches",
+    "customer": "customer portal"
+  },
+  "second": {
+    "title": "ELECTROGEN, A PATH TO THE FUTURE",
+    "text": "At present, we are the biggest manufacturer of industrial and household electric motors in Iran, thanks to our combined knowledge and technological capabilities. Our mission is to set the standard in our industry and establish ourselves as the leading producer of electric motors in the region.",
+    "subtext": "We are always at the forefront of innovation and development."
+  },
+  "fourth": {
+    "title": "title_en",
+    "subtitle": "subtitle_en",
+    "text": "PRODUCT’S CATEGORY"
+  },
+  "fiveth": "Our primary goal is to develop innovative products that can effectively contribute to the betterment of communities both near and far. We firmly believe achieving this objective is only possible through a fresh perspective and a new mindset. We aim to enhance the quality of life for everyone.",
+  "sixth":{
+    "text": "INFINITE MOVEMENT",
+    "title": "title_en",
+    "subtitle": "subtitle_en"
+  },
+  "eight":{
+    "text": "ELECTROGEN AT A GLANCE",
+    "title": "title_en"
+  },
+  "ten": "SOME OF OUR CUSTOMERS",
+  "eleven": {
+    "suptitle": "BLOG",
+    "title": "BLOG",
+    "read": "Read more",
+    "blog_title": "text_en",
+    "blog_subtitle": "subtext_en"
+  },
+  "footer": {
+    "address1": "No. 22, Golestan Som, Ahmadabad Mostofi, Azadegan Highway, Tehran, Iran",
+    "address2": "Iran, Tehran, Saadat Abad, Kaj Square, West Saro Blvd., No. 17",
+    "sublogo": "Electrogen Working Hours, Saturday to Wednesday",
+    "time": "From 7:30 to 17:00",
+    "list1_title": "PRODUCT AND SERVICES",
+    "list2_title": "ADITIONAL INFORMATION",
+    "contact": "CONTACT US",
+    "faq": "FAQ",
+    "copy": "copyright.All right reserved"
+  }
+}
