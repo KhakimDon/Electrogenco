@@ -28,7 +28,7 @@
 <template>
     <header class="py-[15px] z-[999] shadow-sm bg-white fixed w-[100%]">
         <div class="flex items-center justify-between max-w-[1250px] mx-auto">
-            <img class="h-[50px]" src="https://electrogenco.com/en/wp-content/uploads/2023/01/ELECTROGEN-FA-8.png"
+            <img @click="$router.push('/')" class="h-[50px] cursor-pointer" src="https://electrogenco.com/en/wp-content/uploads/2023/01/ELECTROGEN-FA-8.png"
                 alt="image">
             <nav class="flex gap-[30px] roboto-regular font-[700] text-[17px]">
                 <router-link class="uppercase" :to="'/'"> {{ $t("header.home") }} </router-link>
@@ -63,3 +63,9 @@
         </div>
     </header>
 </template>
+
+<style>
+header{
+    box-shadow:  0 4px 4px rgba(0, 0, 0, 0.108) !important;
+}
+</style>

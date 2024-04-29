@@ -33,6 +33,7 @@ export default {
       <video class="w-[100%] max-h-[95vh] object-cover"
         src="https://electrogenco.com/en/wp-content/uploads/2024/03/New-Banner_4MB.mp4" muted loop autoplay></video>
     </section>
+
     <section class="second-section h-[100vh] flex items-center flex-col justify-center text-center">
       <h3
         class="w-[500px] border-b-[1px] border-[#003366] roboto-black pb-[15px] text-[#003366] font-[700] text-[20px]">
@@ -45,10 +46,12 @@ export default {
         {{ $t("second.subtext")  }}
       </p>
     </section>
+
     <section>
       <video class="w-[100%] max-h-[90vh] object-cover" muted loop autoplay
         src="https://electrogenco.com/en/wp-content/uploads/2024/03/WhatsApp-Video-2023-12-09-at-2.33.42-PM.mp4"></video>
     </section>
+    
     <section class="py-[100px]">
       <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-black text-[26px]">
         {{ $t("fourth.text") }}
@@ -240,7 +243,8 @@ export default {
   </main>
 </template>
 
-<style>
+<style scoped>
+
 .group-cont:hover .group-item{
   color: #0652dd !important;
 }
