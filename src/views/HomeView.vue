@@ -59,7 +59,7 @@ export default {
       </h3>
 
       <div class="max-w-[1200px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
-        <div v-for="item of product_category.productCategory" :key="item.id"
+        <div v-for="item of product_category.productCategory" :class="{hidden: item.id == 6 || item.id == 7}" :key="item.id"
           class="product_hover_block cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
           <div class=" flex items-center justify-start h-[100%] w-[100%]">
             <figure class="bg-[#E5E8ED] duration-[.7s] w-[70px] rounded-[50%] mr-[20px]">
@@ -73,6 +73,7 @@ export default {
         </div>
       </div>
     </section>
+    
     <section class="third-section h-[90vh]">
       <div class="max-w-[1250px] flex items-center justify-end h-[100%] mx-auto">
         <p class="roboto-black text-white text-center max-w-[500px] leading-[38px] text-[19px]">

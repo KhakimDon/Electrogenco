@@ -13,6 +13,10 @@ export const useProductCategoryStore = defineStore('productcategory', () => {
             subtitle_ru: "ПРОМЫШЛЕННЫЕ ЭЛЕКТРОДВИГАТЕЛИ",
             subtitle_uz: "SANOAT ELEKTR MOTORLARI",
             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%B5%D9%86%D8%B9%D8%AA%DB%8C-%D9%85%D8%B4%D8%A7%D8%A8%D9%87-%D8%A8%D8%A7-%D9%86%D9%85%D9%88%D9%86%D9%87-%D9%85%D9%88%D8%AA%D9%88%D8%B1-%D8%B5%D9%86%D8%B9%D8%AA%DB%8C.svg",
+            // ---- 
+            category_en: [
+                
+            ]
         },
         {
             id: 2,
@@ -56,6 +60,26 @@ export const useProductCategoryStore = defineStore('productcategory', () => {
         },
         {
             id: 6,
+            title_en: "Elevator Motors",
+            subtitle_en: "",
+            img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%A8%DB%8C%D8%B4%D8%AA%D8%B1.svg",
+            title_ru: "Лифтовые двигатели",
+            subtitle_ru: "",
+            title_uz: "Lift motorlari",
+            subtitle_uz: "",
+        },
+        {
+            id: 7,
+            title_en: "Heating Unit Motors",
+            subtitle_en: "HEATING PACKAGE",
+            img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%A8%DB%8C%D8%B4%D8%AA%D8%B1.svg",
+            title_ru: "Двигатели нагревательного агрегата",
+            subtitle_ru: "ОТОПЛИТЕЛЬНЫЙ ПАКЕТ",
+            title_uz: "Isitish bloklari motorlari",
+            subtitle_uz: "ISITISH PAKETI",
+        },
+        {
+            id: 8,
             title_en: "All Products",
             subtitle_en: "All Products",
             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%A8%DB%8C%D8%B4%D8%AA%D8%B1.svg",
