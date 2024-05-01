@@ -34,8 +34,8 @@
                 <router-link class="uppercase" :to="'/'"> {{ $t("header.home") }} </router-link>
                 <router-link class="uppercase" :to="'/about'">{{ $t("header.about") }}</router-link>
                 <router-link class="uppercase" :to="'/products'">{{ $t("header.products") }}</router-link>
-                <router-link class="uppercase" :to="'/blog'">{{ $t("header.blog") }}</router-link>
-                <router-link class="uppercase" :to="'/branches'">{{ $t("header.branches") }}</router-link>
+                <router-link class="uppercase" :to="'/'">{{ $t("header.blog") }}</router-link>
+                <router-link class="uppercase" :to="'/'">{{ $t("header.branches") }}</router-link>
             </nav>
             <div class="flex items-center gap-[20px]">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -51,7 +51,7 @@
                         <li @click="changeLanguage('en'), $i18n.locale = 'en'" v-if="!this.english"><a class="font-[700] text-[14px]">EN <img class="h-[20px] w-[30px]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" alt="1200px-Flag_of_Russia"></a></li>
                     </ul>
                 </div>
-                <router-link :to="'/login'" class="flex gap-[20px] duration-[.3s] uppercase roboto-regular text-[#1B3F7B] hover:text-[#5380BE] font-[600] text-[17px]">
+                <router-link :to="'/'" class="flex gap-[20px] duration-[.3s] uppercase roboto-regular text-[#1B3F7B] hover:text-[#5380BE] font-[600] text-[17px]">
                     {{ $t("header.customer") }}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

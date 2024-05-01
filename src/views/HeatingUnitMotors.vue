@@ -1,5 +1,5 @@
-<script>
-import { useProductCategoryStore } from "../stores/productCategory"
+<script lang="ts">
+import { useBlogStore } from "../stores/products"
 
 
 export default {
@@ -7,7 +7,7 @@ export default {
     },
     data() {
         return {
-            product_category: useProductCategoryStore(),
+            useBlogStore: useBlogStore(),
         }
     }
 }
@@ -21,20 +21,20 @@ export default {
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
                     <li @click="$router.push('/')"
-                        class="cursor-pointer roboto-regular hover:text-[#1A85FF] duration-[.3s] text-[#1B3F7B]">{{
-                            $t("header.home") }}</li>
-                    <li class="roboto-medium text-[#1A85FF]">Products</li>
+                        class="cursor-pointer roboto-regular hover:text-[#1A85FF] duration-[.3s] text-[#1B3F7B]">
+                        {{$t("header.home") }}</li>
+                    <li class="roboto-medium text-[#1A85FF]">Heating Unit Motors</li>
                 </ul>
             </div>
         </div>
 
         <section class="mt-[50px]">
             <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Products
+                Heating Unit Motors
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="max-w-[1200px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
-                <div v-for="item of this.product_category.productCategory" @click="$router.push(item.route)" :key="item.id"
+                <div @click="$router.push(`/heating-unit-motors/${item.id}`)" v-for="item of this.useBlogStore.heating_unit_motors" :key="item.id"
                     class="product_hover_block cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
                     <div class=" flex items-center justify-start h-[100%] w-[100%]">
                         <figure class="bg-[#E5E8ED] duration-[.7s] w-[70px] rounded-[50%] mr-[20px]">
@@ -42,9 +42,9 @@ export default {
                         </figure>
                         <div class="flex-1">
                             <h4 class="roboto-bold text-[#032055] text-[19px] leading-[35px]"> {{
-                                item[$t('fourth.title')] }} </h4>
+                                item.title_en }} </h4>
                             <p class="uppercase mt-[15px] roboto-regular tracking-[2px]	 text-[13px]">{{
-                                item[$t('fourth.subtitle')] }}</p>
+                                item.sub_en }}</p>
                         </div>
                     </div>
                 </div>
