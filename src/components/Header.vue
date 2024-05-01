@@ -17,7 +17,7 @@
                 item == "ru" ? document.cookie = 'locale=ru' : false 
                 item == "en" ? document.cookie = 'locale=en' : false 
                 console.log(document.cookie);
-                this.english =document.cookie == 'locale=en'
+                this.english = document.cookie == 'locale=en'
                 this.russian = document.cookie == 'locale=ru'
                 this.uzbek = document.cookie == 'locale=uz'
             }

@@ -40,7 +40,7 @@ export const useProductCategoryStore = defineStore("productcategory", () => {
 
     {
       id: 3,
-      route: "",
+      route: "/water-pumps",
       title_en: "Water Pumps",
       subtitle_en: "Water Pump",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%D9%BE%D9%85%D9%BE%D8%A2%D8%A8-2.svg",
@@ -51,7 +51,7 @@ export const useProductCategoryStore = defineStore("productcategory", () => {
     },
     {
       id: 5,
-      route: "",
+      route: "/ventilation-motors",
       title_en: "Ventilation Motors",
       subtitle_en: "VENTILATION MOTORS",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%D8%AA%D9%87%D9%88%DB%8C%D9%87.svg",
@@ -62,7 +62,7 @@ export const useProductCategoryStore = defineStore("productcategory", () => {
     },
     {
       id: 4,
-      route: "",
+      route: "/burder-motors",
       title_en: "Burner Motors",
       subtitle_en: "Burner Motors",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%D9%85%D8%B4%D8%B9%D9%84.svg",
@@ -74,7 +74,7 @@ export const useProductCategoryStore = defineStore("productcategory", () => {
 
     {
       id: 2,
-      route: "",
+      route: "/motors-and-water-pumps-for-desert-cooler",
       title_en: "Motors And Water Pumps For Desert Cooler",
       subtitle_en: "MOTORS AND WATER PUMPS FOR DESERT COOLER",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%DA%A9%D9%88%D9%84%D8%B1.svg",

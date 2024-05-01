@@ -5358,10 +5358,10 @@ export const useBlogStore = defineStore("blog", () => {
 
   const ventilation_motors = ref([
     {
-      id: 1,
+      id: "air-curtain-motor",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
       title_en: "Air Curtain Motor",
-      sub_eng: "",
+      sub_en: "",
       prod: [
         {
           id: 1,
@@ -5387,11 +5387,12 @@ export const useBlogStore = defineStore("blog", () => {
         },
       ],
     },
+
     {
-      id: 2,
+      id: "duct-split-motors",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
       title_en: "Duct Split Motors",
-      sub_eng: "",
+      sub_en: "",
       prod: [
         {
           id: 1,
@@ -5409,7 +5410,7 @@ export const useBlogStore = defineStore("blog", () => {
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5999.png",
           // ----
           en: {
-            title: "Duct Split Motor (Air-conditioner)-600W",
+            title: "Duct Split Motor (Air-conditioner)-360W",
             specifications: {
               Power: "360 W",
             },
@@ -5420,7 +5421,7 @@ export const useBlogStore = defineStore("blog", () => {
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5999.png",
           // ----
           en: {
-            title: "Duct Split Motor (Air-conditioner)-600W",
+            title: "Duct Split Motor (Air-conditioner)-250W",
             specifications: {
               Power: "250 W",
             },
@@ -5431,7 +5432,7 @@ export const useBlogStore = defineStore("blog", () => {
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5999.png",
           // ----
           en: {
-            title: "Duct Split Motor (Air-conditioner)-600W",
+            title: "Duct Split Motor (Air-conditioner)-187W",
             specifications: {
               Power: "187 W",
             },
@@ -5439,11 +5440,12 @@ export const useBlogStore = defineStore("blog", () => {
         },
       ],
     },
+
     {
-      id: 3,
+      id: "fan-motors",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
       title_en: "Fan Motors",
-      sub_eng: "",
+      sub_en: "",
       prod: [
         {
           id: 1,
@@ -5687,11 +5689,12 @@ export const useBlogStore = defineStore("blog", () => {
         },
       ],
     },
+
     {
-      id: 4,
+      id: "fan-coil-motors",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
       title_en: "Fan Coil Motors",
-      sub_eng: "FAN COIL MOTORS",
+      sub_en: "FAN COIL MOTORS",
       prod: [
         {
           id: 1,
@@ -5792,10 +5795,10 @@ export const useBlogStore = defineStore("blog", () => {
       ],
     },
     {
-      id: 5,
+      id: "industrial-exhaust-fan-motors",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
       title_en: "Industrial Exhaust Fan Motors",
-      sub_eng: "INDUSTRIAL EXHAUST FAN MOTORS",
+      sub_en: "INDUSTRIAL EXHAUST FAN MOTORS",
       prod: [
         {
           id: 1,
@@ -5927,7 +5930,7 @@ export const useBlogStore = defineStore("blog", () => {
 
   const water_pumps_for_desert_cooler = ref([
     {
-      id: 1,
+      id: "motors-for-desert-cooler",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/cooler.svg",
       title_en: "Motors For Desert Cooler",
       sub_en: "MOTORS FOR DESERT COOLER",
@@ -6512,6 +6515,110 @@ export const useBlogStore = defineStore("blog", () => {
 
       ],
     },
+    {
+      id: "water-pumps-for-desert-cooler",
+      img: "https://electrogenco.com/en/wp-content/uploads/2024/03/cooler.svg",
+      title_en: "Water Pumps for Desert Cooler",
+      sub_en: "WATER PUMPS FOR DESERT COOLER",
+      prod: [
+        {
+          id: 1,
+          img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4942.png",
+          // ----
+          en: {
+            title: "Evaporative Cooler Pump-Damavand",
+            specifications: {
+              Material: "CU",
+              Application: "Evaporative Cooler",
+            },
+          },
+        },
+        {
+          id: 2,
+          img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8090.png",
+          // ----
+          en: {
+            title: "Evaporative Cooler Pump-Sahand (Submersible)",
+            specifications: {
+              Material: "CU",
+              Application: "Evaporative Cooler",
+            },
+          },
+        },
+        {
+          id: 3,
+          img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8074.png",
+          // ----
+          en: {
+            title: "Evaporative Cooler Pump-Alvand",
+            specifications: {
+              Material: "CU",
+              Application: "Evaporative Cooler",
+            },
+          },
+        },
+        {
+          id: 4,
+          img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8076.png",
+          // ----
+          en: {
+            title: "Evaporative Cooler Pump-Zagros (Low-consumption)",
+            specifications: {
+              Material: "CU",
+              Application: "Evaporative Cooler",
+            },
+          },
+        },
+        {
+          id: 5,
+          img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8078.png",
+          // ----
+          en: {
+            title: "Evaporative Cooler Pump-Zagros (Low-consumption)",
+            specifications: {
+              Material: "AL",
+              Application: "Portable Cooler",
+            },
+          },
+        },
+        {
+          id: 6,
+          img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8078.png",
+          // ----
+          en: {
+            title: "Evaporative Cooler Pump-Zagros (Low-consumption)",
+            specifications: {
+              Material: "AL",
+              Application: "Evaporative Cooler",
+            },
+          },
+        },
+        {
+          id: 7,
+          img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8080.png",
+          // ----
+          en: {
+            title: "Evaporative Cooler Pump-Alborz (Two-Impeller)",
+            specifications: {
+              Material: "CU",
+              Application: "Portable Cooler",
+            },
+          },
+        },
+        {
+          id: 8,
+          img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8080.png",
+          // ----
+          en: {
+            title: "Evaporative Cooler Pump-Alborz (Five-Impeller",
+            specifications: {
+              Material: "CU",
+              Application: "Evaporative Cooler",
+            },
+          },
+        },
+      ]
+    },
   ]);
 
 
@@ -6521,5 +6628,5 @@ export const useBlogStore = defineStore("blog", () => {
 
   
 
-  return { electric_motors, elevator_motors, heating_unit_motors };
+  return { electric_motors, elevator_motors, heating_unit_motors,water_pumps,ventilation_motors,burner_motors,water_pumps_for_desert_cooler };
 });

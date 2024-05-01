@@ -11,31 +11,44 @@ export default {
                 {
                     title: "OUTPUT POWER",
                     items: [
-                        "30 W",
-                        "39 W",
-                        "45 W",
-                        "48 W",
-                        "60 W",
+                        "1/16 kW",
+                        "1/20 HP",
+                        "1/25 HP",
+                        "1/30 HP",
                     ]
-                }
+                },
+                {
+                    title: "SHAFT",
+                    items: [
+                        "Double-shaft",
+                        "Single-shaft",
+                    ]
+                },
+
             ],
             useBlogStore: useBlogStore(),
             fallback: [],
         }
     },
     mounted() {
-        
         setTimeout(() => {
-            this.fallback = this.useBlogStore.heating_unit_motors[1].prod
+            this.fallback = this.useBlogStore.ventilation_motors[3].prod
+            this.$i18n.locale = 'en'
         }, 200);
+
     },
     methods: {
         filter() {
             console.log(event.target.dataset.filterby);
             console.log(event.target.dataset.value);
             this.fallback = []
+
             if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.useBlogStore.heating_unit_motors[1].prod.filter(item => item.en.specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
+                let filtered = this.useBlogStore.ventilation_motors[3].prod.filter(item => item[this.$t("lang")].specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
+                this.fallback = filtered
+            }
+            else if (event.target.dataset.filterby == "SHAFT") {
+                let filtered = this.useBlogStore.ventilation_motors[3].prod.filter(item => item[this.$t("lang")].specifications.Shaft.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
                 this.fallback = filtered
             }
 
@@ -68,16 +81,16 @@ export default {
                     </li>
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
-                        Heating Unit Motors
+                        Ventilation Motors
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">Heating Unit Fan</li>
+                    <li class="roboto-medium text-[#1A85FF]">Fan Coil Motors</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px]">
             <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Heating Unit Fan
+                Fan Coil Motors
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="flex items-start gap-[25px]">

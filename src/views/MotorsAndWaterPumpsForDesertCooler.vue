@@ -9,6 +9,9 @@ export default {
         return {
             useBlogStore: useBlogStore(),
         }
+    },
+    mounted(){
+        this.$i18n.locale = 'en'
     }
 }
 </script>
@@ -23,18 +26,18 @@ export default {
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-regular hover:text-[#1A85FF] duration-[.3s] text-[#1B3F7B]">
                         {{$t("header.home") }}</li>
-                    <li class="roboto-medium text-[#1A85FF]">Heating Unit Motors</li>
+                    <li class="roboto-medium text-[#1A85FF]">Motors And Water Pumps For Desert Cooler</li>
                 </ul>
             </div>
         </div>
 
         <section class="mt-[50px]">
             <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Heating Unit Motors
+                Motors And Water Pumps For Desert Cooler
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="max-w-[1200px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
-                <div @click="$router.push(`/heating-unit-motors/${item.id}`)" v-for="item of this.useBlogStore.heating_unit_motors" :key="item.id"
+                <div @click="$router.push(`/motors-and-water-pumps-for-desert-cooler/${item.id}`)" v-for="item of this.useBlogStore.water_pumps_for_desert_cooler" :key="item.id"
                     class="product_hover_block cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
                     <div class=" flex items-center justify-start h-[100%] w-[100%]">
                         <figure class="bg-[#E5E8ED] duration-[.7s] w-[70px] rounded-[50%] mr-[20px]">
@@ -49,7 +52,7 @@ export default {
                     </div>
                 </div>
                 <div
-                    class="opacity-0 cursor-default product_hover_block cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
+                    class="opacity-0  product_hover_block cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
                     <div class=" flex items-center justify-start h-[100%] w-[100%]">
                         <figure class="bg-[#E5E8ED] duration-[.7s] w-[70px] rounded-[50%] mr-[20px]">
                         </figure>
