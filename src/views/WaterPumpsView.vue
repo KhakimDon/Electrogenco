@@ -1,6 +1,5 @@
-<script lang="ts" >
+<script lang="ts">
 import Cards from '../components/Cards.vue'
-import { useBlogStore } from "../stores/products"
 
 
 export default {
@@ -36,13 +35,158 @@ export default {
                     ]
                 },
             ],
-            useBlogStore: useBlogStore(),
             fallback: [],
+            massiv: [
+                {
+                    id: 1,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_6078.png",
+                    // ----
+                    en: {
+                        title: "Three Phase Water Pump-3HP-Two Impellers (CBT310)",
+                        specifications: {
+                            Impeller: "Two-impeller",
+                            Power: "3 HP",
+                            Phase: "3",
+                        },
+                    },
+                },
+                {
+                    id: 2,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_6078.png",
+                    // ----
+                    en: {
+                        title: "Three Phase Water Pump-2HP-Two Impellers (CBT210)",
+                        specifications: {
+                            Impeller: "Two-impeller",
+                            Power: "2 HP",
+                            Phase: "3",
+                        },
+                    },
+                },
+                {
+                    id: 3,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_6078.png",
+                    // ----
+                    en: {
+                        title: "Three Phase Water Pump-1.5HP-Two Impellers (CBT160)",
+                        specifications: {
+                            Impeller: "Two-impeller",
+                            Power: "1.5 HP",
+                            Phase: "3",
+                        },
+                    },
+                },
+                {
+                    id: 4,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4995.jpg",
+                    // ----
+                    en: {
+                        title: "Single Phase Water Pump-3HP-Two Impellers (CB310)",
+                        specifications: {
+                            Impeller: "Two-impeller",
+                            Power: "3 HP",
+                            Phase: "1",
+                        },
+                    },
+                },
+                {
+                    id: 5,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4995.jpg",
+                    // ----
+                    en: {
+                        title: "Single Phase Water Pump-2HP-Two Impellers (CB210)",
+                        specifications: {
+                            Impeller: "Two-impeller",
+                            Power: "2 HP",
+                            Phase: "1",
+                        },
+                    },
+                },
+                {
+                    id: 6,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4995.jpg",
+                    // ----
+                    en: {
+                        title: "Single Phase Water Pump-1.5HP (CB160)",
+                        specifications: {
+                            Impeller: "Single-Impeller",
+                            Power: "1.5 HP",
+                            Phase: "1",
+                        },
+                    },
+                },
+                {
+                    id: 7,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4999.jpg",
+                    // ----
+                    en: {
+                        title: "Single Phase Water Pump-1HP (CAM100)",
+                        specifications: {
+                            Impeller: "Single-Impeller",
+                            Power: "1 HP",
+                            Phase: "1",
+                        },
+                    },
+                },
+                {
+                    id: 8,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4997-1.jpg",
+                    // ----
+                    en: {
+                        title: "Single Phase Water Pump-1HP (KPM100)",
+                        specifications: {
+                            Impeller: "Single-Impeller",
+                            Power: "1 HP",
+                            Phase: "1",
+                        },
+                    },
+                },
+                {
+                    id: 9,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4997-1.jpg",
+                    // ----
+                    en: {
+                        title: "Single Phase Water Pump-1HP (KPM100)",
+                        specifications: {
+                            Impeller: "Single-Impeller",
+                            Power: "0.5 HP",
+                            Phase: "1",
+                        },
+                    },
+                },
+                {
+                    id: 10,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_6078.png",
+                    // ----
+                    en: {
+                        title: "Two-propeller three-phase electropump (CBT210) 2HP",
+                        specifications: {
+                            voltage: "10 Volts",
+                        },
+                        appearance: {
+                            color: "Yellow",
+                        },
+                    },
+                },
+                {
+                    id: 11,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_6027-.png",
+                    // ----
+                    en: {
+                        title: "Single Phase Water Pump-1HP (CM100)",
+                        specifications: {
+                            Power: "1 HP",
+                            Impeller: "Single-Impeller",
+                            Phase: "1",
+                        },
+                    },
+                },
+            ]
         }
     },
     mounted() {
         setTimeout(() => {
-            this.fallback = this.useBlogStore.water_pumps
+            this.fallback = this.massiv
         }, 200);
 
     },
@@ -51,25 +195,24 @@ export default {
             // console.log(event.target.dataset.filterby);
             // console.log(event.target.dataset.value);
             this.fallback = []
-            console.log(this.useBlogStore.water_pumps[0][this.$t("lang")].specifications.Phase);
-            
+
             if (event.target.dataset.filterby == "NUMBER OF PHASE") {
-                let filtered = this.useBlogStore.water_pumps.filter(item => item[this.$t("lang")].specifications.Phase == event.target.dataset.value)
+                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Phase == event.target.dataset.value)
                 this.fallback = filtered
             }
             else if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.useBlogStore.water_pumps.filter(item => item[this.$t("lang")].specifications.Power == event.target.dataset.value)
+                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Power == event.target.dataset.value)
                 this.fallback = filtered
             }
             else if (event.target.dataset.filterby == "PHASE NUMBER") {
-                let filtered = this.useBlogStore.water_pumps.filter(item => item[this.$t("lang")].specifications.Phase == event.target.dataset.value)
+                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Phase == event.target.dataset.value)
                 this.fallback = filtered
             }
             else if (event.target.dataset.filterby == "NUMBER OF IMPELLER") {
-                let filtered = this.useBlogStore.water_pumps.filter(item => item[this.$t("lang")].specifications.Impeller == event.target.dataset.value)
+                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Impeller == event.target.dataset.value)
                 this.fallback = filtered
             }
-           
+
 
         },
         accordion() {
