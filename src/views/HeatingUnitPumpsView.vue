@@ -1,13 +1,109 @@
 <script  lang="ts">
 import Cards from '../components/Cards.vue'
-import { useBlogStore } from "../stores/products"
 
 
 export default {
     components: { Cards },
     data() {
         return {
-           useBlogStore: useBlogStore()
+           massiv: [
+                {
+                    id: "heating-unit-pumps",
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/pacage.svg",
+                    title_en: "Heating Unit Pumps",
+                    sub_en: "HEATING UNIT PUMPS",
+                    prod: [
+                        {
+                            id: 1,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8118.png",
+                            en: {
+                                title: "Heating Unit Water Pump-Type E",
+                                specifications: {
+                                    type: "Type E",
+                                },
+                            },
+                        },
+                        {
+                            id: 2,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8127.png",
+                            en: {
+                                title: "Heating Unit Water Pump-Type A",
+                                specifications: {
+                                    type: "Type A",
+                                },
+                            },
+                        },
+                    ],
+                },
+                {
+                    id: "heating-unit-fan",
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/pacage.svg",
+                    title_en: "Heating Unit Fan",
+                    sub_en: "HEATING UNIT FAN",
+                    prod: [
+                        {
+                            id: 1,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
+                            en: {
+                                title: "Heating Unit Fan Motor-60W (Kaman)",
+                                specifications: {
+                                    Power: "60 W",
+                                },
+                            },
+                        },
+                        {
+                            id: 2,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
+                            en: {
+                                title: "Heating Unit Fan Motor-45W (Kaman)",
+                                specifications: {
+                                    Power: "45 W",
+                                },
+                            },
+                        },
+                        {
+                            id: 3,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
+                            en: {
+                                title: "Heating Unit Fan Motor-30W (Kaman)",
+                                specifications: {
+                                    Power: "30 W",
+                                },
+                            },
+                        },
+                        {
+                            id: 4,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
+                            en: {
+                                title: "Heating Unit Fan Motor-48W (Helal)",
+                                specifications: {
+                                    Power: "48 W",
+                                },
+                            },
+                        },
+                        {
+                            id: 5,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
+                            en: {
+                                title: "Heating Unit Fan Motor-39W (Helal)",
+                                specifications: {
+                                    Power: "39 W",
+                                },
+                            },
+                        },
+                        {
+                            id: 6,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
+                            en: {
+                                title: "Heating Unit Fan Motor-30W (Helal)",
+                                specifications: {
+                                    Power: "30 W",
+                                },
+                            },
+                        },
+                    ],
+                },
+            ]
         }
     },
     mounted() {
@@ -39,7 +135,7 @@ export default {
             </h3>
             <div class="flex items-start gap-[25px]">
                 <div class="flex-1 flex gap-[25px] flex-wrap">
-                    <Cards :title="item.en.title" :img="item.img" v-for="item of this.useBlogStore.heating_unit_motors[0].prod" :key="item.id" />
+                    <Cards :title="item.en.title" :img="item.img" v-for="item of this.massiv[0].prod" :key="item.id" />
                 </div>
 
 
