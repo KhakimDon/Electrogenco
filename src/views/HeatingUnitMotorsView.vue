@@ -8,11 +8,16 @@ export default {
     data() {
         return {
             useBlogStore: useBlogStore(),
+            completed: false,
         }
     },
     mounted(){
         this.$i18n.locale = 'en'
-    }
+        if(this.useBlogStore.heating_unit_motors){
+            this.completed = true
+        }
+        
+    },
 }
 </script>
 
@@ -36,7 +41,7 @@ export default {
                 Heating Unit Motors
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
-            <div class="max-w-[1200px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
+            <div v-if="completed" class="max-w-[1200px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
                 <div @click="$router.push(`/heating-unit-motors/${item.id}`)" v-for="item of this.useBlogStore.heating_unit_motors" :key="item.id"
                     class="product_hover_block cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
                     <div class=" flex items-center justify-start h-[100%] w-[100%]">
