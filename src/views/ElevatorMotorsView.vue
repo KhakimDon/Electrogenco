@@ -30,13 +30,223 @@ export default {
 
             ],
             useBlogStore: useBlogStore(),
+            massiv: [
+                {
+                    id: 1,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4963.jpg",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4963.jpg",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type S-5.5KW (Two-speed)",
+                        specifications: {
+                            Power: "5.5 kW",
+                            Speed: "Two-speed",
+                        },
+                    },
+                },
+                {
+                    id: 2,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4963.jpg",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4963.jpg",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type S-7.3KW (Single-speed)",
+                        specifications: {
+                            Power: "7.3 kW",
+                            Speed: "Single-speed",
+                        },
+                    },
+                },
+                {
+                    id: 3,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4963.jpg",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4963.jpg",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type S-5.5KW (Single-speed)",
+                        specifications: {
+                            Power: "5.5 kW",
+                            Speed: "Single-speed",
+                        },
+                    },
+                },
+                {
+                    id: 4,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070-300x214.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type E-6.1KW (Two-speed)",
+                        specifications: {
+                            Power: "6.1 kW",
+                            Speed: "Two-speed (AC2)",
+                        },
+                    },
+                },
+                {
+                    id: 5,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070-300x214.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type E-7.3KW (Single-speed)",
+                        specifications: {
+                            Power: "9.2 kW",
+                            Speed: "Single-speed",
+                        },
+                    },
+                },
+                {
+                    id: 6,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070-300x214.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type E-7.3KW (Single-speed)",
+                        specifications: {
+                            Power: "7.3 kW",
+                            Speed: "Single-speed",
+                        },
+                    },
+                },
+                {
+                    id: 7,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070-300x214.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type E-7.3KW (Single-speed)",
+                        specifications: {
+                            Power: "13.2 kW",
+                            Speed: "Single-speed",
+                        },
+                    },
+                },
+                {
+                    id: 8,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/8153.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8152-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type M-6.1KW (Two-speed)",
+                        specifications: {
+                            Power: "6.1 kW",
+                            Speed: "Two-speed (AC2)",
+                        },
+                    },
+                },
+                {
+                    id: 9,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/8153.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8152-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type M-9.2KW (Single-speed)",
+                        specifications: {
+                            Power: "9.2  kW",
+                            Speed: "Single-speed (VVVF)",
+                        },
+                    },
+                },
+                {
+                    id: 10,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/8153.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8152-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type M-9.2KW (Single-speed)",
+                        specifications: {
+                            Power: "7.3  kW",
+                            Speed: "Single-speed (VVVF)",
+                        },
+                    },
+                },
+                {
+                    id: 11,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/8153.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8152-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type M-6.1KW (Single-speed)",
+                        specifications: {
+                            Power: "6.1  kW",
+                            Speed: "Single-speed (VVVF)",
+                        },
+                    },
+                },
+                {
+                    id: 12,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/8153.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8152-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type M-13.2KW (Single-speed)",
+                        specifications: {
+                            Power: "13.2 kW",
+                            Speed: "Single-speed (VVVF)",
+                        },
+                    },
+                },
+                {
+                    id: 13,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070-300x214.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type E-7.3KW (Two-speed)",
+                        specifications: {
+                            Power: "7.2 kW",
+                            Speed: "Two-speed (AC2)",
+                        },
+                    },
+                },
+                {
+                    id: 14,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070.png",
+                    additionalImages: [
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8070-300x214.png",
+                        "https://electrogenco.com/en/wp-content/uploads/2023/09/8153-300x200.png",
+                    ],
+                    en: {
+                        title: "Elevator Stator & Rotor-Type E-6.1KW (Two-speed)",
+                        specifications: {
+                            Power: "6.1 kW",
+                            Speed: "Two-speed (AC2)",
+                        },
+                    },
+                },
+            ],
             fallback: [],
         }
     },
     mounted() {
-        setTimeout(() => {
-            this.fallback = this.useBlogStore.elevator_motors
-        }, 200);
+        this.fallback = this.massiv
 
     },
     methods: {
