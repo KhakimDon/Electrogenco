@@ -256,11 +256,11 @@ export default {
             this.fallback = []
 
             if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.useBlogStore.elevator_motors.filter(item => item[this.$t("lang")].specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
+                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
                 this.fallback = filtered
             }
             else if (event.target.dataset.filterby == "NUMBER OF SPEED") {
-                let filtered = this.useBlogStore.elevator_motors.filter(item => item[this.$t("lang")].specifications.Speed.split(' ').join('') == event.target.dataset.value.split(' ').join(''))
+                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Speed.split(' ').join('') == event.target.dataset.value.split(' ').join(''))
                 this.fallback = filtered
             }
         },
