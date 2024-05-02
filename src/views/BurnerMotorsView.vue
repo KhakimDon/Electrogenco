@@ -1,6 +1,5 @@
-<script  lang="ts">
+<script lang="ts">
 import Cards from '../components/Cards.vue'
-import { useBlogStore } from "../stores/products"
 
 
 export default {
@@ -26,13 +25,124 @@ export default {
 
 
             ],
-            useBlogStore: useBlogStore(),
             fallback: [],
+            massiv: [
+                {
+                    id: 1,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8061blur.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HN series-750W (Three-phase)",
+                        specifications: {
+                            Power: "750 W",
+                        },
+                    },
+                },
+                {
+                    id: 2,
+                    img: "https://electrogenco.com/en/wp-content/uploads/woocommerce-placeholder-600x600.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HN series-550W",
+                        specifications: {
+                            Power: "550 W",
+                        },
+                    },
+                },
+                {
+                    id: 3,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_4954.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HN series-450W",
+                        specifications: {
+                            Power: "450 W",
+                        },
+                    },
+                },
+                {
+                    id: 4,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_4954.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HN series-370W",
+                        specifications: {
+                            Power: "370 W",
+                        },
+                    },
+                },
+                {
+                    id: 5,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HA series-175W",
+                        specifications: {
+                            Power: "175 W",
+                        },
+                    },
+                },
+                {
+                    id: 6,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HA series-150W",
+                        specifications: {
+                            Power: "150 W",
+                        },
+                    },
+                },
+                {
+                    id: 7,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HA series-125W",
+                        specifications: {
+                            Power: "125 W",
+                        },
+                    },
+                },
+                {
+                    id: 8,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HA series- 100W",
+                        specifications: {
+                            Power: "100 W",
+                        },
+                    },
+                },
+                {
+                    id: 9,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HA series- 50W",
+                        specifications: {
+                            Power: "50 W",
+                        },
+                    },
+                },
+                {
+                    id: 10,
+                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
+                    // ----
+                    en: {
+                        title: "Burner Motor-HA series-240W",
+                        specifications: {
+                            Power: "240 W",
+                        },
+                    },
+                },
+            ]
         }
     },
     mounted() {
         setTimeout(() => {
-            this.fallback = this.useBlogStore.burner_motors
+            this.fallback = this.massiv
             this.$i18n.locale = 'en'
         }, 200);
 
@@ -44,7 +154,7 @@ export default {
             this.fallback = []
 
             if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.useBlogStore.burner_motors.filter(item => item[this.$t("lang")].specifications.Power == event.target.dataset.value)
+                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Power == event.target.dataset.value)
                 this.fallback = filtered
             }
 
@@ -76,7 +186,7 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("header.home") }}
                     </li>
-                   
+
                     <li class="roboto-medium text-[#1A85FF]">Burner Motors</li>
                 </ul>
             </div>
