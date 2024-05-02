@@ -1,9 +1,11 @@
-<script  >
+<script lang="ts">
+import { defineComponent } from 'vue'
+
 import Cards from '../components/Cards.vue'
 import { useBlogStore } from "../stores/products"
 
 
-export default {
+export default defineComponent({
     components: { Cards },
     data() {
         return {
@@ -53,7 +55,7 @@ export default {
             }
         }
     }
-}
+})
 </script>
 
 <template>

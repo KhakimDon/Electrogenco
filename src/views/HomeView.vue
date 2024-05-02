@@ -1,4 +1,4 @@
-<script  >
+<script lang="ts" >
 import { useProductCategoryStore } from "../stores/productCategory"
 import { useElectrogenGlanceStore } from "../stores/electrogenAtAGlance"
 import { useInfiniteMovementStore } from "../stores/InfiniteMovement"

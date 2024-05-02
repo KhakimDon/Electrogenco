@@ -1,5 +1,12 @@
-<script setup >
-const props = defineProps(['title','img'])
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent( {
+    name: 'Card',
+    props:{
+        title: String,
+        img: String,
+    }
+})
 </script>
 
 
@@ -8,10 +15,10 @@ const props = defineProps(['title','img'])
         class="border-[1px] group hover:border-[#1A85FF] cursor-pointer duration-[.3s] h-[360px] rounded-[15px] grow basis-[290px] max-w-[300px] overflow-hidden p-[20px]">
         <figure class="h-[180px] overflow-hidden">
             <img class="h-[100%] w-[100%] object-cover"
-                :src="props.img" alt="image">
+                :src="this.img" alt="image">
         </figure>
         <p class="group-hover:text-[#1A85FF] leading-[35px] text-center duration-[.3s] text-[19px] roboto-regular">
-            {{props.title}}
+            {{this.title}}
         </p>
         <div class="flex flex-col items-center  mt-[10px]">
             <span class="text-[16px] roboto-regular">Product Details</span>

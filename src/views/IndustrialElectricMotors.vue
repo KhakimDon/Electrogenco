@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 import Cards from '../components/Cards.vue'
 import { useBlogStore } from "../stores/products"
+import { defineComponent } from 'vue'
 
 
-export default {
+export default defineComponent({
     components: { Cards },
     data() {
         return {
@@ -4953,27 +4954,27 @@ export default {
             let filterby = event.target.dataset.filterby
             let value = event.target.dataset.value
             if (filterby == "OUTPUT POWER") {
-                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.specifications.Power.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                let filtered = this.massiv.filter(item => item.en.specifications.Power.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
                 this.shows(filtered)
 
             }
             else if (filterby == "FRAME MATERIAL") {
-                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.appearance.FrameMaterial.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                let filtered = this.massiv.filter(item => item.en.appearance.FrameMaterial.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
                 this.shows(filtered)
 
             }
             else if (filterby == "FRAME SIZE") {
-                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.specifications.size.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                let filtered = this.massiv.filter(item => item.en.specifications.size.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
                 this.shows(filtered)
 
             }
             else if (filterby == "NUMBER OF POLE") {
-                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.specifications.pole.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                let filtered = this.massiv.filter(item => item.en.specifications.pole.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
                 this.shows(filtered)
 
             }
             else if (filterby == "MOUNTING TYPE") {
-                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.specifications.type.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                let filtered = this.massiv.filter(item => item.en.specifications.type.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
                 this.shows(filtered)
 
             }
@@ -4991,7 +4992,7 @@ export default {
             }
         }
     }
-}
+})
 </script>
 
 <template>

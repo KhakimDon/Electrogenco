@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
 import HistorySwiperVue from "../components/HistorySwiper.vue"
+import { defineComponent } from 'vue'
 
-export default {
+export default defineComponent( {
   components: {
     HistorySwiperVue
   }
-}
+})
 </script>
 
 <template>

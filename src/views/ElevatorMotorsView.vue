@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import Cards from '../components/Cards.vue'
 import { useBlogStore } from "../stores/products"
 
