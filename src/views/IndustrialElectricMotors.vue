@@ -78,42 +78,58 @@ export default {
                 },
             ],
             useBlogStore: useBlogStore(),
-            fallback: [],
+            eventpage: 1,
+            fallback: []
         }
     },
     mounted() {
-        setTimeout(() => {
-            this.fallback = this.useBlogStore.electric_motors
-        }, 200);
-        
+        this.shows(this.useBlogStore.electric_motors)
     },
     methods: {
-        filter(){
-            console.log(event.target.dataset.filterby);
-            console.log(event.target.dataset.value);
+        inc() {
+            if (this.eventpage < this.fallback.length) {
+                this.eventpage++
+            }
+        },
+        dec() {
+            if (this.eventpage > 1) {
+                this.eventpage--
+            }
+        },
+        shows(arr) {
             this.fallback = []
-            
-            if(event.target.dataset.filterby == "OUTPUT POWER"){
-                let filtered = this.useBlogStore.electric_motors.filter(item => item[this.$t("lang")].specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
-                this.fallback = filtered
+            for (let i = 0; i < arr.length; i += 6) {
+                this.fallback.push(arr.slice(i, i + 6));
             }
-            else if (event.target.dataset.filterby ==  "FRAME MATERIAL"){
-                let filtered = this.useBlogStore.electric_motors.filter(item => item[this.$t("lang")].appearance.FrameMaterial.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
-                this.fallback = filtered
+        },
+        filter() {
+            let filterby = event.target.dataset.filterby
+            let value = event.target.dataset.value
+            if (filterby == "OUTPUT POWER") {
+                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.specifications.Power.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                this.shows(filtered)
+
             }
-            else if (event.target.dataset.filterby ==  "FRAME SIZE"){
-                let filtered = this.useBlogStore.electric_motors.filter(item => item[this.$t("lang")].specifications.size.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
-                this.fallback = filtered
+            else if (filterby == "FRAME MATERIAL") {
+                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.appearance.FrameMaterial.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                this.shows(filtered)
+
             }
-            else if (event.target.dataset.filterby ==  "NUMBER OF POLE"){
-                let filtered = this.useBlogStore.electric_motors.filter(item => item[this.$t("lang")].specifications.pole.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
-                this.fallback = filtered
+            else if (filterby == "FRAME SIZE") {
+                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.specifications.size.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                this.shows(filtered)
+
             }
-            else if (event.target.dataset.filterby ==  "MOUNTING TYPE"){
-                let filtered = this.useBlogStore.electric_motors.filter(item => item[this.$t("lang")].specifications.type.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
-                this.fallback = filtered
+            else if (filterby == "NUMBER OF POLE") {
+                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.specifications.pole.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                this.shows(filtered)
+
             }
-            
+            else if (filterby == "MOUNTING TYPE") {
+                let filtered = this.useBlogStore.electric_motors.filter(item => item.en.specifications.type.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
+                this.shows(filtered)
+
+            }
         },
         accordion() {
             let a = event.currentTarget.children[1].children[0].getBoundingClientRect().height
@@ -167,7 +183,8 @@ export default {
                         </div>
                         <div class="h-[0px] duration-[3s]">
                             <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i" :data-filterby="item.title" :key="i.id"
+                                <li @click="filter()" v-for="i of item.items" :data-value="i"
+                                    :data-filterby="item.title" :key="i.id"
                                     class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
                                     <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
                                 </li>
@@ -178,9 +195,35 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
-                    
+                    <Cards :title="item.en.title" :img="item.img" v-for="item of this.fallback[this.eventpage - 1]"
+                        :key="item.id" />
+
+<div class="w-[100%]">
+    <div class="h-[40px] items-center justify-between w-[max-content] flex flex-wrap">
+                        <button @click="dec()" class="btn hover:text-[white] hover:bg-[#1A94FF]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                            </svg>
+                        </button>
+                        <div class="px-[10px]">
+                            <span class="text-[23px] roboto-meduim">{{ this.eventpage }}</span>
+                            /
+                            <span class="text-[23px] roboto-meduim">{{ this.fallback.length }}</span>
+                        </div>
+                        <button @click="inc()" class="btn hover:text-[white] hover:bg-[#1A94FF]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                        </button>
+                    </div>
+
                 </div>
+</div>
 
 
             </div>
@@ -188,5 +231,4 @@ export default {
     </div>
 </template>
 
-<style>
-</style>
+<style></style>

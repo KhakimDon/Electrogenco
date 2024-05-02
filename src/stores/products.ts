@@ -208,7 +208,7 @@ export const useBlogStore = defineStore("blog", () => {
       },
     },
     {
-      id: 13,
+      id: 17,
       img: "https://electrogenco.com/en/wp-content/uploads/2024/02/FAG_5010.png",
       // ----
       en: {
@@ -292,23 +292,7 @@ export const useBlogStore = defineStore("blog", () => {
         },
       },
     },
-    {
-      id: 17,
-      img: "https://electrogenco.com/en/wp-content/uploads/2024/02/FAG_9191.png",
-      // ----
-      en: {
-        title: "Three Phase Motor-Frame 160-6 Poles-11KW-IMB5",
-        appearance: {
-          FrameMaterial: "Aluminium",
-        },
-        specifications: {
-          size: "160",
-          pole: "6",
-          Power: "11 kW",
-          type: "IMB35",
-        },
-      },
-    },
+
     {
       id: 18,
       img: "https://electrogenco.com/en/wp-content/uploads/2024/02/FAG_9191.png",
@@ -649,23 +633,7 @@ export const useBlogStore = defineStore("blog", () => {
         },
       },
     },
-    {
-      id: 38,
-      img: "https://electrogenco.com/en/wp-content/uploads/2024/02/FAG_9191.png",
-      // ----
-      en: {
-        title: "Three Phase Motor-Frame 160-2 Poles-11KW-IMB5",
-        appearance: {
-          FrameMaterial: "Aluminium",
-        },
-        specifications: {
-          size: "160",
-          pole: "2",
-          Power: "11 kW",
-          type: "IMB5",
-        },
-      },
-    },
+
     {
       id: 38,
       img: "https://electrogenco.com/en/wp-content/uploads/2024/02/FAG_9211.png",
@@ -3464,23 +3432,6 @@ export const useBlogStore = defineStore("blog", () => {
           pole: "4",
           Power: "550 W",
           type: "IMB35",
-        },
-      },
-    },
-    {
-      id: 202,
-      img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_9432.png",
-      // ----
-      en: {
-        title: "Three Phase Motor-Frame 71-4 Poles-550W-IMB34",
-        appearance: {
-          FrameMaterial: "Aluminium",
-        },
-        specifications: {
-          size: "71",
-          pole: "4",
-          Power: "550 W",
-          type: "IMB34",
         },
       },
     },
@@ -6332,7 +6283,10 @@ export const useBlogStore = defineStore("blog", () => {
         },
         {
           id: 29,
-          additionalImages:["https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006-300x200.png", "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8007-300x200.png"],
+          additionalImages: [
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006-300x200.png",
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8007-300x200.png",
+          ],
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006.png",
           // ----
           en: {
@@ -6348,7 +6302,10 @@ export const useBlogStore = defineStore("blog", () => {
         },
         {
           id: 30,
-          additionalImages:["https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-02-copy-300x200.png", "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8013-02-copy-300x200.png"],
+          additionalImages: [
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-02-copy-300x200.png",
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8013-02-copy-300x200.png",
+          ],
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-02-copy.png",
           // ----
           en: {
@@ -6364,7 +6321,10 @@ export const useBlogStore = defineStore("blog", () => {
         },
         {
           id: 31,
-          additionalImages:["https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006-300x200.png", "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8007-300x200.png"],
+          additionalImages: [
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006-300x200.png",
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8007-300x200.png",
+          ],
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006.png",
           // ----
           en: {
@@ -6380,7 +6340,10 @@ export const useBlogStore = defineStore("blog", () => {
         },
         {
           id: 32,
-          additionalImages:["https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006-300x200.png", "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8007-300x200.png"],
+          additionalImages: [
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006-300x200.png",
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8007-300x200.png",
+          ],
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8006.png",
           // ----
           en: {
@@ -6396,7 +6359,10 @@ export const useBlogStore = defineStore("blog", () => {
         },
         {
           id: 33,
-          additionalImages:["https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-300x200.png", "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8013-300x200.png"],
+          additionalImages: [
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-300x200.png",
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8013-300x200.png",
+          ],
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012.png",
           // ----
           en: {
@@ -6412,7 +6378,10 @@ export const useBlogStore = defineStore("blog", () => {
         },
         {
           id: 34,
-          additionalImages:["https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-300x200.png", "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8013-300x200.png"],
+          additionalImages: [
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-300x200.png",
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8013-300x200.png",
+          ],
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012.png",
           // ----
           en: {
@@ -6428,7 +6397,10 @@ export const useBlogStore = defineStore("blog", () => {
         },
         {
           id: 35,
-          additionalImages:["https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-300x200.png", "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8013-300x200.png"],
+          additionalImages: [
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012-300x200.png",
+            "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8013-300x200.png",
+          ],
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8012.png",
           // ----
           en: {
@@ -6512,7 +6484,6 @@ export const useBlogStore = defineStore("blog", () => {
             },
           },
         },
-
       ],
     },
     {
@@ -6617,16 +6588,19 @@ export const useBlogStore = defineStore("blog", () => {
             },
           },
         },
-      ]
+      ],
     },
   ]);
 
-
   ///////////////////
 
-  
-
-  
-
-  return { electric_motors, elevator_motors, heating_unit_motors,water_pumps,ventilation_motors,burner_motors,water_pumps_for_desert_cooler };
+  return {
+    electric_motors,
+    elevator_motors,
+    heating_unit_motors,
+    water_pumps,
+    ventilation_motors,
+    burner_motors,
+    water_pumps_for_desert_cooler,
+  };
 });
