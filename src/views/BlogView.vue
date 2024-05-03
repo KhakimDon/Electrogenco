@@ -1,5 +1,5 @@
 <script lang="ts">
-
+import { useBlogStore } from "../stores/blog"
 
 export default {
     data() {
@@ -13,8 +13,8 @@ export default {
                         "Technical Articles",
                     ]
                 },
-
             ],
+            useBlogStore: useBlogStore(),
         }
     },
     methods: {
@@ -85,9 +85,34 @@ export default {
                     </div>
 
                     <div class="flex-1 flex gap-[25px] flex-wrap">
+                        <div v-for="item of useBlogStore.blogs" :key="item.id" class="cursor-pointer max-w-[30%] overflow-hidden">
+                            <div class="basis-[390px] group">
+                                <div :style="`background-image: url('${item.img}'); background-position: center center; background-size: cover`"
+                                    class="h-[180px] imgees relative flex items-end pb-[20px] w-[100%] bg-[whitesmoke] rounded-[20px] overflow-hidden">
 
-                        <Cards @click="$router.push(`/ventilation-motors/air-curtain-motor/${item.id}`)"
-                            :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                                    <span class="flex items-center roboto-regular text-white z-[2]">
+                                        <div class="h-[1px] mr-[10px] w-[50px] bg-white"></div>{{ item.data }}
+                                    </span>
+
+                                </div>
+                                <div
+                                    class="my-[20px] text-[#032055] text-[20px] roboto-medium text-left group-hover:text-[#0652dd] duration-[.3s]">
+                                    {{ item[$t("eleven.blog_title")] }} </div>
+                                <div class="text-left roboto-regular text-[#878787]">
+                                    {{ item[$t("eleven.blog_subtitle")] }}
+                                </div>
+                                <div class="flex items-center mt-[20px] group-hover:text-[#0652dd] duration-[.3s]">
+                                    {{ $t("eleven.read") }}
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-[15px]">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
 
@@ -98,4 +123,20 @@ export default {
     </div>
 </template>
 
-<style></style>
+<style>
+
+.imgees:hover::after{
+    background: rgba(0, 0, 0, 0.136);
+}
+.imgees::after{
+    transition-duration: .3s;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.431);
+    position: absolute;
+    left: 0 !important;
+    z-index: 1;
+    bottom: 0 !important;
+}
+</style>
