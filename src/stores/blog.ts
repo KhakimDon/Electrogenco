@@ -6,6 +6,7 @@ export const useBlogStore = defineStore('blog', () => {
     const blogs = ref([
         {
             id: 1,
+            type: "Exhibitions and Events",
             category: "Exhibitions and Events",
             text_en: "Electrogen’s Presence at The Home Appliance Exhibition",
             text_ru: "Присутствие Electrogen на выставке бытовой техники",
@@ -18,6 +19,7 @@ export const useBlogStore = defineStore('blog', () => {
         },
         {
             id: 2,
+            type: "Exhibitions and Events",
             category: "Technical Articles",
             text_en: "BLDC Electromotors",
             text_ru: "Электродвигатели BLDC",
@@ -30,6 +32,7 @@ export const useBlogStore = defineStore('blog', () => {
         },
         {
             id: 3,
+            type:"Technical Articles",
             category: "Exhibitions and Events",
             text_en: "Electrogen’s Presence at the International Industry Exhibition",
             text_ru: "Присутствие Electrogen на Международной отраслевой выставке",
@@ -42,6 +45,7 @@ export const useBlogStore = defineStore('blog', () => {
         },
         {
             id: 4,
+            type:"Technical Articles",
             category: "Technical Articles",
             text_en: "How To Read The Electric Motor and Electric Pump Nameplate?",
             text_ru: "Как читать паспортную табличку электродвигателя и электронасоса?",
@@ -54,6 +58,7 @@ export const useBlogStore = defineStore('blog', () => {
         },
         {
             id: 5,
+            type:"Technical Articles",
             category: "Technical Articles",
             text_en: "Troubleshooting Techniques For Electric Motors and Pumps …",
             text_ru: "Методы устранения неисправностей электродвигателей и насосов…",
@@ -66,6 +71,7 @@ export const useBlogStore = defineStore('blog', () => {
         },
         {
             id: 6,
+            type:"Technical Articles",
             category: "Technical Articles",
             text_en: "Electrogen’s Membership in The long List of The Ministry of Petroleum",
             text_ru: "Членство Electrogen в длинном списке Министерства нефти",

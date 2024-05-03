@@ -4,6 +4,7 @@ import { useBlogStore } from "../stores/blog"
 export default {
     data() {
         return {
+            fallback: [],
             filters: [
                 {
                     title: "Categories of articles",
@@ -29,7 +30,14 @@ export default {
                 event.currentTarget.style.height = '55px'
                 event.currentTarget.dataset.accordion = "false"
             }
+        },
+        filter(i){
+            console.log(i);
+            
         }
+    },
+    mounted(){
+        this.fallback = this.useBlogStore.blogs
     }
 }
 
@@ -74,7 +82,7 @@ export default {
                             </div>
                             <div class="h-[0px] duration-[3s]">
                                 <ul class="pb-[10px]">
-                                    <li @click="filter()" v-for="i of item.items" :data-value="i"
+                                    <li @click="filter(i)" v-for="i of item.items" :data-value="i"
                                         :data-filterby="item.title" :key="i.id"
                                         class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
                                         <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
@@ -85,7 +93,7 @@ export default {
                     </div>
 
                     <div class="flex-1 flex gap-[25px] flex-wrap">
-                        <div v-for="item of useBlogStore.blogs" :key="item.id" class="cursor-pointer max-w-[30%] overflow-hidden">
+                        <div v-for="item of this.fallback" :key="item.id" class="cursor-pointer max-w-[30%] overflow-hidden">
                             <div class="basis-[390px] group">
                                 <div :style="`background-image: url('${item.img}'); background-position: center center; background-size: cover`"
                                     class="h-[180px] imgees relative flex items-end pb-[20px] w-[100%] bg-[whitesmoke] rounded-[20px] overflow-hidden">
