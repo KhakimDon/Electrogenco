@@ -1,35 +1,9 @@
 <script lang="ts">
-import Cards from '../components/Cards.vue'
-import { useBlogStore } from "../stores/products"
-
 
 export default {
-    components: { Cards },
+
     data() {
         return {
-            filters: [
-                {
-                    title: "OUTPUT POWER",
-                    items: [
-                        "13.2 kW",
-                        "5.5 kW",
-                        "6.1 kW",
-                        "7.3 kW",
-                        "9.2 kW",
-                    ]
-                },
-                {
-                    title: "NUMBER OF SPEED",
-                    items: [
-                        "Single-speed",
-                        "Single-speed (VVVF)",
-                        "Two-speed",
-                        "Two-speed (AC2)",
-                    ]
-                },
-
-            ],
-            useBlogStore: useBlogStore(),
             massiv: [
                 {
                     id: 1,
@@ -242,47 +216,43 @@ export default {
                     },
                 },
             ],
-            fallback: [],
+            n: 1,
+            i: {
+                id: 1,
+                img: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMDEtdGQtMDA4XzQuanBn.jpg",
+                // ----
+                en: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+            },
         }
     },
     mounted() {
-        this.fallback = this.massiv
-
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+        this.$i18n.locale = 'en'
+        setTimeout(() => {
+            for (let i of this.massiv) {
+                if (i.id ==  +window.location.pathname.split('/')[2]) {
+                    this.i = i
+                }
+            }
+        }, 100);
     },
-    methods: {
-        filter() {
-            console.log(event.target.dataset.filterby);
-            console.log(event.target.dataset.value);
-            this.fallback = []
-
-            if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
-                this.fallback = filtered
-            }
-            else if (event.target.dataset.filterby == "NUMBER OF SPEED") {
-                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Speed.split(' ').join('') == event.target.dataset.value.split(' ').join(''))
-                this.fallback = filtered
-            }
-        },
-        accordion() {
-            let a = event.currentTarget.children[1].children[0].getBoundingClientRect().height
-            if (event.currentTarget.dataset.accordion == 'false') {
-                event.currentTarget.children[0].children[0].style.transform = 'rotate(180deg)'
-                event.currentTarget.style.height = (a + 50) + 'px'
-                event.currentTarget.dataset.accordion = 'true'
-            } else {
-                event.currentTarget.children[0].children[0].style.transform = 'rotate(0deg)'
-                event.currentTarget.style.height = '55px'
-                event.currentTarget.dataset.accordion = "false"
-            }
-        }
-    }
 }
+
 </script>
 
 <template>
     <div class="pt-[75px]">
-        <!-- breadcrumbs  -->
         <div class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
@@ -290,51 +260,134 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("header.home") }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">Elevator Motors</li>
+                    <li @click="$router.push('/')"
+                        class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
+                        All products
+                    </li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
                 </ul>
             </div>
         </div>
 
-        <div class="max-w-[1250px] mx-auto mt-[50px]">
-            <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Elevator Motors
-                <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
-            </h3>
-            <div class="flex items-start gap-[25px]">
+        <div class="min-h-[50vh] mt-[40px]">
+            <div class="max-w-[1250px] gap-[20px] mx-auto flex">
+                <div class="flex-1">
+                    <h3 class="text-[28px] text-[#1B3F7B] roboto-black">
+                        {{ this.i.en.title }}
+                    </h3>
 
-                <div>
-                    <div @click="accordion()" v-for="item of this.filters" :key="item.id" data-accordion="false"
-                        class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
-                        <div
-                            class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-5 h-5 duration-[.3s]">
+                    <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">
+
+                    <div v-if="this.i.en.appearance" class="border-[1px] rounded-[20px] mt-[25px]">
+                        <div class="flex justify-between p-[30px] items-center border-b-[1px]">
+                            <span class="roboto-regular text-[19px] text-[#1A85FF]">Appearance Characteristics</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
 
                         </div>
-                        <div class="h-[0px] duration-[3s]">
-                            <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
-                                    class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
-                                    <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
-                                </li>
-                            </ul>
+                        <div v-if="this.i.en.appearance.FrameMaterial" class="flex">
+                            <div class="flex-1 p-[25px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Frame Material
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}</div>
                         </div>
+                    </div>
+
+                    <div v-if="this.i.en.specifications" class="border-[1px] rounded-[20px] mt-[25px]">
+                        <div class="flex justify-between p-[30px] items-center border-b-[1px]">
+                            <span class="roboto-regular text-[19px] text-[#1A85FF]">Technical Specifications</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                        </div>
+
+
+                        <div v-if="this.i.en.specifications.Size" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Frame Size
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Size }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.size" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Frame Size
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.size }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.pole" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Number of Pole
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.pole }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.Power" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Output Power
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Power }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.type" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Mounting Type
+
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.type }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.Speed" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Speed
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.Material" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Conductor Material
+
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Material }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.Application" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Application
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Application }}</div>
+                        </div>
+
+
+
                     </div>
                 </div>
 
-                <div class="flex-1 flex gap-[25px] flex-wrap">
-
-                    <Cards @click="$router.push(`/elevator-motors/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
-
+                <div class="flex-1">
+                    <figure class="border-[1px] rounded-[20px] p-[10px]">
+                        <img style="transform: rotateY(180deg)" class="" :src="this.i.img">
+                    </figure>
                 </div>
-
 
             </div>
         </div>
+
     </div>
 </template>
 

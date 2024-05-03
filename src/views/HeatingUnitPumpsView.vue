@@ -103,7 +103,7 @@ export default {
                         },
                     ],
                 },
-            ]
+         ],
         }
     },
     mounted() {
@@ -135,7 +135,7 @@ export default {
             </h3>
             <div class="flex items-start gap-[25px]">
                 <div class="flex-1 flex gap-[25px] flex-wrap">
-                    <Cards :title="item.en.title" :img="item.img" v-for="item of this.massiv[0].prod" :key="item.id" />
+                    <Cards @click="$router.push(`/heating-unit-motors/heating-unit-pumps/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.massiv[0].prod" :key="item.id" />
                 </div>
 
 

@@ -566,7 +566,7 @@ export default defineComponent({
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards @click="$router.push(`/ventilation-motors/air-curtain-motor/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 

@@ -1,85 +1,9 @@
 <script lang="ts">
-import Cards from '../components/Cards.vue'
-import { useBlogStore } from "../stores/products"
-import { defineComponent } from 'vue'
 
+export default {
 
-export default defineComponent({
-    components: { Cards },
     data() {
         return {
-            filters: [
-                {
-                    title: "OUTPUT POWER",
-                    items: [
-                        "1.1 kW",
-                        "1.5 kW",
-                        "11 KW",
-                        "120 W",
-                        "15 kW",
-                        "18.5 kW",
-                        "180 W",
-                        "2.2 kW",
-                        "22 kW",
-                        "250 W",
-                        "3 kW",
-                        "30 kW",
-                        "37 kW",
-                        "370 W",
-                        "4 kW",
-                        "45 kW",
-                        "5.5 kW",
-                        "500 W",
-                        "55 kW",
-                        "550 W",
-                        "7.5 kW",
-                        "750 W",
-                    ]
-                },
-                {
-                    title: "FRAME MATERIAL",
-                    items: [
-                        "Aluminium", "Cast Iron"
-                    ]
-                },
-                {
-                    title: "FRAME SIZE",
-                    items: [
-                        "100",
-                        "112",
-                        "132",
-                        "160",
-                        "180",
-                        "200",
-                        "225",
-                        "250",
-                        "63",
-                        "71",
-                        "80",
-                        "90"
-                    ]
-                },
-                {
-                    title: "NUMBER OF POLE",
-                    items: [
-                        "2",
-                        "4",
-                        "6",
-                    ]
-                },
-                {
-                    title: "MOUNTING TYPE",
-                    items: [
-                        "IMB3",
-                        "IMB5",
-                        "IMB14",
-                        "IMB34",
-                        "IMB35",
-                    ]
-                },
-            ],
-            useBlogStore: useBlogStore(),
-            eventpage: 1,
             massiv: [
                 {
                     id: 1,
@@ -4925,79 +4849,43 @@ export default defineComponent({
                     },
                 },
             ],
-            fallback: [],
+            n: 1,
+            i: {
+                id: 1,
+                img: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMDEtdGQtMDA4XzQuanBn.jpg",
+                // ----
+                en: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+            },
         }
     },
     mounted() {
-        for (let i = 0; i < this.massiv.length; i += 6) {
-            this.fallback.push(this.massiv.slice(i, i + 6));
-        }
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+        this.$i18n.locale = 'en'
+        setTimeout(() => {
+            for (let i of this.massiv) {
+                if (i.id ==  +window.location.pathname.split('/')[2] ) {
+                    this.i = i
+                }
+            }
+        }, 100);
     },
-    methods: {
-        inc() {
-            if (this.eventpage < this.fallback.length) {
-                this.eventpage++
-            }
-        },
-        dec() {
-            if (this.eventpage > 1) {
-                this.eventpage--
-            }
-        },
-        shows(arr) {
-            this.fallback = []
-            for (let i = 0; i < arr.length; i += 6) {
-                this.fallback.push(arr.slice(i, i + 6));
-            }
-        },
-        filter() {
-            let filterby = event.target.dataset.filterby
-            let value = event.target.dataset.value
-            if (filterby == "OUTPUT POWER") {
-                let filtered = this.massiv.filter(item => item.en.specifications.Power.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
-                this.shows(filtered)
+}
 
-            }
-            else if (filterby == "FRAME MATERIAL") {
-                let filtered = this.massiv.filter(item => item.en.appearance.FrameMaterial.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
-                this.shows(filtered)
-
-            }
-            else if (filterby == "FRAME SIZE") {
-                let filtered = this.massiv.filter(item => item.en.specifications.size.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
-                this.shows(filtered)
-
-            }
-            else if (filterby == "NUMBER OF POLE") {
-                let filtered = this.massiv.filter(item => item.en.specifications.pole.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
-                this.shows(filtered)
-
-            }
-            else if (filterby == "MOUNTING TYPE") {
-                let filtered = this.massiv.filter(item => item.en.specifications.type.toLowerCase().split(' ').join('') == value.toLowerCase().split(' ').join(''))
-                this.shows(filtered)
-
-            }
-        },
-        accordion() {
-            let a = event.currentTarget.children[1].children[0].getBoundingClientRect().height
-            if (event.currentTarget.dataset.accordion == 'false') {
-                event.currentTarget.children[0].children[0].style.transform = 'rotate(180deg)'
-                event.currentTarget.style.height = (a + 50) + 'px'
-                event.currentTarget.dataset.accordion = 'true'
-            } else {
-                event.currentTarget.children[0].children[0].style.transform = 'rotate(0deg)'
-                event.currentTarget.style.height = '55px'
-                event.currentTarget.dataset.accordion = "false"
-            }
-        }
-    }
-})
 </script>
 
 <template>
     <div class="pt-[75px]">
-        <!-- breadcrumbs  -->
         <div class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
@@ -5005,77 +4893,134 @@ export default defineComponent({
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("header.home") }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">Industrial Electric Motors</li>
+                    <li @click="$router.push('/')"
+                        class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
+                        All products
+                    </li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
                 </ul>
             </div>
         </div>
 
-        <div class="max-w-[1250px] mx-auto mt-[50px]">
-            <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Industrial Electric Motors
-                <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
-            </h3>
-            <div class="flex items-start gap-[25px]">
+        <div class="min-h-[50vh] mt-[40px]">
+            <div class="max-w-[1250px] gap-[20px] mx-auto flex">
+                <div class="flex-1">
+                    <h3 class="text-[28px] text-[#1B3F7B] roboto-black">
+                        {{ this.i.en.title }}
+                    </h3>
 
-                <div>
-                    <div @click="accordion()" v-for="item of this.filters" :key="item.id" data-accordion="false"
-                        class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
-                        <div
-                            class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-5 h-5 duration-[.3s]">
+                    <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">
+
+                    <div v-if="this.i.en.appearance" class="border-[1px] rounded-[20px] mt-[25px]">
+                        <div class="flex justify-between p-[30px] items-center border-b-[1px]">
+                            <span class="roboto-regular text-[19px] text-[#1A85FF]">Appearance Characteristics</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
 
                         </div>
-                        <div class="h-[0px] duration-[3s]">
-                            <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
-                                    class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
-                                    <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex-1 flex gap-[25px] flex-wrap">
-
-                    <Cards @click="$router.push(`/industrial-electric-motors/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback[this.eventpage - 1]"
-                        :key="item.id" />
-
-                    <div class="w-[100%]">
-                        <div class="h-[40px] items-center justify-between w-[max-content] flex flex-wrap">
-                            <button @click="dec()" class="btn hover:text-[white] hover:bg-[#1A94FF]">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
-                                </svg>
-                            </button>
-                            <div class="px-[10px]">
-                                <span class="text-[23px] roboto-meduim">{{ this.eventpage }}</span>
-                                /
-                                <span class="text-[23px] roboto-meduim">{{ this.fallback.length }}</span>
+                        <div v-if="this.i.en.appearance.FrameMaterial" class="flex">
+                            <div class="flex-1 p-[25px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Frame Material
                             </div>
-                            <button @click="inc()" class="btn hover:text-[white] hover:bg-[#1A94FF]">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                                </svg>
-
-                            </button>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}</div>
                         </div>
+                    </div>
+
+                    <div v-if="this.i.en.specifications" class="border-[1px] rounded-[20px] mt-[25px]">
+                        <div class="flex justify-between p-[30px] items-center border-b-[1px]">
+                            <span class="roboto-regular text-[19px] text-[#1A85FF]">Technical Specifications</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+
+                        </div>
+
+
+                        <div v-if="this.i.en.specifications.Size" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Frame Size
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Size }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.size" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Frame Size
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.size }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.pole" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Number of Pole
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.pole }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.Power" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Output Power
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Power }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.type" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Mounting Type
+
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.type }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.Speed" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Speed
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.Material" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Conductor Material
+
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Material }}</div>
+                        </div>
+                        <div v-if="this.i.en.specifications.Application" class="flex">
+                            <div
+                                class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                                <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
+                                Application
+                            </div>
+                            <div class="flex-[2] p-[25px] font-[600]">{{ this.i.en.specifications.Application }}</div>
+                        </div>
+
+
 
                     </div>
                 </div>
 
+                <div class="flex-1">
+                    <figure class="border-[1px] rounded-[20px] p-[10px]">
+                        <img style="transform: rotateY(180deg)" class="" :src="this.i.img">
+                    </figure>
+                </div>
 
             </div>
         </div>
+
     </div>
 </template>
 
