@@ -20,6 +20,7 @@ import MotorsAndWaterPumpsForDesertCooler from '../views/MotorsAndWaterPumpsForD
 import MotorsForDesertCooler from '../views/MotorsForDesertCooler.vue';
 import WaterPumpsForDesertCooler from '../views/WaterPumpsForDesertCooler.vue';
 import AllproductsView from '../views/AllproductsView.vue';
+import AllProductItemView from '../views/AllProductItemView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -122,7 +123,12 @@ const router = createRouter({
     {
       path: '/allproducts',
       name: 'AllproductsView',
-      component: AllproductsView
+      component: AllproductsView,
+    },
+    {
+      path: '/allproducts/:id', 
+      name: 'AllProductItemView',
+      component: AllProductItemView
     },
 
   ]
