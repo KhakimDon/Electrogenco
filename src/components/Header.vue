@@ -35,7 +35,7 @@
                 <router-link class="uppercase" :to="'/about'">{{ $t("header.about") }}</router-link>
                 <router-link class="uppercase" :to="'/products'">{{ $t("header.products") }}</router-link>
                 <router-link class="uppercase" :to="'/blog'">{{ $t("header.blog") }}</router-link>
-                <router-link class="uppercase" :to="'/'">{{ $t("header.branches") }}</router-link>
+                <router-link class="uppercase" :to="'/branches'">{{ $t("header.branches") }}</router-link>
             </nav>
             <div class="flex items-center gap-[20px]">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

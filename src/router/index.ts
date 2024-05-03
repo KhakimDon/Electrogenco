@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
 import BlogView from '../views/BlogView.vue';
 import BlogItem from '../views/BlogItem.vue';
+import BranchesView from '../views/BranchesView.vue';
 import ProductsView from '../views/ProductsView.vue';
 import IndustrialElectricMotors from '../views/IndustrialElectricMotors.vue';
 import ElevatorMotorsView from '../views/ElevatorMotorsView.vue';
@@ -59,6 +60,11 @@ const router = createRouter({
       path: '/blog/:id',
       name: 'Blogitem',
       component: BlogItem
+    },
+    {
+      path: '/branches',
+      name: 'BranchesView',
+      component: BranchesView
     },
     {
       path: '/products',
