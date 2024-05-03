@@ -85,7 +85,7 @@ export const useProductCategoryStore = defineStore("productcategory", () => {
     },
     {
       id: 8,
-      route: "",
+      route: "/allproducts",
       title_en: "All Products",
       subtitle_en: "All Products",
       img: "https://electrogenco.com/en/wp-content/uploads/2024/03/%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%A8%DB%8C%D8%B4%D8%AA%D8%B1.svg",

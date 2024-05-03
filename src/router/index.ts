@@ -19,6 +19,7 @@ import BurnerMotorsView from '../views/BurnerMotorsView.vue';
 import MotorsAndWaterPumpsForDesertCooler from '../views/MotorsAndWaterPumpsForDesertCooler.vue';
 import MotorsForDesertCooler from '../views/MotorsForDesertCooler.vue';
 import WaterPumpsForDesertCooler from '../views/WaterPumpsForDesertCooler.vue';
+import AllproductsView from '../views/AllproductsView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -117,6 +118,11 @@ const router = createRouter({
       path: '/motors-and-water-pumps-for-desert-cooler/water-pumps-for-desert-cooler',
       name: 'WaterPumpsForDesertCooler',
       component: WaterPumpsForDesertCooler
+    },
+    {
+      path: '/allproducts',
+      name: 'AllproductsView',
+      component: AllproductsView
     },
 
   ]
