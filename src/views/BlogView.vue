@@ -19,6 +19,9 @@ export default {
         }
     },
     methods: {
+        lin(item){
+            this.$router.push(`/blog/${item.id}`)
+        },
         accordion() {
             let a = event.currentTarget.children[1].children[0].getBoundingClientRect().height
             if (event.currentTarget.dataset.accordion == 'false') {
@@ -32,11 +35,15 @@ export default {
             }
         },
         filter(i){
-            console.log(i);
-            
+            if(i == "Exhibitions and Events"){
+                this.fallback = this.useBlogStore.blogs.filter(item => item.type == "Exhibitions and Events")
+            }else if (i == "Technical Articles"){
+                this.fallback = this.useBlogStore.blogs.filter(item => item.type == "Technical Articles")
+            }else this.fallback = this.useBlogStore.blogs
         }
     },
     mounted(){
+        this.$i18n.locale = 'en'
         this.fallback = this.useBlogStore.blogs
     }
 }
@@ -93,7 +100,7 @@ export default {
                     </div>
 
                     <div class="flex-1 flex gap-[25px] flex-wrap">
-                        <div v-for="item of this.fallback" :key="item.id" class="cursor-pointer max-w-[30%] overflow-hidden">
+                        <div @click="lin(item)" v-for="item of this.fallback" :key="item.id" class="cursor-pointer max-w-[30%] overflow-hidden">
                             <div class="basis-[390px] group">
                                 <div :style="`background-image: url('${item.img}'); background-position: center center; background-size: cover`"
                                     class="h-[180px] imgees relative flex items-end pb-[20px] w-[100%] bg-[whitesmoke] rounded-[20px] overflow-hidden">
