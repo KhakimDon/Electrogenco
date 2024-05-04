@@ -7,7 +7,7 @@ export default {
     },
     mounted() {
         this.$i18n.locale = 'en'
-
+        window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 }
 </script>
