@@ -16,6 +16,7 @@ export default {
     },
     methods: {
         searchs() {
+            this.$router.push('/products')
             this.search = true
         },
         changeLanguage(item) {
@@ -33,7 +34,7 @@ export default {
 
 <template>
     <header class="py-[15px] z-[999] shadow-sm bg-white fixed w-[100%]">
-        <Search class="search" :class="{searchactive: this.search == true}">
+        <Search @close="this.search = false" class="search" :class="{searchactive: this.search == true}">
             <div @click="this.search = false" class="searchBack absolute left-[40px] text-[16px] cursor-pointer uppercase roboto-medium top-[40px] text-white">
                 <div></div>
                 <span class="text-white">back</span>

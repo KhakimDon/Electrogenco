@@ -1865,7 +1865,7 @@ export default {
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/02/FAG_5010.png",
                     // ----
                     en: {
-                        title: "Three Phase Motor-Frame 180-2 Poles-22KW-IMB35",
+                        title: "Three Phase Motor-Frame 180-2 Poles-22KW-IMB34",
                         appearance: {
                             FrameMaterial: "Cast Iron",
                         },
@@ -6891,7 +6891,7 @@ export default {
         <div class="mx-auto max-h-[600px] overflow-y-auto pr-[10px] flex gap-[20px] max-w-[1200px] mt-[30px]">
             <div class="flex-1" v-if="searchQuery !== ''">
                 <p class="w-[100%] text-center text-white roboto-medium text-[18px]">Products</p>
-                <div ref="vosxods" v-for="article in filteredArticles" :key="article.id"
+                <div @click="$router.push(`/allproducts/${this.articles.indexOf(article) + 1}`), $emit('close')" v-for="article in filteredArticles" :key="article.id"
                     class="cursor-pointer h-[100px] mt-[20px] flex w-[100%] items-center gap-[20px] p-[10px] rounded-[10px] bg-[white]">
                     <img class="h-[100%] rounded-[10px]" :src="article.img" alt="image">
 
@@ -6900,7 +6900,7 @@ export default {
             </div>
             <div class="flex-1" v-if="searchQuery !== ''">
                 <p class="w-[100%] text-center text-white roboto-medium text-[18px]">Articles</p>
-                <div ref="vosxods" v-for="article in filteredArticles2" :key="article.id"
+                <div @click="$router.push(`/blog/${this.articles2.indexOf(article) + 1}`), $emit('close')" v-for="article in filteredArticles2" :key="article.id"
                     class="cursor-pointer h-[100px] mt-[20px] flex w-[100%] items-center gap-[20px] p-[10px] rounded-[10px] bg-[white]">
                     <img class="h-[100%] rounded-[10px]" :src="article.img" alt="image">
 
