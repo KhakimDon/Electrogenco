@@ -52,6 +52,12 @@ export default {
     #begin{
       padding-top: 55px !important;
     }
+    .preloader img {
+      transform: scale(0.6);
+    }
+    .preloader span {
+      transform: scale(0.6) translateY(-35px);
+    }
   }
 
   .preloader{
