@@ -543,7 +543,7 @@ export default {
                 Industrial Exhaust Fan Motors
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
-            <div class="flex items-start gap-[25px]">
+            <div class="flex items-start gap-[25px] sm:flex-col sm:px-[20px] sm:gap-[0px]">
 
                 <div>
                     <div @click="accordion()" v-for="item of this.filters" :key="item.id" data-accordion="false"

@@ -114,9 +114,9 @@ export default {
 </script>
 
 <template>
-    <div class="pt-[75px]">
+    <div id="begin" class="pt-[75px]">
         <!-- breadcrumbs  -->
-        <div class="max-w-[1250px] mx-auto">
+        <div id="breadcrumbs" class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
                     <li @click="$router.push('/')"
@@ -129,12 +129,12 @@ export default {
             </div>
         </div>
 
-        <div class="max-w-[1250px] mx-auto mt-[50px]">
-            <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
+        <div class="max-w-[1250px] mx-auto mt-[50px] sm:mt-[20px]">
+            <h3 class="mx-auto sm:text-[22px] w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
                 Heating Unit Pumps
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
-            <div class="flex items-start gap-[25px]">
+            <div class="flex items-start gap-[25px] sm:flex-col sm:px-[20px] sm:gap-[0px]">
                 <div class="flex-1 flex gap-[25px] flex-wrap">
                     <Cards @click="$router.push(`/heating-unit-motors/heating-unit-pumps/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.massiv[0].prod" :key="item.id" />
                 </div>

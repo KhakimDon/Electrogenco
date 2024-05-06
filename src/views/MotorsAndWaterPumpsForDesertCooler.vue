@@ -728,10 +728,10 @@ export default {
 </script>
 
 <template>
-    <div class="pt-[75px]">
+    <div id="begin" class="pt-[75px]">
 
         <!-- breadcrumbs  -->
-        <div class="max-w-[1250px] mx-auto">
+        <div id="breadcrumbs" class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
                     <li @click="$router.push('/')"
@@ -743,14 +743,14 @@ export default {
         </div>
 
         <section class="mt-[50px]">
-            <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
+            <h3 class="mx-auto w-[max-content] sm:text-[20px] sm:w-[300px] sm:text-center  text-[#032055] mb-[40px] roboto-medium text-[26px]">
                 Motors And Water Pumps For Desert Cooler
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
-            <div class="max-w-[1200px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
+            <div class="max-w-[1200px] sm:flex-col sm:px-[20px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
                 <div @click="$router.push(`/motors-and-water-pumps-for-desert-cooler/${item.id}`)"
                     v-for="item of this.massiv" :key="item.id"
-                    class="product_hover_block cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
+                    class="product_hover_block m:min-h-[150px] cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
                     <div class=" flex items-center justify-start h-[100%] w-[100%]">
                         <figure class="bg-[#E5E8ED] duration-[.7s] w-[70px] rounded-[50%] mr-[20px]">
                             <img class="h-[70px]" :src="item.img">
