@@ -71,3 +71,8 @@
     font-weight: 900;
     font-style: italic;
   }
+
+
+  video,iframe{
+    background: rgba(0, 0, 0, 0.182);
+  }

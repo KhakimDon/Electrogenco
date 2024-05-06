@@ -11,8 +11,16 @@ export default {
     Header,
     Footer
   },
+  data(){
+    return{
+      preloader: true
+    }
+  },
   mounted(){
     document.cookie = "locale=en"
+    setTimeout(() => {
+      this.preloader = false
+    }, 3000);
   }
 }
 
@@ -20,6 +28,10 @@ export default {
 
 <template>
   <div>
+    <div v-if="this.preloader" class="preloader">
+      <img src="https://electrogenco.com/en/wp-content/uploads/2023/01/ELECTROGEN-FA-8.png" alt="img">
+      <span class="loading loading-dots bg-[#032055] loading-lg"></span>
+    </div>
     <Header />
     <!-- <h1> {{ $t('cart')  }}</h1>
   <button @click="$i18n.locale = 'en'">en</button>
@@ -40,5 +52,18 @@ export default {
     #begin{
       padding-top: 55px !important;
     }
+  }
+
+  .preloader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 9999999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
   }
 </style>
