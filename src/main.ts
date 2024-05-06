@@ -12,7 +12,7 @@ import router from "./router";
 
 const app = createApp(App);
 
-
+app.use(router);
 app.use(createPinia());
 import { useLangStore } from "./stores/lang";
 
@@ -29,6 +29,6 @@ const i18n = createI18n({
 
 
 app.use(i18n)
-app.use(router);
+
 
 app.mount("#app");
