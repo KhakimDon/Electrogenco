@@ -1,8 +1,8 @@
 <template>
-  <swiper :autoplay="{
+  <swiper breakpoints="" :autoplay="{
     delay: 2500,
     disableOnInteraction: false,
-  }" :navigation="true" :slidesPerView="3" :spaceBetween="30" :modules="modules" class="mySwiper">
+  }" :navigation="true" :slidesPerView="this.perview" :spaceBetween="30" :modules="modules" class="mySwiper">
     <slot></slot>
   </swiper>
 </template>
@@ -27,6 +27,13 @@ export default {
   },
   data() {
     return {
+      perview: 3,
+    }
+  },
+  mounted() {
+    var x = window.matchMedia("(max-width: 650px)")
+    if (x.matches) {
+      this.perview = 1
     }
   },
   setup() {
@@ -74,6 +81,31 @@ export default {
   background-repeat: no-repeat;
 }
 
+.sponsor {
+  transition-duration: 0.3s;
+  filter: grayscale(1);
+  height: 40px !important;
+  width: initial !important;
+}
+
+@media screen and (max-width: 650px) {
+  .mySwiper .swiper-button-next {
+    width: 50px !important;
+    margin: 0 53% !important;
+    margin-top: -43px !important;
+  }
+
+  .mySwiper .swiper-button-prev {
+    width: 50px !important;
+    margin: 0 30% !important;
+    margin-top: 30px !important;
+  }
+
+  .sponsorwrp{
+    width: max-content !important;
+  }
+}
+
 .mySwiper .swiper-pagination {
   display: none !important;
 }
@@ -105,10 +137,5 @@ export default {
   filter: grayscale(0) !important;
 }
 
-.sponsor {
-  transition-duration: 0.3s;
-  filter: grayscale(1);
-  height: 40px !important;
-  width: initial !important;
-}
+
 </style>

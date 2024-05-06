@@ -46,5 +46,42 @@
     "contact": "BIZ BILAN BOG'LANISH",
     "faq": "TSS",
     "copy": "Mualliflik huquqi. Barcha huquqlar himoyalangan"
-  }
+  },
+
+  "breadcrumbs": {
+    "about": "Elektrogen Haqida",
+    "products": "Mahsulotlar"
+  },
+
+  "about": {
+    "title": "Biz Innovatsion Tushunchalardan Ilhom Olamiz",
+    "text": "Electrogen kompaniyasi maishiy va sanoat maqsadlari uchun elektr motorlarining asosiy yetkazib beruvchisi hisoblanadi. Kompaniya Eronda ham, chet elda ham o'z mijozlarining ehtiyojlarini qondiradigan ellikdan ortiq motor turlaridan iborat turli xil portfelga ega. 1990 yilda Eronning eng muhim sanoat markazlaridan birida tashkil etilgan Electrogen hozirda mamlakat poytaxtida ishlaydi. 165000 kvadrat metr ishlab chiqarish maydoni va 1500 dan ortiq malakali ishchilarning ishchi kuchi bilan Electrogen o'z mijozlariga qoniqarli xizmat ko'rsatish uchun resurslarga ega. Kompaniyaning innovatsion va amaliy yondashuvi unga mintaqaviy mamlakatlarda mustahkam o'rin egallashga yordam berdi. Uning katta eksport tajribasi va katta ishlab chiqarish quvvatlari elektrogenni sanoatning etakchi o'yinchisiga aylantirdi."
+  },
+  "history": {
+    "title": "ELECTROGEN KOMPANIYASI TARIXI",
+    "2017": {
+      "title": "Biz kelajak cheksiz gumbazida ichiga qaradi, va biz ko'tarildi",
+      "text": "Elektrogenning jadal rivojlanishi bizni mamlakatdagi eng yaxshi elektr motor ishlab chiqaruvchilariga aylanishimizga olib keldi. Natijada, bizga kattaroq va yaxshi jihozlangan platforma kerak edi. Biz zavod maydonimizni yangiladik va zamonaviy ob'ektlarga ega bo'ldik, bu bizga kerakli natijalarga erishishga imkon berdi. Bugungi kunda, ko'p yillar o'tgach, biz 1500 malakali ishchilari bo'lgan Eronda suv nasoslari va elektr motorlarining eng yirik ishlab chiqaruvchisi sifatida tan olinganmiz. Biz har doim yangi marralarni zabt etishga intilamiz, chunki biz erisha oladigan narsalarning chegarasi yo'qligiga qat'iy ishonamiz."
+    },
+    "1991": {
+      "title": "Biz jamiyat talablarini hal qilishga harakat qildik...",
+      "text": "Maishiy texnika sanoati ko'plab ishlab chiqaruvchilar bilan to'ldirildi. Bu holat brendlar uchun kuchli raqobatbardosh bozorni yaratdi. Boshqa tomondan, elektr motorlarining cheklangan ishlab chiqarilishi va mamlakatda ushbu turdagi mahsulotlarga yuqori talab tufayli elektromotorlar ishlab chiqarishni boshlash imkoniyati paydo bo'ldi. 1991 yilda Eronda barcha turdagi elektr motorlarini ishlab chiqarish uchun Electrogen nomli yangi kompaniya tashkil etildi."
+    },
+    "1985": {
+      "title": "Biz o'zimizni millatning mavjud sharoitlariga moslashtirdik",
+      "text": "Mamlakat sezilarli o'zgarishlarni boshdan kechirdi va o'zini o'zi ta'minlaydigan tarmoqlarni yaratish va fuqarolarni ish bilan ta'minlash imkoniyatlarini yaratish juda muhim edi. Shunday qilib, biz mamlakatning hozirgi sharoitlariga moslashish uchun o'z operatsiyalarimizni qayta tuzdik. Natijada, biz muzlatgichlar va muzlatgichlar ishlab chiqarishga e'tibor qaratgan holda kompaniyamizni 'Eron sovutish sanoati' deb nomladik."
+    },
+    "1980": {
+      "title": "Bugungi kunda ma'lum bo'lgan narsaning o'rnatilishi elektrogen...",
+      "text": "Bizning hikoyamiz o'z faoliyatining katta qismini elektr jihozlari va maishiy texnika eksporti va importiga qaratishi kerak bo'lgan Jan light kompaniyasini tashkil etish bilan boshlandi."
+    }
+  },
+  "about2":{
+    "title":"BIZ IJODKORLIK VA RIVOJLANAYOTGAN YO'NALISHDA HARAKAT QILMOQDAMIZ",
+    "text": "Iste'molchilarning turmush darajasini yaxshilash har qanday ishlab chiqarish guruhi uchun hal qiluvchi maqsaddir, chunki u o'sish va muvaffaqiyat uchun asos bo'ladi. Ushbu maqsadga erishish uchun soha mutaxassislarining bilim va tajribasidan foydalanish, innovatsion g'oyalarni amalga oshirish va sohaning turli jabhalarida ustunlik qilish kerak.",
+    "text2": "Electrogen o'zining o'tmishdagi yutuqlari va kelajakdagi intilishlariga sodiqligi bilan doimiy ravishda yangi yondashuvlar va mahsulotni ishlab chiqarishning amaliy strategiyalarini o'rganmoqda. Ushbu bag'ishlanish Elektrogenni barqaror taraqqiyot va kengayish yo'liga undadi."
+  },
+  "map": "Yo'lda taraqqiyot ...",
+  "information": "Ma'lumot",
+  "filter": "Filtr"
 }

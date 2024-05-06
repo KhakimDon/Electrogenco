@@ -29,4 +29,16 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style>
+  @media screen and (max-width: 650px) {
+    #breadcrumbs{
+      padding: 0px 20px;
+    }
+    #breadcrumbs div ul li{
+      font-size: 11px;
+    }
+    #begin{
+      padding-top: 55px !important;
+    }
+  }
+</style>

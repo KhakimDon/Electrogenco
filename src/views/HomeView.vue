@@ -20,8 +20,15 @@ export default {
       useElectrogenGlanceStore: useElectrogenGlanceStore(),
       useInfiniteMovementStore: useInfiniteMovementStore(),
       useBlogStore: useBlogStore(),
+      perview: 3,
     }
   },
+  mounted(){
+    var x = window.matchMedia("(max-width: 650px)")
+    if (x.matches) {
+      this.perview = 1
+    }
+  }
 }
 
 
@@ -34,12 +41,12 @@ export default {
         src="https://electrogenco.com/en/wp-content/uploads/2024/03/New-Banner_4MB.mp4" muted loop autoplay></video>
     </section>
 
-    <section class="second-section h-[100vh] flex items-center flex-col justify-center text-center">
+    <section class="second-section sm:h-[max-content] sm:py-[100px] sm:max-w-[100%] sm:px-[20px] h-[100vh] flex items-center flex-col justify-center text-center">
       <h3
-        class="w-[500px] border-b-[1px] border-[#003366] roboto-black pb-[15px] text-[#003366] font-[700] text-[20px]">
+        class="w-[500px] sm:max-w-[100%] border-b-[1px] border-[#003366] roboto-black pb-[15px] text-[#003366] font-[700] text-[20px]">
         {{ $t("second.title")  }}</h3>
       <p
-        class="max-w-[500px] border-b-[1px] border-[#003366] pb-[15px] mt-[50px] roboto-medium font-[700] text-[18px] leading-[35px]">
+        class="max-w-[500px] border-b-[1px] border-[#003366] pb-[15px] mt-[50px] roboto-medium font-[700] text-[18px] leading-[35px] sm:leading-[28px]">
         {{ $t("second.text")  }}
       </p>
       <p class="max-w-[500px] mt-[20px] roboto-medium font-[700] text-[18px]">
@@ -52,15 +59,15 @@ export default {
         src="https://electrogenco.com/en/wp-content/uploads/2024/03/WhatsApp-Video-2023-12-09-at-2.33.42-PM.mp4"></video>
     </section>
     
-    <section class="py-[100px]">
+    <section class="py-[100px] sm:pb-[50px]">
       <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-black text-[26px]">
         {{ $t("fourth.text") }}
         <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
       </h3>
 
-      <div class="max-w-[1200px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
-        <div v-for="item of product_category.productCategory" :class="{hidden: item.id == 6 || item.id == 7}" :key="item.id"
-          class="product_hover_block cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
+      <div class="max-w-[1200px] sm:w-[100%] sm:px-[10px] sm:flex-nowrap sm:overflow-auto flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
+        <div @click="$router.push(item.route)" v-for="item of product_category.productCategory" :class="{hidden: item.id == 6 || item.id == 7}" :key="item.id"
+          class="product_hover_block sm:min-w-[300px] cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
           <div class=" flex items-center justify-start h-[100%] w-[100%]">
             <figure class="bg-[#E5E8ED] duration-[.7s] w-[70px] rounded-[50%] mr-[20px]">
               <img class="h-[70px]" :src="item.img">
@@ -74,7 +81,7 @@ export default {
       </div>
     </section>
     
-    <section class="third-section h-[90vh]">
+    <section class="third-section h-[90vh] sm:h-[70vh] sm:px-[20px]">
       <div class="max-w-[1250px] flex items-center justify-end h-[100%] mx-auto">
         <p class="roboto-black text-white text-center max-w-[500px] leading-[38px] text-[19px]">
          {{ $t("fiveth") }}
@@ -82,9 +89,8 @@ export default {
       </div>
     </section>
 
-
-    <section class="py-[100px]">
-      <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-black text-[26px]">
+    <section class="py-[100px] sm:py-[50px]">
+      <h3 class="mx-auto sm:text-[19px] w-[max-content] text-[#032055] mb-[40px] roboto-black text-[26px]">
         {{ $t('sixth.text') }}
         <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
       </h3>
@@ -107,9 +113,8 @@ export default {
       </SwiperComp>
     </section>
 
-
     <section>
-      <div class="relative max-w-[1200px] mx-auto flex gap-[20px] flex-wrap">
+      <div class="relative max-w-[1200px] mx-auto flex gap-[20px] flex-wrap sm:flex-col sm:px-[20px]">
         <div class="bg-[#eaeaea] grow h-[400px] basis-[35%] rounded-[15px] overflow-hidden">
           <img class="objet-cover h-[100%] w-[100%]"
             src="https://electrogenco.com/en/wp-content/uploads/2024/03/%D8%A2%D8%B4%D9%BE%D8%B2%D8%AE%D8%A7%D9%86%D9%87.jpg"
@@ -136,9 +141,8 @@ export default {
       </div>
     </section>
 
-
-    <section class="py-[100px]">
-      <h3 class="mx-auto w-[max-content] text-[#032055] mb-[40px] roboto-black text-[26px]">
+    <section class="py-[100px] sm:py-[50px]">
+      <h3 class="mx-auto w-[max-content] sm:text-[19px] text-[#032055] mb-[40px] roboto-black text-[26px]">
         {{ $t("eight.text") }}
         <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
       </h3>
@@ -161,7 +165,7 @@ export default {
       </SwiperComp>
     </section>
 
-    <section class="h-[90vh] seven-screen">
+    <section class="h-[90vh] sm:h-[max-content] seven-screen">
       <video autoplay muted src="https://electrogenco.com/wp-content/uploads/2024/02/Banner.mp4"></video>
     </section>
 
@@ -171,33 +175,33 @@ export default {
         <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
       </h3>
       <SwiperComp :slidesPerView="6" class="max-w-[1200px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
-        <swiper-slide class=" cursor-pointer overflow-hidden">
+        <swiper-slide class="cursor-pointer overflow-hidden sponsorwrp">
           <img class="sponsor"
             src="https://electrogenco.com/en/wp-content/uploads/2023/01/%D9%84%D9%88%DA%AF%D9%88-2.png" alt="image">
         </swiper-slide>
-        <swiper-slide class=" cursor-pointer overflow-hidden">
+        <swiper-slide class=" cursor-pointer overflow-hidden sponsorwrp">
           <img class="sponsor"
             src="https://electrogenco.com/en/wp-content/uploads/2023/01/a7f0364a99d44237%DB%B218d1ba193a8e6cb8-1.png"
             alt="image">
         </swiper-slide>
-        <swiper-slide class=" cursor-pointer overflow-hidden">
+        <swiper-slide class=" cursor-pointer overflow-hidden sponsorwrp">
           <img class="sponsor" src="https://electrogenco.com/en/wp-content/uploads/2023/01/Layer-2.png" alt="image">
         </swiper-slide>
-        <swiper-slide class=" cursor-pointer overflow-hidden">
+        <swiper-slide class=" cursor-pointer overflow-hidden sponsorwrp">
           <img class="sponsor" src="https://electrogenco.com/en/wp-content/uploads/2023/01/logoen.png" alt="image">
         </swiper-slide>
-        <swiper-slide class=" cursor-pointer overflow-hidden">
+        <swiper-slide class=" cursor-pointer overflow-hidden sponsorwrp">
           <img class="sponsor" src="https://electrogenco.com/en/wp-content/uploads/2023/06/SAVALAN-1.png" alt="image">
         </swiper-slide>
-        <swiper-slide class=" cursor-pointer overflow-hidden">
+        <swiper-slide class=" cursor-pointer overflow-hidden sponsorwrp">
           <img class="sponsor" src="https://electrogenco.com/en/wp-content/uploads/2023/06/Butane-Logo1-300x185-1.png"
             alt="image">
         </swiper-slide>
-        <swiper-slide class=" cursor-pointer overflow-hidden">
+        <swiper-slide class=" cursor-pointer overflow-hidden sponsorwrp">
           <img class="sponsor" src="https://electrogenco.com/en/wp-content/uploads/2023/06/English-Logo-since-1-1.png"
             alt="image">
         </swiper-slide>
-        <swiper-slide class=" cursor-pointer overflow-hidden">
+        <swiper-slide class=" cursor-pointer overflow-hidden sponsorwrp">
           <img class="sponsor"
             src="https://electrogenco.com/en/wp-content/uploads/2023/06/07444620230129_%D9%84%D9%88%DA%AF%D9%88-%D9%85%D8%B4%D9%87%D8%AF-%D8%AF%D9%88%D8%A7%D9%85-Copy-1.png"
             alt="image">
@@ -206,17 +210,18 @@ export default {
     </section>
 
 
-    <section>
-      <div class="max-w-[1200px] mx-auto">
+    <section >
+      <div class="max-w-[1200px] mx-auto sm:px-[20px]">
         <div>
           <span class="text-[#BFBEBE] roboto-medium font-[600] text-[20px]">{{ $t("eleven.suptitle") }}</span>
           <h2 class="text-[26px] mt-[10px] roboto-black font-[1000] text-[#032055]">{{ $t("eleven.title") }}</h2>
           <hr class="h-[1px] border-[#032055] w-[40px]">
         </div>
         <div>
-          <SwiperComp :slidesPerView="3"
+          <SwiperComp :slidesPerView="this.perview"
             class="max-w-[1200px] mt-[50px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
-            <swiper-slide v-for="item of useBlogStore.blogs" :key="item.id" class="cursor-pointer overflow-hidden">
+            <swiper-slide @click="$router.push(`blog/${item.id}`)" v-for="item of useBlogStore.blogs" :key="item.id" class="cursor-pointer overflow-hidden">
+
               <div class="basis-[390px] group">
                 <div :style="`background-image: url('${item.img}'); background-position: center center; background-size: cover`" class="h-[280px] relative flex items-end pb-[30px] w-[100%] bg-[whitesmoke] rounded-[20px] overflow-hidden">
                   <span class="flex items-center roboto-regular text-white"><div class="h-[1px] mr-[10px] w-[50px] bg-white"></div>{{ item.data  }}</span>
@@ -234,6 +239,7 @@ export default {
 
                 </div>
               </div>
+              
             </swiper-slide>
 
           </SwiperComp>

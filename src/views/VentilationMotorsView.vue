@@ -466,7 +466,7 @@ export default {
         }
     },
     mounted() {
-
+        window.scrollTo({ top: 0, behavior: 'auto' })
         this.$i18n.locale = 'en'
     }
 }

@@ -19,12 +19,12 @@
     "text": "PRODUCT’S CATEGORY"
   },
   "fiveth": "Our primary goal is to develop innovative products that can effectively contribute to the betterment of communities both near and far. We firmly believe achieving this objective is only possible through a fresh perspective and a new mindset. We aim to enhance the quality of life for everyone.",
-  "sixth":{
+  "sixth": {
     "text": "INFINITE MOVEMENT",
     "title": "title_en",
     "subtitle": "subtitle_en"
   },
-  "eight":{
+  "eight": {
     "text": "ELECTROGEN AT A GLANCE",
     "title": "title_en"
   },
@@ -46,5 +46,42 @@
     "contact": "CONTACT US",
     "faq": "FAQ",
     "copy": "copyright.All right reserved"
-  }
+  },
+
+  "breadcrumbs": {
+    "about": "About electrogen",
+    "products": "Products"
+  },
+
+  "about": {
+    "title": "We Draw Inspiration From Innovative Concepts",
+    "text": "Electrogen Company is a major supplier of electric motors for both household and industrial purposes. The company boasts a diverse portfolio of over fifty motor types, catering to the needs of its customers both in Iran and abroad. Established in one of Iran’s most significant industrial hubs in 1990, Electrogen currently operates in the country’s capital. With a production area of 165,000 square meters and a workforce of over 1500 skilled workers, Electrogen has the resources to serve its customers satisfactorily. The company’s innovative and practical approach has helped it to establish a strong foothold in regional countries. Its extensive export experience and vast production capacities have positioned Electrogen to become a leading player in the industry."
+  },
+  "history": {
+    "title": "HISTORY OF ELECTROGEN COMPANY",
+    "2017": {
+      "title": "We Gazed Into The Boundless Expanse of The Future, and We Ascended",
+      "text": "The rapid advancement of Electrogen has led us to become the top electric motor manufacturers in the country. As a result, we needed a larger and better-equipped platform. We upgraded our factory space and gained access to modern facilities, which allowed us to achieve our desired outcomes. Today, after many years, we are recognized as the largest producer of water pumps and electric motors in Iran, with 1500 skilled workers. We are always striving to reach new heights, as we firmly believe that there are no limits to what we can accomplish."
+    },
+    "1991": {
+      "title": "We Made Efforts To Address The Requirements of Society...",
+      "text": "The home appliance industry was filled with numerous producers. This situation made an intensely competitive market for brands. On the other hand, Due to the limited production of electric motors and high demand for these types of products in the country, there was an opportunity to start producing electromotors. In 1991, a new company called Electrogen was established to produce all types of electric motors in Iran."
+    },
+    "1985": {
+      "title": "We Adjusted Ourselves To The Prevailing Conditions of The Nation",
+      "text": "The country was going through a period of significant transformation and it was crucial to establish self-sufficient industries and create employment opportunities for citizens. So we have restructured our operations to adapt to the current conditions of the country. As a result, we have rebranded our company as “Iran Refrigeration Industries,” with a focus on manufacturing refrigerators and freezers."
+    },
+    "1980": {
+      "title": "The Establishment of What is known Today as Electrogen...",
+      "text": "Our story began with the establishment of Jeanlight, a company that was supposed to focus most of its activities on the export and import of electrical equipment and home appliances."
+    }
+  },
+  "about2":{
+    "title":"WE ARE MOVING IN CREATIVITY AND EVOLVING DIRECTION",
+    "text": "Improving the living standards of consumers is a crucial objective for any production group as it forms the basis for growth and success. To attain this goal, it is necessary to leverage the knowledge and expertise of industry professionals, implement innovative ideas, and excel in various aspects of the industry.",
+    "text2": "Electrogen, with its unwavering commitment to past accomplishments and future aspirations, is constantly exploring new approaches and practical product development strategies. This dedication has propelled Electrogen towards a path of sustained progress and expansion."
+  },
+  "map": "In the Path Advancement ...",
+  "information": "Information",
+  "filter": "Filter"
 }

@@ -2,50 +2,50 @@
     <swiper :slidesPerView="1" :spaceBetween="10" :loop="true" :pagination="pagination" :modules="modules"
         class="mySwiper2">
         <swiper-slide>
-            <div class="h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px]">
-                <div class="h-[100%] w-[50%] bg-yellow rounded-[17px] overflow-hidden">
+            <div class="sm:flex-col h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px] sm:p-[20px]">
+                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden">
                     <img class="h-[100%] group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/Group-pics-05.jpg" alt="image">
                 </div>
-                <div class="flex-1">
-                    <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] text-left roboto-bold">We Gazed Into The Boundless Expanse of The Future, and We Ascended</p>
+                <div class="flex-1 sm:order-1">
+                    <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] sm:text-[20px] sm:leading-[30px] text-left roboto-bold">{{ $t("history.2017.title") }}</p>
                     <hr class="border-[#1A85FF] w-[40px]">
-                    <p class="text-left leading-[35px] text-[17px] roboto-regular">The rapid advancement of Electrogen has led us to become the top electric motor manufacturers in the country. As a result, we needed a larger and better-equipped platform. We upgraded our factory space and gained access to modern facilities, which allowed us to achieve our desired outcomes. Today, after many years, we are recognized as the largest producer of water pumps and electric motors in Iran, with 1500 skilled workers. We are always striving to reach new heights, as we firmly believe that there are no limits to what we can accomplish.</p>
+                    <p class="text-left leading-[35px] text-[17px] roboto-regular sm:leading-[24px] sm:mt-[10px] sm:text-[15px]">{{ $t("history.2017.text") }}</p>
                 </div>
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px]">
-                <div class="h-[100%] w-[50%] bg-yellow rounded-[17px] overflow-hidden">
+            <div class="sm:flex-col h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px] sm:p-[20px]">
+                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden">
                     <img class="h-[100%] group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/49-Copy-1.jpg" alt="image">
                 </div>
-                <div class="flex-1">
-                    <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] text-left roboto-bold">We Made Efforts To Address The Requirements of Society...</p>
+                <div class="flex-1 sm:order-1">
+                    <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] sm:text-[20px] sm:leading-[30px] text-left roboto-bold">{{ $t("history.1991.title") }}</p>
                     <hr class="border-[#1A85FF] w-[40px]">
-                    <p class="text-left leading-[35px] text-[17px] roboto-regular">The home appliance industry was filled with numerous producers. This situation made an intensely competitive market for brands. On the other hand, Due to the limited production of electric motors and high demand for these types of products in the country, there was an opportunity to start producing electromotors. In 1991, a new company called Electrogen was established to produce all types of electric motors in Iran.</p>
+                    <p class="text-left leading-[35px] text-[17px] roboto-regular sm:leading-[24px] sm:mt-[10px] sm:text-[15px]">{{ $t("history.1991.text") }}</p>
                 </div>
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px]">
-                <div class="h-[100%] w-[50%] bg-yellow rounded-[17px] overflow-hidden">
+            <div class="sm:flex-col h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px] sm:p-[20px]">
+                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden">
                     <img class="h-[100%] group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/Group-pics-03.jpg" alt="image">
                 </div>
-                <div class="flex-1">
-                    <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] text-left roboto-bold">We Adjusted Ourselves To The Prevailing Conditions of The Nation</p>
+                <div class="flex-1 sm:order-1">
+                    <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] sm:text-[20px] sm:leading-[30px] text-left roboto-bold">{{ $t("history.1985.title") }}</p>
                     <hr class="border-[#1A85FF] w-[40px]">
-                    <p class="text-left leading-[35px] text-[17px] roboto-regular">The country was going through a period of significant transformation and it was crucial to establish self-sufficient industries and create employment opportunities for citizens. So we have restructured our operations to adapt to the current conditions of the country. As a result, we have rebranded our company as “Iran Refrigeration Industries,” with a focus on manufacturing refrigerators and freezers.</p>
+                    <p class="text-left leading-[35px] text-[17px] roboto-regular sm:leading-[24px] sm:mt-[10px] sm:text-[15px]">{{ $t("history.1985.text") }}</p>
                 </div>
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px]">
-                <div class="h-[100%] w-[50%] bg-yellow rounded-[17px] overflow-hidden">
+            <div class="sm:flex-col h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px] sm:p-[20px]">
+                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden">
                     <img class="h-[100%] group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/014-Copy-1.jpg" alt="image">
                 </div>
-                <div class="flex-1">
-                    <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] text-left roboto-bold">The Establishment of What is known Today as Electrogen...</p>
+                <div class="flex-1 sm:order-1">
+                    <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] sm:text-[20px] sm:leading-[30px] text-left roboto-bold">{{ $t("history.1980.title") }}</p>
                     <hr class="border-[#1A85FF] w-[40px]">
-                    <p class="text-left leading-[35px] text-[17px] roboto-regular">Our story began with the establishment of Jeanlight, a company that was supposed to focus most of its activities on the export and import of electrical equipment and home appliances.</p>
+                    <p class="text-left leading-[35px] text-[17px] roboto-regular sm:leading-[24px] sm:mt-[10px] sm:text-[15px]">{{ $t("history.1980.text") }}</p>
                 </div>
             </div>
         </swiper-slide>
@@ -147,5 +147,11 @@ export default {
 .mySwiper2 .swiper {
     margin-left: auto;
     margin-right: auto;
+}
+@media screen and (max-width: 650px) {
+    .mySwiper2 .swiper-pagination-bullet {
+        margin: 0px 10px !important;
+        font-size: 20px !important;
+    }
 }
 </style>

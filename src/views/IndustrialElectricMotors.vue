@@ -4926,9 +4926,16 @@ export default defineComponent({
                 },
             ],
             fallback: [],
+            mobile: false,
+            burger: false,
         }
     },
     mounted() {
+        var x = window.matchMedia("(max-width: 650px)")
+        if (x.matches) {
+            this.mobile = true
+        }
+        window.scrollTo({ top: 0, behavior: 'auto' })
         for (let i = 0; i < this.massiv.length; i += 6) {
             this.fallback.push(this.massiv.slice(i, i + 6));
         }
@@ -4996,9 +5003,9 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="pt-[75px]">
+    <div id="begin" class="pt-[75px]">
         <!-- breadcrumbs  -->
-        <div class="max-w-[1250px] mx-auto">
+        <div id="breadcrumbs" class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
                     <li @click="$router.push('/')"

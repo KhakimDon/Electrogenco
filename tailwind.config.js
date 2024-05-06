@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    screens:{
+      "sm": { max: "650px" },
+    },
+    extend: {
+    },
   },
   plugins: [require("daisyui")],
 

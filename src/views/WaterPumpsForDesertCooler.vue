@@ -740,6 +740,7 @@ export default {
         }
     },
     mounted() {
+        window.scrollTo({ top: 0, behavior: 'auto' })
         setTimeout(() => {
             this.fallback = this.massiv[1].prod
             this.$i18n.locale = 'en'

@@ -141,6 +141,7 @@ export default {
         }
     },
     mounted() {
+        window.scrollTo({ top: 0, behavior: 'auto' })
         setTimeout(() => {
             this.fallback = this.massiv
             this.$i18n.locale = 'en'

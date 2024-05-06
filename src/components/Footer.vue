@@ -14,15 +14,15 @@ export default {
     <footer class="bg-[#333333] py-[80px] mt-[150px]">
         <div @click="top()" class="max-w-[1200px] mx-auto relative">
             <div
-                class="h-[50px] cursor-pointer flex items-center justify-center absolute w-[50px] bg-[#1B3F7B] rounded-[50%] right-0 top-[-100px]">
+                class="h-[50px] cursor-pointer flex items-center justify-center absolute w-[50px] bg-[#1B3F7B] rounded-[50%] right-0 top-[-100px] sm:right-[30px]">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="white" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
                 </svg>
 
             </div>
-            <div class="flex gap-[20px] border-b-[1px] border-[#ddd2c263] pb-[80px]">
-                <div class="flex flex-1 items-center roboto-regular text-[#DDD2C2]">
+            <div class="flex gap-[20px] border-b-[1px] sm:flex-col sm:px-[15px] border-[#ddd2c263] pb-[80px]">
+                <div class="flex flex-1 items-center sm:mb-[25px] roboto-regular text-[#DDD2C2]">
                     <img class="mr-[30px] h-[70px]"
                         src="https://electrogenco.com/en/wp-content/uploads/2023/07/Group-2-1-1-2.svg" alt="svg">
                     <div>
@@ -45,8 +45,8 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="flex justify-around py-[50px]">
-                <div>
+            <div class="flex justify-around py-[50px] sm:flex-col sm:px-[20px]">
+                <div class="sm:mb-[20px]">
                     <img class="mb-[20px]" src="https://electrogenco.com/en/wp-content/uploads/2023/01/Group-1-6.png"
                         alt="logo">
                     <p class="text-[#DDD2C2] mb-[20px] roboto-regular">{{ $t("footer.sublogo") }} 
@@ -78,7 +78,7 @@ export default {
                         {{ $t("footer.contact") }}</p>
                 </div>
             </div>
-            <div class="flex justify-between">
+            <div class="flex justify-between sm:px-[20px]">
                 <div class="flex gap-[10px]">
                     <svg class="h-[30px] w-[30px]" style="filter:invert(1)" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 50 50">

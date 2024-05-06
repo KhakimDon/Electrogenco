@@ -3,6 +3,11 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
     mounted() {
+        var x = window.matchMedia("(max-width: 650px)")
+        if (x.matches) {
+            this.mobile = true
+        }
+        window.scrollTo({ top: 0, behavior: 'auto' })
         this.$i18n.locale = 'en'
         this.n = +window.location.pathname.split('/')[2] - 1
     },
@@ -6504,7 +6509,8 @@ export default defineComponent({
                     },
                 },
             ],
-            n: 1
+            n: 1,
+            mobile: false
         }
     },
 })
@@ -6512,15 +6518,15 @@ export default defineComponent({
 </script>
 
 <template>
-    <div class="pt-[75px]">
-        <div class="max-w-[1250px] mx-auto">
+    <div id="begin" class="pt-[75px]">
+        <div id="breadcrumbs" class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("header.home") }}
                     </li>
-                    <li @click="$router.push('/')"
+                    <li @click="$router.push('/allproducts')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         All products
                     </li>
@@ -6529,18 +6535,23 @@ export default defineComponent({
             </div>
         </div>
 
-        <div class="min-h-[50vh] mt-[40px]">
-            <div class="max-w-[1250px] gap-[20px] mx-auto flex">
+        <div class="min-h-[50vh] mt-[40px] sm:mt-[20px]">
+            <div class="max-w-[1250px] sm:px-[20px] gap-[20px] mx-auto flex">
                 <div class="flex-1">
-                    <h3 class="text-[28px] text-[#1B3F7B] roboto-black">
+                    <h3 class="text-[28px] text-[#1B3F7B] sm:text-[22px] roboto-black">
                         {{ this.massiv[n].en.title }}
                     </h3>
 
                     <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">
 
+                    <figure v-if="this.mobile" class="border-[1px] mt-[25px] rounded-[20px]">
+                        <img style="transform: rotateY(180deg)" class=""
+                            :src="this.massiv[n].img">
+                    </figure>
+
                     <div v-if="this.massiv[n].en.appearance" class="border-[1px] rounded-[20px] mt-[25px]">
-                        <div class="flex justify-between p-[30px] items-center border-b-[1px]">
-                            <span class="roboto-regular text-[19px] text-[#1A85FF]">Appearance Characteristics</span>
+                        <div class="flex justify-between p-[30px] sm:p-[20px]  items-center border-b-[1px]">
+                            <span class="roboto-regular text-[19px] sm:text-[17px] text-[#1A85FF]">Appearance Characteristics</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -6548,17 +6559,17 @@ export default defineComponent({
 
                         </div>
                         <div v-if="this.massiv[n].en.appearance.FrameMaterial" class="flex">
-                            <div class="flex-1 p-[25px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1 sm:border-r-[0px] p-[25px] sm:p-[10px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                                 Frame Material
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.appearance.FrameMaterial}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.appearance.FrameMaterial}}</div>
                         </div>
                     </div>
 
                     <div v-if="this.massiv[n].en.specifications" class="border-[1px] rounded-[20px] mt-[25px]">
-                        <div class="flex justify-between p-[30px] items-center border-b-[1px]">
-                            <span class="roboto-regular text-[19px] text-[#1A85FF]">Technical Specifications</span>
+                        <div class="flex justify-between p-[30px] sm:p-[20px] items-center border-b-[1px]">
+                            <span class="roboto-regular text-[19px] sm:text-[17px] text-[#1A85FF]">Technical Specifications</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -6568,62 +6579,62 @@ export default defineComponent({
 
 
                         <div v-if="this.massiv[n].en.specifications.Size" class="flex">
-                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                                 Frame Size
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.specifications.Size}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.specifications.Size}}</div>
                         </div>
                         <div v-if="this.massiv[n].en.specifications.size" class="flex">
-                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1  px-[25px] py-[5px] border-r-[1px] sm:border-r-[0px] sm:px-[10px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                                 Frame Size
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.specifications.size}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.specifications.size}}</div>
                         </div>
                         <div v-if="this.massiv[n].en.specifications.pole" class="flex">
-                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1  px-[25px] py-[5px] border-r-[1px] sm:border-r-[0px] sm:px-[10px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                                 Number of Pole
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.specifications.pole}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.specifications.pole}}</div>
                         </div>
                         <div v-if="this.massiv[n].en.specifications.Power" class="flex">
-                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1 sm:border-r-[0px] px-[25px] py-[5px] border-r-[1px] sm:px-[10px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                             Output Power
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.specifications.Power}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.specifications.Power}}</div>
                         </div>
                         <div v-if="this.massiv[n].en.specifications.type" class="flex">
-                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1 sm:border-r-[0px] px-[25px] py-[5px] border-r-[1px] sm:px-[10px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                             Mounting Type	
 
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.specifications.type}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.specifications.type}}</div>
                         </div>
                         <div v-if="this.massiv[n].en.specifications.Speed" class="flex">
-                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1 sm:border-r-[0px] px-[25px] py-[5px] border-r-[1px] sm:px-[10px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                             Speed
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.specifications.Speed}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.specifications.Speed}}</div>
                         </div>
                         <div v-if="this.massiv[n].en.specifications.Material" class="flex">
-                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1 sm:border-r-[0px] px-[25px] py-[5px] border-r-[1px] sm:px-[10px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                             Conductor Material	
 
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.specifications.Material}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.specifications.Material}}</div>
                         </div>
                         <div v-if="this.massiv[n].en.specifications.Application" class="flex">
-                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div class="flex-1 px-[25px] py-[5px] border-r-[1px] sm:px-[10px] sm:border-r-[0px] flex items-center gap-[9px] font-[600]">
                             <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                             Application
                             </div>
-                            <div class="flex-[2] p-[25px] font-[600]">{{this.massiv[n].en.specifications.Application}}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{this.massiv[n].en.specifications.Application}}</div>
                         </div>
                     
 
@@ -6631,7 +6642,7 @@ export default defineComponent({
                     </div>
                 </div>
 
-                <div class="flex-1">
+                <div v-if="!this.mobile" class="flex-1">
                     <figure class="border-[1px] rounded-[20px] p-[10px]">
                         <img style="transform: rotateY(180deg)" class=""
                             :src="this.massiv[n].img">

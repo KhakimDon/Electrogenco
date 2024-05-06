@@ -5,20 +5,23 @@ import { defineComponent } from 'vue'
 export default defineComponent( {
   components: {
     HistorySwiperVue
+  },
+  mounted(){
+    window.scrollTo({ top: 0, behavior: 'auto' })
   }
 })
 </script>
 
 <template>
-  <div class="about pt-[75px]">
+  <div id="begin" class="about pt-[75px]">
     <!-- breadcrumbs  -->
-    <div class="max-w-[1250px] mx-auto">
+    <div id="breadcrumbs" class="max-w-[1250px] mx-auto">
       <div class="text-sm breadcrumbs mt-[15px]">
         <ul>
           <li @click="$router.push('/')"
             class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">{{
               $t("header.home") }}</li>
-          <li class="roboto-medium text-[#1A85FF]">About electrogen</li>
+          <li class="roboto-medium text-[#1A85FF]">{{ $t("breadcrumbs.about") }}</li>
         </ul>
       </div>
     </div>
@@ -30,54 +33,43 @@ export default defineComponent( {
     </div>
 
     <!-- about 1  -->
-    <section class="bg min-h-[100vh] flex items-center flex-col justify-center text-center">
+    <section class="bg min-h-[100vh] sm:px-[20px] flex items-center flex-col justify-center text-center">
       <h3
-        class="w-[500px] border-b-[1px] border-[#003366] roboto-black pb-[15px] text-[#003366] font-[700] text-[20px]">
-        We Draw Inspiration From Innovative Concepts
+        class="w-[500px] sm:w-[300px] sm:mt-[70px] border-b-[1px] border-[#003366] roboto-black pb-[15px] text-[#003366] font-[700] text-[20px]">
+        {{$t("about.title")}}
       </h3>
-      <p class="max-w-[500px]  pb-[15px] mt-[50px] roboto-medium font-[700] text-[18px] leading-[35px]">
-        Electrogen Company is a major supplier of electric motors for both household and industrial purposes. The
-        company boasts a diverse portfolio of over fifty motor types, catering to the needs of its customers both in
-        Iran and abroad. Established in one of Iran’s most significant industrial hubs in 1990, Electrogen currently
-        operates in the country’s capital. With a production area of 165,000 square meters and a workforce of over 1500
-        skilled workers, Electrogen has the resources to serve its customers satisfactorily.
-        The company’s innovative and practical approach has helped it to establish a strong foothold in regional
-        countries. Its extensive export experience and vast production capacities have positioned Electrogen to become a
-        leading player in the industry.
+      <p class="max-w-[500px] sm:leading-[25px] sm:mt-[30px] pb-[15px] mt-[50px] roboto-medium font-[700] text-[18px] leading-[35px]">
+        {{$t("about.text")}}
       </p>
     </section>
 
     <!-- swiper  -->
-    <section class="mt-[50px] max-w-[1200px] mx-auto">
-      <h3 class="mx-auto w-[max-content] text-[#032055] mb-[30px] roboto-black text-[26px]">
-        HISTORY OF ELECTROGEN COMPANY
+    <section class="mt-[50px] max-w-[1200px] mx-auto sm:px-[20px]">
+      <h3 class="mx-auto w-[max-content] sm:text-[20px] sm:w-[300px] sm:text-center text-[#032055] mb-[30px] roboto-black text-[26px]">
+        {{ $t("history.title") }}
         <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
       </h3>
-      <div class="h-[570px]  rounded-[15px]">
+      <div class="h-[570px] sm:h-[max-content] rounded-[15px]">
         <HistorySwiperVue />
       </div>
     </section>
 
     <!-- about 2  -->
-    <section class="bg min-h-[100vh] flex items-center flex-col justify-center text-center">
+    <section class="bg min-h-[100vh] flex items-center sm:px-[20px] flex-col justify-center text-center">
       <h3
-        class="w-[500px] border-b-[1px] border-[#003366] roboto-black pb-[15px] text-[#003366] font-[700] text-[20px]">
-        WE ARE MOVING IN CREATIVITY AND EVOLVING DIRECTION
+        class="w-[500px]  sm:w-[300px] sm:mt-[70px] border-b-[1px] border-[#003366] roboto-black pb-[15px] text-[#003366] font-[700] text-[20px]">
+        {{ $t("about2.title") }}
       </h3>
-      <p class="max-w-[500px]  pb-[15px] mt-[50px] roboto-medium font-[700] text-[18px] leading-[35px]">
-        Improving the living standards of consumers is a crucial objective for any production group as it forms the
-        basis for growth and success. To attain this goal, it is necessary to leverage the knowledge and expertise of
-        industry professionals, implement innovative ideas, and excel in various aspects of the industry.
+      <p class="max-w-[500px] sm:leading-[25px] sm:mt-[30px]  pb-[15px] mt-[50px] roboto-medium font-[700] text-[18px] leading-[35px]">
+        {{ $t("about2.text") }}
       </p>
-      <p class="max-w-[500px]  pb-[15px] mt-[10px] roboto-medium font-[700] text-[18px] leading-[35px]">
-        Electrogen, with its unwavering commitment to past accomplishments and future aspirations, is constantly
-        exploring new approaches and practical product development strategies. This dedication has propelled Electrogen
-        towards a path of sustained progress and expansion.
+      <p class="max-w-[500px] sm:leading-[25px] sm:mt-[5px]  pb-[15px] mt-[10px] roboto-medium font-[700] text-[18px] leading-[35px]">
+        {{ $t("about2.text2") }}
       </p>
     </section>
 
     <!-- photos  -->
-    <section class="max-w-[1200px] mx-auto flex flex-wrap justify-between">
+    <section class="max-w-[1200px] mx-auto sm:px-[20px] sm:gap-[20px] flex flex-wrap justify-between">
       <img class="w-[390px] rounded-[15px]"
         src="https://electrogenco.com/en/wp-content/uploads/2024/03/Small-banners-02_EN.jpg" alt="image">
       <img class="w-[390px] rounded-[15px]"
@@ -90,7 +82,7 @@ export default defineComponent( {
     <section class="max-w-[1200px] mx-auto mt-[150px]">
       <h3
         class="w-[max-content] mx-auto border-b-[1px] text-[#0F3A77] mb-[50px] pb-[20px] border-[#BFCBDB] text-[26px] font-[600]">
-        In the Path Advancement ...
+        {{ $t("map") }}
       </h3>
       <img class="w-[100%]" src="../assets/map.png" alt="map">
     </section>
@@ -98,7 +90,7 @@ export default defineComponent( {
     <!-- grades  -->
     <section class="flex flex-col items-center">
       <img src="https://electrogenco.com/en/wp-content/uploads/2024/03/WhatsApp-Image-2024-02-19-at-11.01.37.jpeg" alt="image">
-      <img class="my-[50px]" src="https://electrogenco.com/en/wp-content/uploads/2024/03/stat_Resized.jpg" alt="image">
+      <img class="my-[50px] sm:my-[30px]" src="https://electrogenco.com/en/wp-content/uploads/2024/03/stat_Resized.jpg" alt="image">
       <img src="https://electrogenco.com/en/wp-content/uploads/2024/03/Certifications-02.jpg" alt="image">
     </section>
 
