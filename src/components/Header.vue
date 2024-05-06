@@ -69,8 +69,7 @@ export default {
             </div>
         </div>
         <Search @close="this.search = false" class="search" :class="{ searchactive: this.search == true }">
-            <div @click="this.search = false"
-                class="searchBack absolute left-[40px] text-[16px] cursor-pointer uppercase roboto-medium top-[40px] text-white">
+            <div @click="this.search = false" class="searchBack absolute left-[40px] text-[16px] cursor-pointer uppercase roboto-medium top-[40px] text-white">
                 <div></div>
                 <span class="text-white">back</span>
                 <div></div>
@@ -222,4 +221,13 @@ header {
     opacity: 1 !important;
     pointer-events: fill !important;
 }
+
+@media screen and (max-width: 650px) {
+    .searchBack{
+        top: 20px !important;
+        left: 15px !important;
+        transform: scale(0.6) !important;
+    }
+}
+
 </style>

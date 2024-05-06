@@ -6888,23 +6888,23 @@ export default {
             </div>
         </div>
 
-        <div class="mx-auto max-h-[600px] overflow-y-auto pr-[10px] flex gap-[20px] max-w-[1200px] mt-[30px]">
+        <div class="mx-auto max-h-[600px] overflow-y-auto pr-[10px] sm:gap-[5px] flex gap-[20px] max-w-[1200px] mt-[30px]">
             <div class="flex-1" v-if="searchQuery !== ''">
                 <p class="w-[100%] text-center text-white roboto-medium text-[18px]">Products</p>
                 <div @click="$router.push(`/allproducts/${this.articles.indexOf(article) + 1}`), $emit('close')" v-for="article in filteredArticles" :key="article.id"
-                    class="cursor-pointer h-[100px] mt-[20px] flex w-[100%] items-center gap-[20px] p-[10px] rounded-[10px] bg-[white]">
-                    <img class="h-[100%] rounded-[10px]" :src="article.img" alt="image">
+                    class="cursor-pointer h-[120px] mt-[20px] flex sm:block w-[100%] items-center gap-[20px] p-[10px] rounded-[10px] bg-[white]">
+                    <img class="h-[100%] sm:h-[40px] sm:mb-[5px] rounded-[10px] sm:block " :src="article.img" alt="image">
 
-                    <p class="roboto-medium text-[17px]" v-html="highlightContent(article.en.title)"></p>
+                    <p class="roboto-medium text-[17px] sm:text-[13px]" v-html="highlightContent(article.en.title)"></p>
                 </div>
             </div>
             <div class="flex-1" v-if="searchQuery !== ''">
                 <p class="w-[100%] text-center text-white roboto-medium text-[18px]">Articles</p>
                 <div @click="$router.push(`/blog/${this.articles2.indexOf(article) + 1}`), $emit('close')" v-for="article in filteredArticles2" :key="article.id"
-                    class="cursor-pointer h-[100px] mt-[20px] flex w-[100%] items-center gap-[20px] p-[10px] rounded-[10px] bg-[white]">
-                    <img class="h-[100%] rounded-[10px]" :src="article.img" alt="image">
+                    class="cursor-pointer h-[120px] mt-[20px] flex sm:block w-[100%] items-center gap-[20px] p-[10px] rounded-[10px] bg-[white]">
+                    <img class="h-[100%] sm:h-[40px] sm:mb-[5px] rounded-[10px] sm:block " :src="article.img" alt="image">
 
-                    <p class="roboto-medium text-[17px]" v-html="highlightContent2(article.text_en)"></p>
+                    <p class="roboto-medium text-[17px] sm:text-[13px]" v-html="highlightContent2(article.text_en)"></p>
                 </div>
             </div>
 
