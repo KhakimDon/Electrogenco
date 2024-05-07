@@ -134,7 +134,7 @@ export default {
                                 </div>
                                 <div
                                     class="my-[20px] text-[#032055] sm:text-[19px] text-[20px] roboto-medium text-left group-hover:text-[#0652dd] duration-[.3s]">
-                                    {{ item[$t("eleven.blog_title")] }} </div>
+                                    {{ item[$t("eleven.blog_title")] }}</div>
                                 <div class="text-left roboto-regular text-[#878787]">
                                     {{ item[$t("eleven.blog_subtitle")] }}
                                 </div>

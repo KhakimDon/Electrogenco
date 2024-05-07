@@ -32,7 +32,7 @@
   "eleven": {
     "suptitle": "BLOG",
     "title": "BLOG",
-    "read": "Read more",
+    "read": "Read more",  
     "blog_title": "text_en",
     "blog_subtitle": "subtext_en"
   },
@@ -83,5 +83,8 @@
   },
   "map": "In the Path Advancement ...",
   "information": "Information",
-  "filter": "Filter"
+  "filter": "Filter",
+  "blog_text": "content_en",
+  "All_products": "All products",
+  "det": "Product Details"
 }

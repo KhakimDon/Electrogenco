@@ -26,13 +26,10 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("header.home") }}
                     </li>
-                    <li @click="$router.push('/blog')"
-                        class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
-                       Blog
-                    </li>
+                 
                     <li @click="$router.push('/ventilation-motors')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#1A85FF]">
-                        {{ this.obj.text_en }}
+                       {{ this.obj[$t("eleven.blog_title")]}}
                     </li>
                 </ul>
             </div>
@@ -40,7 +37,7 @@ export default {
 
         <div class="max-w-[900px] mx-auto sm:px-[20px] sm:w-[100%]">
             <h3 class="text-[#032055] mt-[40px] sm:text-[22px] mb-[40px] roboto-medium text-[26px]">
-                {{ this.obj.text_en }}
+                {{ this.obj[$t("eleven.blog_title")] }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mt-[10px]">
             </h3>
             <figure class="h-[400px] sm:w-[100%] sm:h-[250px] overflow-hidden rounded-[20px] w-[600px] mx-auto bg-[red]">
@@ -60,7 +57,7 @@ export default {
             <iframe v-if="this.obj.video" class="h-[520px] sm:h-[180px] mt-[20px] w-[100%]" :src="this.obj.video" frameborder="0"></iframe>
 
             <div v-if="this.obj.content_en" class="tex mt-[20px]">
-                <p class="roboto-regular leading-[35px] sm:text-[14px] sm:leading-[25px] text-[16px]" v-html="this.obj.content_en"></p>
+                <p class="roboto-regular leading-[35px] sm:text-[14px] sm:leading-[25px] text-[16px]" v-html="this.obj[$t('blog_text')]"></p>
             </div>
 
         </div>
