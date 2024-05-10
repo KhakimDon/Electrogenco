@@ -462,21 +462,117 @@ export default {
                         },
                     ],
                 },
-            ]
+            ],
+            ru: [
+                "Двигатель воздушной завесы-90 Вт",
+                "Двигатель воздушной завесы-45 Вт",
+                "Двигатель с разделением каналов (кондиционер)-600 Вт",
+                "Двигатель с разделением каналов (кондиционер)-360 Вт",
+                "Двигатель с разделением каналов (кондиционер)-250 Вт",
+                "Двигатель с разделением каналов (кондиционер)-187 Вт",
+                "Двигатель с разделением каналов (кондиционер)-600 Вт",
+                "Вытяжной вентилятор-AL (четырехскоростной)",
+                "Вытяжной вентилятор (четырехскоростной)",
+                "Вытяжной двигатель-одновальный-AL (четырехскоростной)",
+                "Вытяжной вентилятор (трехскоростной)",
+                "Вытяжной двигатель-одновальный (четырехскоростной)",
+                "Вытяжной двигатель-одновальный (трехскоростной)",
+                "Вытяжной двигатель-одновальный (трехскоростной)",
+                "Вытяжной двигатель-Тип K (четырехскоростной)",
+                "Двигатель вентилятора-45 Вт",
+                "Двигатель вентилятора-25 Вт",
+                "Двигатель вентилятора-30 Вт",
+                "Двигатель вентилятора-25 Вт",
+                "Двигатель вентилятора-16 Вт",
+                "Двигатель вентилятора-10 Вт-AL",
+                "Вентилятор Двигатель-10 Вт",
+                "Двигатель вентилятора-5 Вт-AL",
+                "Двигатель вентилятора-5 Вт-AL",
+                "Двигатель вентилятора отопительного агрегата-48 Вт (Helal)",
+                "Двигатель вентилятора отопительного агрегата-39 Вт (Helal)",
+                "Двигатель фанкойла-1/30 л.с.-Двойной вал",
+                "Двигатель фанкойла-1/30 л.с.-двойной вал",
+                "Двигатель фанкойла-1/25 л.с.-Двойной вал",
+                "Двигатель фанкойла-1/25 л.с.-Одиночный вал",
+                "Двигатель фанкойла-1/20 л.с.-Двойной вал",
+                "Двигатель фанкойла-1/20 л.с.-одиночный вал",
+                "Двигатель фанкойла-1/16 л.с.-двухвальный",
+                "Двигатель фанкойла-1/16 л.с.-одновальный",
+                "Двигатели промышленных вытяжных вентиляторов",
+
+
+            ],
+            uz: [
+                "havo pardasi dvigateli-90 Vt",
+                "havo pardasi dvigateli-45 Vt",
+                "kanalli Split Motor (konditsioner)-600 Vt",
+                "kanalli Split Motor (konditsioner)-360 Vt",
+                "kanalli Split Motor (konditsioner)-250 Vt",
+                "kanalli Split Motor (konditsioner)-187 Vt",
+                "kanalli Split Motor (konditsioner)-600 Vt",
+                "kaput puflagich-AL (to'rt tezlikda)",
+                "Kaputli puflagich (to'rt tezlikli)",
+                "Hood Motor-yagona mil-AL (to'rt-tezlikda)",
+                "Kaputli puflagich (uch tezlikli)",
+                "Hood Motor-yagona mil (to'rt-tezlikda)",
+                "Hood Motor-yagona mil (uch-tezlikda)",
+                "Hood Motor-yagona mil (uch-tezlikda)",
+                "Hood Motor-turi K (to'rt-tezlikda)",
+                "Fan Motor-45 Vt",
+                "Fan Motor-25 Vt",
+                "Fan Motor-30 Vt",
+                "Fan Motor-25 Vt",
+                "Fan Motor-16 Vt",
+                "Fan Motor-10 Vt-AL",
+                "Fan Motor-10 Vt",
+                "Fan Motor-5 Vt-AL",
+                "Fan Motor-5 Vt-AL",
+                "isitish birligi Fan Motor-48 Vt (Helal)",
+                "isitish birligi Fan Motor-39 Vt (Helal)",
+                "Fan halqa Motor-1/30hp-ikki mil",
+                "Fan halqa Motor-1/30hp-ikki mil",
+                "Fan halqa Motor-1/25hp-ikki mil",
+                "Fan halqa Motor-1/25hp-yagona mil",
+                "Fan halqa Motor-1/20hp-ikki mil",
+                "Fan halqa Motor-1/20hp-yagona mil",
+                "Fan halqa Motor-1/16hp-ikki mil",
+                "Fan halqa Motor-1/16hp-yagona mil",
+                "sanoat chiqarish Fan motorlar",
+
+
+
+
+            ],
+            finV: false,
         }
     },
     mounted() {
+        this.fin()
         window.scrollTo({ top: 0, behavior: 'auto' })
         this.$i18n.locale = 'en'
+    },
+    methods:{
+        fin(){
+            for (let i = 0; i < this.massiv.length; i++) {
+            this.massiv[i].ru = {
+                title: this.ru[i],  
+            };
+            this.massiv[i].uz = {
+                title: this.uz[i],
+            };
+            console.log(this.massiv[i]);
+        }
+        this.finV = true
+        },
     }
 }
 </script>
 
 <template>
-    <div id="begin"  class="pt-[75px]">
+    <div id="begin" class="pt-[75px]">
 
         <!-- breadcrumbs  -->
-        <div id="breadcrumbs"  class="max-w-[1250px] mx-auto">
+        <div id="breadcrumbs" class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
                     <li @click="$router.push('/')"
@@ -488,13 +584,13 @@ export default {
         </div>
 
         <section class="mt-[50px]">
-            <h3 class="mx-auto  sm:text-[20px] sm:w-[300px] sm:text-center w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
+            <h3
+                class="mx-auto  sm:text-[20px] sm:w-[300px] sm:text-center w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
                 Ventilation Motors
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="max-w-[1200px] sm:flex-col sm:px-[20px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
-                <div @click="$router.push(`/ventilation-motors/${item.id}`)"
-                    v-for="item of this.massiv" :key="item.id"
+                <div @click="$router.push(`/ventilation-motors/${item.id}`)" v-for="item of this.massiv" :key="item.id"
                     class="product_hover_block sm:min-h-[150px] cursor-pointer overflow-hidden border-[1px] p-[20px] border-[#F2F2F2] h-[200px] basis-[30%] flex-1 rounded-[20px]">
                     <div class=" flex items-center justify-start h-[100%] w-[100%]">
                         <figure class="bg-[#E5E8ED] duration-[.7s] w-[70px] rounded-[50%] mr-[20px]">

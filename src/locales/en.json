@@ -86,5 +86,22 @@
   "filter": "Filter",
   "blog_text": "content_en",
   "All_products": "All products",
-  "det": "Product Details"
+  "det": "Product Details",
+  
+  "app": "Appearance Characteristics",
+  "fr": "Frame Material",
+  "ts": "Technical Specifications",
+  "fs" : "Frame Size",
+  "np": " Number of Pole",
+  "op": "Output Power",
+  "mt": "Mounting Type",
+  "s": "Speed",
+  "cm": "Conductor Material",
+  "apl": "Application",
+
+  "1.1": "Industrial Electric Motors",
+  "1.2": "Heating Unit Pumps",
+  "1.3": "Elevator motors",
+  "1.4": "Heating Unit Fan",
+  "1.5": "Air Curtain Motor"
 }

@@ -86,5 +86,23 @@
   "filter": "Filtr",
   "blog_text": "content_uz",
   "All_products": "Barcha mahsulotlar",
-  "det": "Mahsulot Tafsilotlari"
+  "det": "Mahsulot Tafsilotlari",
+
+  "app": "Tashqi Ko'rinish Xususiyatlari",
+  "fr": "Ramka Materiali",
+  "ts": "Texnik Xususiyatlari",
+  "fs" : "Ramka Hajmi",
+  "np": "Qutb soni",
+  "op": "Chiqish Quvvati",
+  "mt": "O'rnatish Turi",
+  "s": "Tezlik",
+  "cm": "Supero'tkazuvchilar Material",
+  "apl": "Dastur",
+
+
+  "1.1": "Sanoat elektr motorlari",
+  "1.2": "Isitish Moslamasi Nasoslari",
+  "1.3": "Lift motorlari",
+  "1.4": "Isitish Moslamasi Foniy",
+  "1.5": "Havo Pardasi Motori"
 }

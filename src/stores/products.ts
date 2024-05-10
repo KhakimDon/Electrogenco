@@ -6592,8 +6592,6 @@ export const useBlogStore = defineStore("blog", () => {
     },
   ]);
 
-  
-
   ///////////////////
 
   return {
@@ -6606,5 +6604,3 @@ export const useBlogStore = defineStore("blog", () => {
     water_pumps_for_desert_cooler,
   };
 });
-
-

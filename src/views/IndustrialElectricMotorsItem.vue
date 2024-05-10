@@ -4850,6 +4850,580 @@ export default {
                 },
             ],
             n: 1,
+            ru: [
+     "Трехфазный двигатель-рама 132-6 полюсов-5,5 кВт-IMB34",
+ "Трехфазный двигатель-рама 132-6 полюсов-4 кВт-IMB34",
+ "Трехфазный двигатель-рама 250-4 полюса-55 кВт-IMB35",
+ "Трехфазный двигатель-рама 250-2 полюса-55 КВТ-IMB35",
+ "Трехфазный двигатель-рама 225-4 полюса-45 кВт-IMB35",
+ "Трехфазный двигатель-рама 225-2 полюса-45 кВт-IMB35",
+ "Трехфазный двигатель-рама 225-2 полюса-45 кВт-IMB35",
+ "Трехфазный двигатель-Рама 200-2 опоры-37 кВт-IMB35",
+             "Трехфазный двигатель-рама 200-2 полюса-30 кВт-IMB35",
+ "Трехфазный двигатель-рама 180-4 полюса-22 кВт-IMB35",
+ "Трехфазный двигатель-рама 180-4 полюса-18,5 кВт-IMB35",
+ "Трехфазный двигатель-рама 180-2 полюса-22 КВТ-IMB35",
+ "Трехфазный двигатель-рама 180-2 полюса-22 КВТ-IMB35",
+ "Трехфазный двигатель-рама 132-4 полюса-5,5 КВТ-IMB34",
+ "Трехфазный двигатель-рама 132-2 полюса-7,5 кВт-IMB34",
+ "Трехфазный двигатель-рама Мотор-рама 132-2 полюса-5,5 кВт-IMB34",
+             "Трехфазный двигатель-рама 160-6 полюсов-11 КВТ-IMB35",
+ "Трехфазный двигатель-рама 160-6 полюсов-11 кВт-IMB5",
+ "Трехфазный двигатель-рама 160-6 полюсов-11 кВт-IMB3",
+ "Трехфазный двигатель-рама 160-6 полюсов-7,5КВТ-IMB35",
+ "Трехфазный двигатель-рама 160-6 полюсов-7,5 КВТ-IMB5",
+ "Трехфазный двигатель-рама 160-6 полюсов-7,5 КВТ-IMB3",
+ "Трехфазный двигатель-рама 160-4 полюса-15 кВт-IMB35",
+ "Трехфазный двигатель-рама Мотор-рама 160-4 полюса-15 кВт-IMB5",
+             "Трехфазный двигатель-рама 160-4 полюса-15 КВТ-IMB3",
+ "Трехфазный двигатель-рама 160-4 полюса-11 кВт-IMB35",
+ "Трехфазный двигатель-рама 160-4 полюса-11 кВт-IMB5",
+ "Трехфазный двигатель-рама 160-4 полюса-11 кВт-IMB5",
+ "Трехфазный двигатель-рама 160-4 полюса-11 кВт-IMB3",
+ "Трехфазный двигатель-рама 160-2 полюса-18,5 кВт-IMB35",
+ "Трехфазный двигатель-рама 160-2 полюса-18,5 кВт-IMB5",
+ "Трехфазный двигатель-Рама на 160-2 опоры-18,5кВт-IMB3",
+             "Трехфазный двигатель-рама 160-2 полюса-15 КВТ-IMB35",
+ "Трехфазный двигатель-рама 160-2 полюса-15 кВт-IMB5",
+ "Трехфазный двигатель-рама 160-2 полюса-15 кВт-IMB3",
+ "Трехфазный двигатель-рама 160-2 полюса-11 кВт-IMB35",
+ "Трехфазный двигатель-рама 160-2 полюса-11 кВт-IMB5",
+ "Трехфазный двигатель-рама 160-2 полюса-11 кВт-IMB3",
+ "Трехфазный двигатель-рама 132-6 полюсов-5,5 кВт-IMB35",
+ "Трехфазный двигатель-Рама на 132-6 опор-5,5кВт-IMB5",
+             "Трехфазный двигатель-рама 132-6 полюсов-4 КВТ-IMB35",
+ "Трехфазный двигатель-рама 132-6 полюсов-4 КВТ-IMB5",
+ "Трехфазный двигатель-рама 132-6 полюсов-4 кВт-IMB3",
+ "Трехфазный двигатель-рама 132-6 полюсов-3 кВт-IMB35",
+ "Трехфазный двигатель-рама 132-6 полюсов-3 КВТ-IMB5",
+ "Трехфазный двигатель-рама 132-6 полюсов-3 КВТ-IMB3",
+ "Трехфазный двигатель-рама 132-4 полюса-7,5 кВт-IMB5",
+ "Трехфазный двигатель-Рама 132-4 опоры-7,5кВт-IMB3",
+             "Трехфазный двигатель-рама 132-4 полюса-5,5КВТ-IMB35",
+ "Трехфазный двигатель-рама 132-4 полюса-5,5 КВТ-IMB35",
+ "Трехфазный двигатель-рама 132-4 полюса-5,5 кВт-IMB5",
+ "Трехфазный двигатель-рама 132-4 Полюсов-5,5КВТ-IMB5",
+ "Трехфазный двигатель-рама 132-4 полюса-5,5КВТ-IMB3",
+ "Трехфазный двигатель-рама 132-2 полюса-7,5 КВТ-IMB35",
+ "Трехфазный двигатель-рама 132-2 полюса-7,5кВт-IMB35",
+ "Трехфазный двигатель-Рама 132-2 полюса-7,5 кВт-IMB5",
+             "Трехфазный двигатель-рама 132-2 полюса-7,5КВТ-IMB5",
+ "Трехфазный двигатель-рама 132-2 полюса-7,5 КВТ-IMB5",
+ "Трехфазный двигатель-рама 132-2 полюса-7,5 кВт-IMB3",
+ "Трехфазный двигатель-рама 132-2 Полюса-5,5КВТ-IMB35",
+ "Трехфазный двигатель-рама 132-2 полюса-5,5КВТ-IMB5",
+ "Трехфазный двигатель-рама 132-2 полюса-5,5КВТ-IMB3",
+ "Трехфазный двигатель-рама 132-2 полюса-5,5кВт-IMB3",
+ "Трехфазный двигатель-Рама 132-2 полюса-5,5 кВт-IMB35",
+             "Трехфазный двигатель-рама 132-2 полюса-5,5КВТ-IMB35",
+ "Трехфазный двигатель-рама 132-2 полюса-5,5 кВт-IMB3",
+ "Трехфазный двигатель-рама 112-6 полюсов-2,2 кВт-IMB35",
+ "Трехфазный двигатель-рама 112-6 Полюсов-2,2КВТ-IMB34",
+ "Трехфазный двигатель-рама 112-6 полюсов-2,2КВТ-IMB14",
+ "Трехфазный двигатель-рама 112-6 полюсов-2,2КВТ-IMB5",
+ "Трехфазный двигатель-рама 112-6 полюсов-2,2КВТ-IMB3",
+ "Трехфазный двигатель-Рама 112-4 полюса-5,5 кВт-IMB35",
+             "Трехфазный двигатель-рама 112-4 полюса-5,5 КВТ-IMB35",
+ "Трехфазный двигатель-рама 112-4 полюса-5,5 КВТ-IMB34",
+ "Трехфазный двигатель-рама 112-4 полюса-5,5 кВт-IMB14",
+ "Трехфазный двигатель-рама 112-4 Полюсов-5,5КВТ-IMB5",
+ "Трехфазный двигатель-рама 112-4 полюса-5,5КВТ-IMB3",
+ "Однофазный двигатель-рама 112-4 полюса-2,2КВТ-IMB35",
+ "Однофазный двигатель-рама 112-4 полюса-2,2КВТ-IMB14",
+ "Однофазный двигатель-Рама 112-4 полюса-2,2 кВт-IMB5",
+             "Однофазный двигатель-рама 112-4 полюса-2,2КВТ-IMB3",
+ "Трехфазный двигатель-рама 112-4 полюса-4 КВТ-IMB35",
+ "Трехфазный двигатель-рама 112-4 полюса-4 кВт-IMB34",
+ "Трехфазный двигатель-рама 112-4 полюса-4 КВТ-IMB34",
+ "Трехфазный двигатель-рама 112-4 полюса-4 КВТ-IMB14",
+ "Трехфазный двигатель-рама 112-4 полюса-4 КВТ-IMB5",
+ "Трехфазный двигатель-рама 112-4 полюса-4 кВт-IMB3",
+ "Трехфазный двигатель-Рама 112-2 опоры-5,5кВт-IMB35",
+             "Трехфазный двигатель-рама 112-2 полюса-5,5кВт-IMB34",
+ "Трехфазный двигатель-рама 112-2 полюса-5,5 кВт-IMB14",
+ "Трехфазный двигатель-рама 112-2 полюса-5,5 кВт-IMB5",
+  "Трехфазный двигатель-рама 112-2 полюса-5,5кВт-IMB3",
+ "Трехфазный двигатель-рама 112-2 полюса-4 КВТ-IMB35",
+ "Трехфазный двигатель-рама 112-2 полюса-4 кВт-IMB34",
+ "Трехфазный двигатель-рама 112-2 полюса-4 КВТ-IMB14",
+ "Трехфазный двигатель-рама 112-2 полюса-4 КВТ-IMB5",
+ "Трехфазный двигатель-рама 112-2 полюса-4 КВТ-IMB3",
+ "Однофазный двигатель-рама 100-4 полюса-2,2 кВт-IMB35",
+ "Однофазный двигатель-Рама на 100-4 опоры-2,2кВт-IMB14",
+             "Однофазный двигатель-рама 100-4 полюса-2,2 КВТ-IMB5",
+ "Однофазный двигатель-рама 100-4 полюса-2,2 КВТ-IMB3",
+ "Трехфазный двигатель-рама 100-4 полюса-3 кВт-IMB35",
+ "Трехфазный двигатель-рама 100-4 полюса-3 КВТ-IMB35",
+ "Трехфазный двигатель-рама 100-4 полюса-3 КВТ-IMB34",
+ "Трехфазный двигатель-рама 100-4 полюса-3 КВТ-IMB14",
+ "Трехфазный двигатель-рама 100-4 полюса-3 КВТ-IMB5",
+ "Трехфазный двигатель-Рама 100-4 опоры-3 кВт-IMB3",
+             "Трехфазный двигатель-рама 100-4 полюса-2,2 КВТ-IMB35",
+ "Трехфазный двигатель-рама 100-4 полюса-2,2 КВТ-IMB34",
+ "Трехфазный двигатель-рама 100-4 полюса-2,2 КВТ-IMB14",
+ "Трехфазный двигатель-рама 100-4 Полюсов-2,2КВТ-IMB5",
+ "Трехфазный двигатель-рама 100-4 полюса-2,2КВТ-IMB5",
+ "Трехфазный двигатель-рама 100-4 полюса-2,2КВТ-IMB3",
+ "Трехфазный двигатель-рама 100-2 полюса-3 кВт-IMB35",
+ "Трехфазный двигатель-Рама 100-2 полюса-3 кВт-IMB34",
+             "Трехфазный двигатель-рама 100-2 полюса-3 КВТ-IMB14",
+ "Трехфазный двигатель-рама 100-2 полюса-3 КВТ-IMB5",
+ "Трехфазный двигатель-рама 100-2 полюса-3 кВт-IMB3",
+ "Трехфазный двигатель-рама 90-4 полюса-1,5КВТ-IMB35",
+ "Трехфазный двигатель-рама 90-4 полюса-1,5 КВТ-IMB34",
+ "Трехфазный двигатель-рама 90-4 полюса-1,5 КВТ-IMB14",
+ "Трехфазный двигатель-рама 90-4 полюса-1,5 КВТ-IMB5",
+ "Три Фазный двигатель-Рама на 90-4 полюса-1,5 кВт-IMB3",
+             "Однофазный двигатель-рама 90-4 полюса-1,5 КВТ-IMB35",
+ "Однофазный двигатель-рама 90-4 полюса-1,5 КВТ-IMB14",
+ "Однофазный двигатель-рама 90-4 полюса-1,5 КВТ-IMB5",
+ "Однофазный двигатель-рама 90-4 Полюсов-1,5КВТ-IMB3",
+ "Трехфазный двигатель-рама 90-4 полюса-1,1КВТ-IMB35",
+ "Трехфазный двигатель-рама 90-4 полюса-1,1КВТ-IMB34",
+ "Трехфазный двигатель-рама 90-4 полюса-1,1КВТ-IMB14",
+ "Трехфазный двигатель-Рама 90-4 полюса-1,1 кВт-IMB5",
+             "Трехфазный двигатель-рама 90-4 полюса-1,1КВТ-IMB3",
+ "Однофазный двигатель-рама 90-4 полюса-1,1 КВТ-IMB35",
+ "Однофазный двигатель-рама 90-4 полюса-1,1 КВТ-IMB14",
+ "Однофазный двигатель-рама 90-4 Полюсов-1,1КВТ-IMB5",
+ "Однофазный двигатель-рама 90-4 полюса-1,1КВТ-IMB3",
+ "Трехфазный двигатель-рама 90-2 полюса-2,2КВТ-IMB35",
+ "Трехфазный двигатель-рама 90-2 полюса-2,2КВТ-IMB34",
+ "Трехфазный двигатель-Рама 90-2 полюса-2,2 кВт-IMB14",
+             "Трехфазный двигатель-рама 90-2 полюса-2,2КВТ-IMB5",
+            //  line 1.4 
+ "Трехфазный двигатель-рама 90-2 полюса-2,2 КВТ-IMB3",
+ "Трехфазный двигатель-рама 90-2 полюса-1,5 кВт-IMB35",
+ "Трехфазный двигатель-рама 90-2 Полюсов-1,5КВТ-IMB34",
+ "Трехфазный двигатель-рама 90-2 полюса-1,5КВТ-IMB14",
+ "Трехфазный двигатель-рама 90-2 полюса-1,5КВТ-IMB5",
+ "Трехфазный двигатель-рама 90-2 полюса-1,5кВт-IMB3",
+ "Однофазный двигатель-Рама 90-2 полюса-1,5 кВт-IMB35",
+             "Однофазный двигатель-рама 90-2 полюса-1,5 КВТ-IMB14",
+ "Однофазный двигатель-рама 90-2 полюса-1,5 КВТ-IMB5",
+ "Однофазный двигатель-рама 90-2 полюса-1,5 кВт-IMB3",
+ "Трехфазный двигатель-рама 80-6 Полюса-550 Вт-IMB35",
+ "Трехфазный двигатель-рама 80-6 полюсов-550 Вт-IMB34",
+ "Трехфазный двигатель-рама 80-6 полюсов-550 Вт-IMB14",
+ "Трехфазный двигатель-рама 80-6 полюсов-550 Вт-IMB5",
+ "Трехфазный двигатель-рама Мотор-рама 80-6 полюсов-550 Вт-IMB3",
+             "Трехфазный двигатель-рама 80-6 полюсов-370 Вт-IMB35",
+ "Трехфазный двигатель-рама 80-6 полюсов-370 Вт-IMB34",
+ "Трехфазный двигатель-рама 80-6 полюсов-370 Вт-IMB14",
+ "Трехфазный двигатель-рама 80-6 полюсов-370 Вт-IMB5",
+ "Трехфазный двигатель-рама 80-6 полюсов-370 Вт-IMB3",
+ "Однофазный двигатель-рама 80-6 полюсов-370 Вт-IMB35",
+ "Однофазный двигатель-рама 80-6 полюсов-370 Вт-IMB14",
+ "Однофазный двигатель-рама 80-6 полюсов-370 Вт-IMB5",
+             "Однофазный двигатель-рама 80-6 полюсов-370 Вт-IMB3",
+ "Трехфазный двигатель-рама 80-4 полюса-750 Вт-IMB35",
+ "Трехфазный двигатель-рама 80-4 полюса-750 Вт-IMB34",
+ "Трехфазный двигатель-рама 80-4 полюса-750 Вт-IMB14",
+ "Трехфазный двигатель-рама 80-4 полюса-750 Вт-IMB5",
+ "Трехфазный двигатель-рама 80-4 полюса-750 Вт-IMB3",
+ "Однофазный двигатель-рама 80-4 полюса-750 Вт-IMB35",
+ "Однофазный двигатель-рама 80-4 полюса-750 Вт-IMB14",
+             "Однофазный двигатель-рама 80-4 полюса-750 Вт-IMB5",
+ "Однофазный двигатель-рама 80-4 полюса-750 Вт-IMB3",
+ "Трехфазный двигатель-рама 80-4 полюса-550 Вт-IMB35",
+ "Трехфазный двигатель-рама 80-4 полюса-550 Вт-IMB34",
+ "Трехфазный двигатель-рама 80-4 полюса-550 Вт-IMB14",
+ "Трехфазный двигатель-рама 80-4 полюса-550 Вт-IMB5",
+ "Трехфазный двигатель-рама 80-4 полюса-550 Вт-IMB3",
+ "Однофазный двигатель-рама 80-4 полюса-550 Вт-IMB35",
+             "Однофазный двигатель-рама 80-4 полюса-550 Вт-IMB14",
+ "Однофазный двигатель-рама 80-4 полюса-550 Вт-IMB5",
+ "Однофазный двигатель-рама 80-4 полюса-550 Вт-IMB3",
+ "Трехфазный двигатель-рама 80-2 полюса-750 Вт-IMB35",
+ "Трехфазный двигатель-рама 80-2 полюса-750 Вт-IMB34",
+ "Трехфазный двигатель-рама 80-2 полюса-750 Вт-IMB14",
+ "Трехфазный двигатель-рама 80-2 полюса-750 Вт-IMB5",
+ "Трехфазный двигатель-рама 80-2 полюса-750 Вт-IMB3",
+             "Однофазный двигатель-рама 80-2 полюса-750 Вт-IMB35",
+ "Однофазный двигатель-рама 80-2 полюса-750 Вт-IMB14",
+ "Однофазный двигатель-рама 80-2 полюса-750 Вт-IMB5",
+ "Однофазный двигатель-рама 80-2 полюса-750 Вт-IMB3",
+ "Трехфазный двигатель-рама 80-2 полюса-1,1 КВТ-IMB35",
+ "Трехфазный двигатель-рама 80-2 полюса-1,1 КВТ-IMB34",
+ "Трехфазный двигатель-рама 80-2 полюса-1,1 кВт-IMB14",
+ "Трехфазный двигатель-рама Двигатель-рама 80-2 полюса-1,1кВт-IMB5",
+             "Трехфазный двигатель-рама 80-2 полюса-1,1КВТ-IMB3",
+ "Однофазный двигатель-рама 80-2 полюса-1,1 КВТ-IMB35",
+ "Однофазный двигатель-рама 80-2 полюса-1,1 КВТ-IMB14",
+ "Однофазный двигатель-рама 80-2 Полюсов-1,1КВТ-IMB5",
+ "Однофазный двигатель-рама 80-2 полюса-1,1кВт-IMB3",
+ "Трехфазный двигатель-рама 71-4 полюса-550 Вт-IMB35",
+  "Трехфазный двигатель-рама 71-4 полюса-550 Вт-IMB34",
+ "Трехфазный двигатель-рама 71-4 полюса-550 Вт-IMB14",
+ "Трехфазный двигатель-рама 71-4 полюса-550 Вт-IMB5",
+ "Трехфазный двигатель-рама 71-4 полюса-550 Вт-IMB3",
+ "Однофазный двигатель-рама 71-4 полюса-500 Вт-IMB35",
+ "Однофазный двигатель-рама 71-4 полюса-500 Вт-IMB14",
+ "Однофазный двигатель-рама 71-4 полюса-500 Вт-IMB5",
+ "Однофазный двигатель-рама 71-4 полюса-500 Вт-IMB3",
+             "Трехфазный двигатель-рама 71-4 полюса-370 Вт-IMB35",
+ "Трехфазный двигатель-рама 71-4 полюса-370 Вт-IMB34",
+ "Трехфазный двигатель-рама 71-4 полюса-370 Вт-IMB14",
+ "Трехфазный двигатель-рама 71-4 полюса-370 Вт-IMB5",
+ "Трехфазный двигатель-рама 71-4 полюса-370 Вт-IMB3",
+ "Однофазный двигатель-рама 71-4 полюса-370 Вт-IMB35",
+ "Однофазный двигатель-рама 71-4 полюса-370 Вт-IMB14",
+ "Однофазный двигатель-рама 71-4 полюса-370 Вт-IMB5",
+             "Однофазный двигатель-рама 71-4 полюса-370 Вт-IMB3",
+ "Трехфазный двигатель-рама 71-4 полюса-250 Вт-IMB35",
+ "Трехфазный двигатель-рама 71-4 полюса-250 Вт-IMB35",
+ "Трехфазный двигатель-рама 71-4 полюса-250 Вт-IMB5",
+ "Трехфазный двигатель-рама 71-4 полюса-250 Вт-IMB3",
+ "Трехфазный двигатель-рама 71-2 полюса-750 Вт-IMB35",
+ "Трехфазный двигатель-рама 71-2 полюса-750 Вт-IMB34",
+ "Трехфазный двигатель-рама 71-2 полюса-750 Вт-IMB14",
+             "Трехфазный двигатель-рама 71-2 полюса-750 Вт-IMB5",
+ "Трехфазный двигатель-рама 71-2 полюса-750 Вт-IMB3",
+ "Трехфазный двигатель-рама 71-2 полюса-550 Вт-IMB35",
+ "Трехфазный двигатель-рама 71-2 полюса-550 Вт-IMB34",
+ "Трехфазный двигатель-рама 71-2 полюса-550 Вт-IMB14",
+ "Трехфазный двигатель-рама 71-2 полюса-550 Вт-IMB5",
+ "Трехфазный двигатель-рама 71-2 полюса-550 Вт-IMB3",
+ "Однофазный двигатель-рама 71-2 полюса-550 Вт-IMB35",
+             "Однофазный двигатель-рама 71-2 полюса-550 Вт-IMB14",
+ "Однофазный двигатель-рама 71-2 полюса-550 Вт-IMB35",
+ "Однофазный двигатель-рама 71-2 полюса-550 Вт-IMB3",
+ "Трехфазный двигатель-рама 71-2 полюса-370 Вт-IMB35",
+ "Трехфазный двигатель-рама 71-2 полюса-370 Вт-IMB34",
+ "Трехфазный двигатель-рама 71-2 полюса-370 Вт-IMB14",
+ "Трехфазный двигатель-рама 71-2 полюса-370 Вт-IMB14",
+ "Трехфазный двигатель-рама 71-2 полюса-370 Вт-IMB5",
+             "Трехфазный двигатель-рама 71-2 полюса-370 Вт-IMB3",
+ "Однофазный двигатель-рама 71-2 полюса-370 Вт-IMB35",
+ "Однофазный двигатель-рама 71-2 полюса-370 Вт-IMB14",
+ "Однофазный двигатель-рама 71-2 полюса-370 Вт-IMB5",
+ "Трехфазный двигатель-рама 71-2 полюса-370 Вт-IMB3",
+ "Однофазный двигатель-рама 71-2 полюса-370 Вт-IMB35",
+ "Однофазный двигатель-рама 71-2 полюса-370 Вт-IMB14",
+ "Однофазный двигатель-рама 71-2 полюса-370 Вт-IMB5",
+             "Однофазный двигатель-рама 71-2 полюса-370 Вт-IMB3",
+ "Трехфазный двигатель-рама 63-4 полюса-180 Вт-IMB35",
+ "Трехфазный двигатель-рама 63-4 полюса-180 Вт-IMB34",
+ "Трехфазный двигатель-рама 63-4 полюса-180 Вт-IMB14",
+ "Трехфазный двигатель-рама 63-4 полюса-180 Вт-IMB5",
+ "Трехфазный двигатель-рама 63-4 полюса-180 Вт-IMB3",
+ "Однофазный двигатель-рама 63-4 полюса-180 Вт-IMB35",
+ "Однофазный двигатель-рама 63-4 полюса-180 Вт-IMB14",
+             "Однофазный двигатель-рама 63-4 полюса-180 Вт-IMB5",
+ "Однофазный двигатель-рама 63-4 полюса-180 Вт-IMB3",
+ "Трехфазный двигатель-рама 63-4 полюса-120 Вт-IMB35",
+ "Трехфазный двигатель-рама 63-4 полюса-120 Вт-IMB34",
+ "Трехфазный двигатель-рама 63-4 полюса-120 Вт-IMB14",
+ "Трехфазный двигатель-рама 63-4 полюса-120 Вт-IMB5",
+ "Трехфазный двигатель-рама 63-4 полюса-120 Вт-IMB3",
+ "Однофазный двигатель-рама 63-4 полюса-120 Вт-IMB35",
+             "Однофазный двигатель-рама 63-4 полюса-120 Вт-IMB14",
+ "Однофазный двигатель-рама 63-4 полюса-120 Вт-IMB5",
+ "Однофазный двигатель-рама 63-4 полюса-120 Вт-IMB3",
+ "Трехфазный двигатель-рама 63-2 полюса-250 Вт-IMB35",
+ "Трехфазный двигатель-рама 63-2 полюса-250 Вт-IMB34",
+ "Трехфазный двигатель-рама 63-2 полюса-250 Вт-IMB34",
+ "Трехфазный двигатель-рама 63-2 полюса-250 Вт-IMB5",
+ "Трехфазный двигатель-рама 63-2 полюса-250 Вт-IMB3",
+             "Однофазный двигатель-рама 63-2 полюса-250 Вт-IMB35",
+ "Однофазный двигатель-рама 63-2 полюса-250 Вт-IMB14",
+ "Однофазный двигатель-рама 63-2 полюса-250 Вт-IMB5",
+ "Однофазный двигатель-рама 63-2 полюса-250 Вт-IMB3",
+ "Трехфазный двигатель-рама 63-2 полюса-180 Вт-IMB35",
+ "Трехфазный двигатель-рама 63-2 полюса-180 Вт-IMB34",
+ "Трехфазный двигатель-рама 63-2 полюса-180 Вт-IMB14",
+ "Трехфазный двигатель-рама 63-2 полюса-180 Вт-IMB5",
+             "Трехфазный двигатель-рама 63-2 полюса-180 Вт-IMB3",
+ "Однофазный двигатель-рама 63-2 полюса-180 Вт-IMB35",
+ "Однофазный двигатель-рама 63-2 полюса-180 Вт-IMB3",
+            ],
+            uz: [
+    "Uch fazali dvigatel-132-6 qutbli ramka-5,5 kVt-IMB34",
+ "Uch fazali dvigatel-132-6 qutbli ramka-4 kVt-IMB34",
+ "Uch fazali dvigatel-ramka 250-4 qutb-55 kVt-IMB35",
+ "Uch fazali dvigatel-250-2 qutbli ramka-55 kVt-IMB35",
+ "Uch fazali dvigatel-ramka 225-4 qutb-45 kVt-IMB35",
+ "Uch fazali dvigatel-225-2 qutbli ramka-45 kVt-IMB35",
+ "Uch fazali dvigatel-225-2 qutbli ramka-45 kVt-IMB35",
+ "Uch fazali dvigatel-ramka 200-2 tayanch-37 kVt-IMB35",
+             "Uch fazali dvigatel-200-2 qutbli ramka-30 kVt-IMB35",
+ "Uch fazali dvigatel-180-4 qutbli ramka-22 kVt-IMB35",
+ "Uch fazali dvigatel-180-4 qutbli ramka-18,5 kVt-IMB35",
+ "Uch fazali dvigatel-ramka 180-2 qutb-22 kVt-IMB35",
+ "Uch fazali dvigatel-ramka 180-2 qutb-22 kVt-IMB35",
+ "Uch fazali dvigatel-132-4 qutbli ramka - 5,5 kVt-IMB34",
+ "Uch fazali dvigatel-132-2 qutbli ramka - 7,5 kVt-IMB34",
+ "Uch fazali dvigatel-ramka motor-ramka 132-2 qutblar - 5,5 kVt-IMB34",
+             "Uch fazali dvigatel-160-6 qutbli ramka-11 kVt-IMB35",
+ "Uch fazali dvigatel-160-6 qutbli ramka-11 kVt-IMB5",
+ "Uch fazali dvigatel-160-6 qutbli ramka-11 kVt-IMB3",
+ "Uch fazali dvigatel-160-6 qutbli ramka-7,5 kVt-IMB35",
+ "Uch fazali dvigatel-160-6 qutbli ramka-7,5 kVt-IMB5",
+ "Uch fazali dvigatel-160-6 qutbli ramka-7,5 kVt-IMB3",
+ "Uch fazali dvigatel-160-4 qutbli ramka-15 kVt-IMB35",
+ "Uch fazali dvigatel-ramka Motor-ramka 160-4 qutb-15 kVt-IMB5",
+             "Uch fazali dvigatel-160-4 qutbli ramka-15 kVt-IMB3",
+ "Uch fazali dvigatel-160-4 qutbli ramka-11 kVt-IMB35",
+ "Uch fazali dvigatel-160-4 qutbli ramka-11 kVt-IMB5",
+ "Uch fazali dvigatel-160-4 qutbli ramka-11 kVt-IMB5",
+ "Uch fazali dvigatel-160-4 qutbli ramka-11 kVt-IMB3",
+ "Uch fazali dvigatel-160-2 qutbli ramka-18,5 kVt-IMB35",
+ "Uch fazali dvigatel-160-2 qutbli ramka-18,5 kVt-IMB5",
+ "Uch fazali dvigatel-160-2 tayanchli ramka-18,5 kVt-IMB3",
+             "Uch fazali dvigatel-160-2 qutbli ramka-15 kVt-IMB35",
+ "Uch fazali dvigatel-160-2 qutbli ramka-15 kVt-IMB5",
+ "Uch fazali dvigatel-160-2 qutbli ramka-15 kVt-IMB3",
+ "Uch fazali dvigatel-160-2 qutbli ramka-11 kVt-IMB35",
+ "Uch fazali dvigatel-160-2 qutbli ramka-11 kVt-IMB5",
+ "Uch fazali dvigatel-160-2 qutbli ramka-11 kVt-IMB3",
+ "Uch fazali dvigatel-132-6 qutbli ramka-5,5 kVt-IMB35",
+ "Uch fazali dvigatel-132-6 tayanchli ramka-5,5 kVt-IMB5",
+             "Uch fazali dvigatel-132-6 qutbli ramka-4 kVt-IMB35",
+ "Uch fazali dvigatel-132-6 qutbli ramka-4 kVt-IMB5",
+ "Uch fazali dvigatel-132-6 qutbli ramka-4 kVt-IMB3",
+ "Uch fazali dvigatel-132-6 qutbli ramka-3 kVt-IMB35",
+ "Uch fazali dvigatel-132-6 qutbli ramka-3 kVt-IMB5",
+ "Uch fazali dvigatel-132-6 qutbli ramka-3 kVt-IMB3",
+ "Uch fazali dvigatel-132-4 qutbli ramka-7,5 kVt-IMB5",
+ "Uch fazali dvigatel-132-4 tayanchli ramka-7,5 kVt-IMB3",
+             "Uch fazali dvigatel-132-4 qutbli ramka-5,5 kVt-IMB35",
+ "Uch fazali dvigatel-132-4 qutbli ramka-5,5 kVt-IMB35",
+ "Uch fazali dvigatel-132-4 qutbli ramka-5,5 kVt-IMB5",
+ "Uch fazali dvigatel-132-4 qutbli ramka-5,5 kVt-IMB5",
+ "Uch fazali dvigatel-132-4 qutbli ramka-5,5 kVt-IMB3",
+ "Uch fazali dvigatel-132-2 qutbli ramka-7,5 kVt-IMB35",
+ "Uch fazali dvigatel-132-2 qutbli ramka-7,5 kVt-IMB35",
+ "Uch fazali dvigatel-132-2 qutbli ramka-7,5 kVt-IMB5",
+             "Uch fazali dvigatel-132-2 qutbli ramka-7,5 kVt-IMB5",
+ "Uch fazali dvigatel-132-2 qutbli ramka-7,5 kVt-IMB5",
+ "Uch fazali dvigatel-132-2 qutbli ramka-7,5 kVt-IMB3",
+ "Uch fazali dvigatel-132-2 qutbli ramka-5,5 kVt-IMB35",
+ "Uch fazali dvigatel-132-2 qutbli ramka-5,5 kVt-IMB5",
+ "Uch fazali dvigatel-132-2 qutbli ramka-5,5 kVt-IMB3",
+ "Uch fazali dvigatel-132-2 qutbli ramka-5,5 kVt-IMB3",
+ "Uch fazali dvigatel-132-2 qutbli ramka-5,5 kVt-IMB35",
+             "Uch fazali dvigatel-132-2 qutbli ramka-5,5 kVt-IMB35",
+ "Uch fazali dvigatel-132-2 qutbli ramka-5,5 kVt-IMB3",
+ "Uch fazali dvigatel-112-6 qutbli ramka-2,2 kVt-IMB35",
+ "Uch fazali dvigatel-112-6 qutbli ramka-2,2 kVt-IMB34",
+ "Uch fazali dvigatel-112-6 qutbli ramka-2,2 kVt-IMB14",
+ "Uch fazali dvigatel-112-6 qutbli ramka-2,2 kVt-IMB5",
+ "Uch fazali dvigatel-112-6 qutbli ramka-2,2 kVt-IMB3",
+ "Uch fazali dvigatel-112-4 qutbli ramka-5,5 kVt-IMB35",
+             "Uch fazali dvigatel-112-4 qutbli ramka-5,5 kVt-IMB35",
+ "Uch fazali dvigatel-112-4 qutbli ramka - 5,5 kVt-IMB34",
+ "Uch fazali dvigatel-112-4 qutbli ramka-5,5 kVt-IMB14",
+ "Uch fazali dvigatel-112-4 qutbli ramka-5,5 kVt-IMB5",
+ "Uch fazali dvigatel-112-4 qutbli ramka-5,5 kVt-IMB3",
+ "Bir fazali dvigatel-112-4 qutbli ramka-2,2 kVt-IMB35",
+ "Bir fazali dvigatel-112-4 qutbli ramka-2,2 kVt-IMB14",
+ "Bir fazali dvigatel-112-4 qutbli ramka-2,2 kVt-IMB5",
+             "Bir fazali dvigatel-112-4 qutbli ramka-2,2 kVt-IMB3",
+ "Uch fazali dvigatel-ramka 112-4 qutb-4 kVt-IMB35",
+ "Uch fazali dvigatel-ramka 112-4 qutb-4 kVt-IMB34",
+ "Uch fazali dvigatel-ramka 112-4 qutb-4 kVt-IMB34",
+ "Uch fazali dvigatel-ramka 112-4 qutb-4 kVt-IMB14",
+ "Uch fazali dvigatel-ramka 112-4 qutb-4 kVt-IMB5",
+ "Uch fazali dvigatel-ramka 112-4 qutb-4 kVt-IMB3",
+ "Uch fazali dvigatel-112-2 tayanchli ramka-5,5 kVt-IMB35",
+             "Uch fazali dvigatel-112-2 qutbli ramka-5,5 kVt-IMB34",
+ "Uch fazali dvigatel-112-2 qutbli ramka - 5,5 kVt-IMB14",
+ "Uch fazali dvigatel-112-2 qutbli ramka-5,5 kVt-IMB5",
+  "Uch fazali dvigatel-112-2 qutbli ramka-5,5 kVt-IMB3",
+ "Uch fazali dvigatel-112-2 qutbli ramka-4 kVt-IMB35",
+ "Uch fazali dvigatel-112-2 qutbli ramka-4 kVt-IMB34",
+ "Uch fazali dvigatel-112-2 qutbli ramka-4 kVt-IMB14",
+ "Uch fazali dvigatel-112-2 qutbli ramka-4 kVt-IMB5",
+ "Uch fazali dvigatel-112-2 qutbli ramka-4 kVt-IMB3",
+ "Bir fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB35",
+ "Bir fazali dvigatel-100-4 tayanchli ramka-2,2 kVt-IMB14",
+             "Bir fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB5",
+ "Bir fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB3",
+ "Uch fazali dvigatel-100-4 qutbli ramka-3 kVt-IMB35",
+ "Uch fazali dvigatel-100-4 qutbli ramka-3 kVt-IMB35",
+ "Uch fazali dvigatel-100-4 qutbli ramka-3 kVt-IMB34",
+ "Uch fazali dvigatel-100-4 qutbli ramka-3 kVt-IMB14",
+ "Uch fazali dvigatel-100-4 qutbli ramka-3 kVt-IMB5",
+ "Uch fazali dvigatel-100-4 tayanchli ramka-3 kVt-IMB3",
+             "Uch fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB35",
+ "Uch fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB34",
+ "Uch fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB14",
+ "Uch fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB5",
+ "Uch fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB5",
+ "Uch fazali dvigatel-100-4 qutbli ramka-2,2 kVt-IMB3",
+ "Uch fazali dvigatel-100-2 qutbli ramka-3 kVt-IMB35",
+ "Uch fazali dvigatel-100-2 qutbli ramka-3 kVt-IMB34",
+             "Uch fazali dvigatel-100-2 qutbli ramka-3 kVt-IMB14",
+ "Uch fazali dvigatel-100-2 qutbli ramka-3 kVt-IMB5",
+ "Uch fazali dvigatel-100-2 qutbli ramka-3 kVt-IMB3",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB35",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB34",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB14",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB5",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB3",
+             "Bir fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB35",
+ "Bir fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB14",
+ "Bir fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB5",
+ "Bir fazali dvigatel-90-4 qutbli ramka-1,5 kVt-IMB3",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB35",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB34",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB14",
+ "Uch fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB5",
+             "Uch fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB3",
+ "Bir fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB35",
+ "Bir fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB14",
+ "Bir fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB5",
+ "Bir fazali dvigatel-90-4 qutbli ramka-1,1 kVt-IMB3",
+ "Uch fazali dvigatel-90-2 qutbli ramka-2,2 kVt-IMB35",
+ "Uch fazali dvigatel-90-2 qutbli ramka-2,2 kVt-IMB34",
+ "Uch fazali dvigatel-90-2 qutbli ramka-2,2 kVt-IMB14",
+             "Uch fazali dvigatel-90-2 qutbli ramka-2,2 kVt-IMB5",
+             "Uch fazali dvigatel-90-2 qutbli ramka-2,2 kVt-IMB3",
+ "Uch fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB35",
+ "Uch fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB34",
+ "Uch fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB14",
+ "Uch fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB5",
+ "Uch fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB3",
+ "Bir fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB35",
+             "Bir fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB14",
+ "Bir fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB5",
+ "Bir fazali dvigatel-90-2 qutbli ramka-1,5 kVt-IMB3",
+ "Uch fazali dvigatel-80-6 qutbli ramka - 550 Vt-IMB35",
+ "Uch fazali dvigatel-80-6 qutbli ramka-550 Vt-IMB34",
+ "Uch fazali dvigatel-80-6 qutbli ramka-550 Vt-IMB14",
+ "Uch fazali dvigatel-80-6 qutbli ramka-550 Vt-IMB5",
+ "Uch fazali dvigatel-ramka motor-ramka 80-6 qutb-550 Vt-IMB3",
+             "Uch fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB35",
+ "Uch fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB34",
+ "Uch fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB14",
+ "Uch fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB5",
+ "Uch fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB3",
+ "Bir fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB35",
+ "Bir fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB14",
+ "Bir fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB5",
+             "Bir fazali dvigatel-80-6 qutbli ramka-370 Vt-IMB3",
+ "Uch fazali dvigatel-80-4 qutbli ramka - 750 Vt-IMB35",
+ "Uch fazali dvigatel-80-4 qutbli ramka - 750 Vt-IMB34",
+ "Uch fazali dvigatel-80-4 qutbli ramka - 750 Vt-IMB14",
+ "Uch fazali dvigatel-80-4 qutbli ramka-750 Vt-IMB5",
+ "Uch fazali dvigatel-80-4 qutbli ramka-750 Vt-IMB3",
+ "Bir fazali dvigatel-80-4 qutbli ramka - 750 Vt-IMB35",
+ "Bir fazali dvigatel-80-4 qutbli ramka - 750 Vt-IMB14",
+             "Bir fazali dvigatel-80-4 qutbli ramka-750 Vt-IMB5",
+ "Bir fazali dvigatel-80-4 qutbli ramka-750 Vt-IMB3",
+ "Uch fazali dvigatel-80-4 qutbli ramka - 550 Vt-IMB35",
+ "Uch fazali dvigatel-80-4 qutbli ramka - 550 Vt-IMB34",
+ "Uch fazali dvigatel-80-4 qutbli ramka - 550 Vt-IMB14",
+ "Uch fazali dvigatel-80-4 qutbli ramka-550 Vt-IMB5",
+ "Uch fazali dvigatel-80-4 qutbli ramka-550 Vt-IMB3",
+ "Bir fazali dvigatel-80-4 qutbli ramka - 550 Vt-IMB35",
+             "Bir fazali dvigatel-80-4 qutbli ramka-550 Vt-IMB14",
+ "Bir fazali dvigatel-80-4 qutbli ramka-550 Vt-IMB5",
+ "Bir fazali dvigatel-80-4 qutbli ramka - 550 Vt-IMB3",
+ "Uch fazali dvigatel-80-2 qutbli ramka - 750 Vt-IMB35",
+ "Uch fazali dvigatel-80-2 qutbli ramka - 750 Vt-IMB34",
+ "Uch fazali dvigatel-80-2 qutbli ramka - 750 Vt-IMB14",
+ "Uch fazali dvigatel-80-2 qutbli ramka-750 Vt-IMB5",
+ "Uch fazali dvigatel-80-2 qutbli ramka-750 Vt-IMB3",
+             "Bir fazali dvigatel-80-2 qutbli ramka - 750 Vt-IMB35",
+ "Bir fazali dvigatel-80-2 qutbli ramka - 750 Vt-IMB14",
+ "Bir fazali dvigatel-80-2 qutbli ramka-750 Vt-IMB5",
+ "Bir fazali dvigatel-80-2 qutbli ramka-750 Vt-IMB3",
+ "Uch fazali dvigatel-80-2 qutbli ramka-1,1 kVt-IMB35",
+ "Uch fazali dvigatel-80-2 qutbli ramka-1,1 kVt-IMB34",
+ "Uch fazali dvigatel-80-2 qutbli ramka-1,1 kVt-IMB14",
+ "Uch fazali dvigatel-ramka dvigatel-ramka 80-2 qutb-1,1 kVt-IMB5",
+             "Uch fazali dvigatel-80-2 qutbli ramka-1,1 kVt-IMB3",
+ "Bir fazali dvigatel-80-2 qutbli ramka-1,1 kVt-IMB35",
+ "Bir fazali dvigatel-80-2 qutbli ramka-1,1 kVt-IMB14",
+ "Bir fazali dvigatel-80-2 qutbli ramka-1,1 kVt-IMB5",
+ "Bir fazali dvigatel-80-2 qutbli ramka-1,1 kVt-IMB3",
+ "Uch fazali dvigatel-71-4 qutbli ramka-550 Vt-IMB35",
+  "Uch fazali dvigatel-71-4 qutbli ramka - 550 Vt-IMB34",
+ "Uch fazali dvigatel-71-4 qutbli ramka - 550 Vt-IMB14",
+ "Uch fazali dvigatel-71-4 qutbli ramka-550 Vt-IMB5",
+ "Uch fazali dvigatel-71-4 qutbli ramka-550 Vt-IMB3",
+ "Bir fazali dvigatel-71-4 qutbli ramka - 500 Vt-IMB35",
+ "Bir fazali dvigatel-71-4 qutbli ramka - 500 Vt-IMB14",
+ "Bir fazali dvigatel-71-4 qutbli ramka-500 Vt-IMB5",
+ "Bir fazali dvigatel-71-4 qutbli ramka-500 Vt-IMB3",
+             "Uch fazali dvigatel-71-4 qutbli ramka-370 Vt-IMB35",
+ "Uch fazali dvigatel-71-4 qutbli ramka - 370 Vt-IMB34",
+ "Uch fazali dvigatel-71-4 qutbli ramka - 370 Vt-IMB14",
+ "Uch fazali dvigatel-71-4 qutbli ramka-370 Vt-IMB5",
+ "Uch fazali dvigatel-71-4 qutbli ramka-370 Vt-IMB3",
+ "Bir fazali dvigatel-71-4 qutbli ramka - 370 Vt-IMB35",
+ "Bir fazali dvigatel-71-4 qutbli ramka - 370 Vt-IMB14",
+ "Bir fazali dvigatel-71-4 qutbli ramka-370 Vt-IMB5",
+             "Bir fazali dvigatel-71-4 qutbli ramka-370 Vt-IMB3",
+ "Uch fazali dvigatel-71-4 qutbli ramka-250 Vt-IMB35",
+ "Uch fazali dvigatel-71-4 qutbli ramka-250 Vt-IMB35",
+ "Uch fazali dvigatel-71-4 qutbli ramka-250 Vt-IMB5",
+ "Uch fazali dvigatel-71-4 qutbli ramka-250 Vt-IMB3",
+ "Uch fazali dvigatel-71-2 qutbli ramka-750 Vt-IMB35",
+ "Uch fazali dvigatel-71-2 qutbli ramka - 750 Vt-IMB34",
+ "Uch fazali dvigatel-71-2 qutbli ramka - 750 Vt-IMB14",
+             "Uch fazali dvigatel-71-2 qutbli ramka-750 Vt-IMB5",
+ "Uch fazali dvigatel-71-2 qutbli ramka-750 Vt-IMB3",
+ "Uch fazali dvigatel-71-2 qutbli ramka - 550 Vt-IMB35",
+ "Uch fazali dvigatel-71-2 qutbli ramka - 550 Vt-IMB34",
+ "Uch fazali dvigatel-71-2 qutbli ramka - 550 Vt-IMB14",
+ "Uch fazali dvigatel-71-2 qutbli ramka-550 Vt-IMB5",
+ "Uch fazali dvigatel-71-2 qutbli ramka-550 Vt-IMB3",
+ "Bir fazali dvigatel-71-2 qutbli ramka - 550 Vt-IMB35",
+             "Bir fazali dvigatel-71-2 qutbli ramka - 550 Vt-IMB14",
+ "Bir fazali dvigatel-71-2 qutbli ramka - 550 Vt-IMB35",
+ "Bir fazali dvigatel-71-2 qutbli ramka-550 Vt-IMB3",
+ "Uch fazali dvigatel-71-2 qutbli ramka-370 Vt-IMB35",
+ "Uch fazali dvigatel-71-2 qutbli ramka - 370 Vt-IMB34",
+ "Uch fazali dvigatel-71-2 qutbli ramka - 370 Vt-IMB14",
+ "Uch fazali dvigatel-71-2 qutbli ramka - 370 Vt-IMB14",
+ "Uch fazali dvigatel-71-2 qutbli ramka-370 Vt-IMB5",
+             "Uch fazali dvigatel-71-2 qutbli ramka-370 Vt-IMB3",
+ "Bir fazali dvigatel-71-2 qutbli ramka - 370 Vt-IMB35",
+ "Bir fazali dvigatel-71-2 qutbli ramka - 370 Vt-IMB14",
+ "Bir fazali dvigatel-71-2 qutbli ramka-370 Vt-IMB5",
+ "Uch fazali dvigatel-71-2 qutbli ramka-370 Vt-IMB3",
+ "Bir fazali dvigatel-71-2 qutbli ramka - 370 Vt-IMB35",
+ "Bir fazali dvigatel-71-2 qutbli ramka - 370 Vt-IMB14",
+ "Bir fazali dvigatel-71-2 qutbli ramka-370 Vt-IMB5",
+             "Bir fazali dvigatel-71-2 qutbli ramka-370 Vt-IMB3",
+ "Uch fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB35",
+ "Uch fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB34",
+ "Uch fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB14",
+ "Uch fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB5",
+ "Uch fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB3",
+ "Bir fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB35",
+ "Bir fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB14",
+             "Bir fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB5",
+ "Bir fazali dvigatel-63-4 qutbli ramka-180 Vt-IMB3",
+ "Uch fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB35",
+ "Uch fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB34",
+ "Uch fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB14",
+ "Uch fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB5",
+ "Uch fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB3",
+ "Bir fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB35",
+             "Bir fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB14",
+ "Bir fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB5",
+ "Bir fazali dvigatel-63-4 qutbli ramka-120 Vt-IMB3",
+ "Uch fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB35",
+ "Uch fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB34",
+ "Uch fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB34",
+ "Uch fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB5",
+ "Uch fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB3",
+             "Bir fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB35",
+ "Bir fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB14",
+ "Bir fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB5",
+ "Bir fazali dvigatel-63-2 qutbli ramka-250 Vt-IMB3",
+ "Uch fazali dvigatel-63-2 qutbli ramka-180 Vt-IMB35",
+ "Uch fazali dvigatel-63-2 qutbli ramka-180 Vt-IMB34",
+ "Uch fazali dvigatel-63-2 qutbli ramka-180 Vt-IMB14",
+ "Uch fazali dvigatel-63-2 qutbli ramka-180 Vt-IMB5",
+             "Uch fazali dvigatel-63-2 qutbli ramka-180 Vt-IMB3",
+ "Bir fazali dvigatel-63-2 qutbli ramka-180 Vt-IMB35",
+ "Bir fazali dvigatel-63-2 qutbli ramka-180 Vt-IMB3",
+            ],
+            finV: false,
             mobile: false,
             i: {
                 id: 1,
@@ -4871,6 +5445,7 @@ export default {
         }
     },
     mounted() {
+       this.fin()
         var x = window.matchMedia("(max-width: 650px)")
         if (x.matches) {
             this.mobile = true
@@ -4885,6 +5460,20 @@ export default {
             }
         }, 100);
     },
+    methods:{
+        fin(){
+            for (let i = 0; i < this.massiv.length; i++) {
+            this.massiv[i].ru = {
+                title: this.ru[i],  
+            };
+            this.massiv[i].uz = {
+                title: this.uz[i],
+            };
+            console.log(this.massiv[i]);
+        }
+        this.finV = true
+        }
+    }
 }
 
 </script>
@@ -4900,7 +5489,7 @@ export default {
                     </li>
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
-                        All products
+                        {{ $t("All_products") }}
                     </li>
                     <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
                 </ul>
@@ -4910,8 +5499,8 @@ export default {
         <div class="min-h-[50vh] mt-[40px] sm:mt-[20px]">
             <div class="max-w-[1250px] sm:px-[20px] gap-[20px] mx-auto flex">
                 <div class="flex-1">
-                    <h3 class="text-[28px] sm:text-[22px]  text-[#1B3F7B] roboto-black">
-                        {{ this.i.en.title }}
+                    <h3 v-if="this.finV" class="text-[28px] sm:text-[22px]  text-[#1B3F7B] roboto-black">
+                        {{ this.i[$t("lang")].title }}
                     </h3>
 
                     <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">
@@ -4926,7 +5515,7 @@ export default {
 
                     <div v-if="this.i.en.appearance" class="border-[1px] rounded-[20px] mt-[25px]">
                         <div class="flex justify-between sm:p-[20px] p-[30px] items-center border-b-[1px]">
-                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">Appearance Characteristics</span>
+                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">{{ $t("app")  }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -4936,7 +5525,7 @@ export default {
                         <div v-if="this.i.en.appearance.FrameMaterial" class="flex">
                             <div class="flex-1 sm:border-r-[0px] sm:p-[10px] p-[25px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Frame Material
+                                {{ $t("fr")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}</div>
                         </div>
@@ -4944,7 +5533,7 @@ export default {
 
                     <div v-if="this.i.en.specifications" class="border-[1px] rounded-[20px] mt-[25px]">
                         <div class="flex justify-between sm:p-[20px] p-[30px] items-center border-b-[1px]">
-                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">Technical Specifications</span>
+                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">{{ $t("ts")  }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -4957,7 +5546,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Frame Size
+                                {{ $t("fs")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Size }}</div>
                         </div>
@@ -4966,7 +5555,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Frame Size
+                                {{ $t("fs")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.size }}</div>
                         </div>
@@ -4975,7 +5564,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] sm:px-[10px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Number of Pole
+                                {{ $t("np")  }}
                             </div>
                             <div class="flex-[2]  sm:flex-1  p-[25px] font-[600]">{{ this.i.en.specifications.pole }}</div>
                         </div>
@@ -4983,7 +5572,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Output Power
+                                {{ $t("op")  }}
                             </div>
                             <div class="flex-[2] p-[25px] sm:flex-1 font-[600]">{{ this.i.en.specifications.Power }}</div>
                         </div>
@@ -4992,7 +5581,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] sm:px-[10px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a]  w-[6px] rounded-[50%]"></div>
-                                Mounting Type
+                                {{ $t("mt")  }}
 
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.type }}</div>
@@ -5002,7 +5591,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Speed
+                                {{ $t("s")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
                         </div>
@@ -5011,7 +5600,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Conductor Material
+                                {{ $t("cm")  }}
 
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Material }}</div>
@@ -5021,7 +5610,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Application
+                                {{ $t("apl")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Application }}</div>
                         </div>

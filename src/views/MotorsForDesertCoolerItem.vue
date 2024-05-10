@@ -684,7 +684,7 @@ export default {
 
                     <div v-if="this.i.en.appearance" class="border-[1px] rounded-[20px] mt-[25px]">
                         <div class="flex justify-between sm:p-[20px] p-[30px] items-center border-b-[1px]">
-                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">Appearance Characteristics</span>
+                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">{{ $t("app")  }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -694,7 +694,7 @@ export default {
                         <div v-if="this.i.en.appearance.FrameMaterial" class="flex">
                             <div class="flex-1 sm:border-r-[0px] sm:p-[10px] p-[25px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Frame Material
+                                {{ $t("fr")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}</div>
                         </div>
@@ -702,7 +702,7 @@ export default {
 
                     <div v-if="this.i.en.specifications" class="border-[1px] rounded-[20px] mt-[25px]">
                         <div class="flex justify-between sm:p-[20px] p-[30px] items-center border-b-[1px]">
-                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">Technical Specifications</span>
+                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">{{ $t("ts")  }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -715,7 +715,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Frame Size
+                                {{ $t("fs")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Size }}</div>
                         </div>
@@ -724,7 +724,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Frame Size
+                                {{ $t("fs")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.size }}</div>
                         </div>
@@ -733,7 +733,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] sm:px-[10px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Number of Pole
+                                {{ $t("np")  }}
                             </div>
                             <div class="flex-[2]  sm:flex-1  p-[25px] font-[600]">{{ this.i.en.specifications.pole }}</div>
                         </div>
@@ -741,7 +741,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Output Power
+                                {{ $t("op")  }}
                             </div>
                             <div class="flex-[2] p-[25px] sm:flex-1 font-[600]">{{ this.i.en.specifications.Power }}</div>
                         </div>
@@ -750,7 +750,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] sm:px-[10px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a]  w-[6px] rounded-[50%]"></div>
-                                Mounting Type
+                                {{ $t("mt")  }}
 
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.type }}</div>
@@ -760,7 +760,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Speed
+                                {{ $t("s")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
                         </div>
@@ -769,7 +769,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Conductor Material
+                                {{ $t("cm")  }}
 
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Material }}</div>
@@ -779,7 +779,7 @@ export default {
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                Application
+                                {{ $t("apl")  }}
                             </div>
                             <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Application }}</div>
                         </div>

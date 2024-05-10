@@ -245,6 +245,38 @@ export default {
             fallback: [],
             mobile: false,
             burger: false,
+            ru: [
+                "Статор и ротор лифта типа S-5,5 кВт (двухскоростной)",
+                "Статор и ротор лифта типа S-7,3 кВт (односкоростной)",
+                "Статор и ротор лифта типа S-5,5 кВт (односкоростной)",
+                "Статор и ротор лифта типа E-6,1кВт (двухскоростной)",
+                "Статор и ротор лифта типа E-7,3 кВт (односкоростной)",
+                "Статор и ротор лифта типа E-7,3 кВт (односкоростной)",
+                "Статор и ротор лифта типа E-7,3кВт (односкоростной)",
+                "Статор и ротор лифта типа M-6,1 кВт (двухскоростной)",
+                "Статор и ротор лифта типа M-9,2кВт (односкоростной)",
+                "Статор и ротор лифта типа M-9,2 кВт (односкоростной)",
+                "Статор и ротор лифта типа M-6,1 кВт (односкоростной)",
+                "Статор и ротор лифта типа M-13,2кВт (односкоростной)",
+                "Статор и ротор лифта типа E-7,3 кВт (двухскоростной)",
+                "Статор и ротор лифта типа E-6,1 кВт (двухскоростной)",
+            ],
+          uz: [
+                "S tipidagi lift statori va rotori-5,5 kVt (ikki tezlikli)",
+                "S tipidagi lift statori va rotori-7,3 kVt (bitta tezlikda)",
+                "S tipidagi lift statori va rotori-5,5 kVt (bitta tezlikda)",
+                "E-6,1 kVt (ikki tezlikli) liftning statori va rotori",
+                "E tipidagi lift statori va rotori-7,3 kVt (bitta tezlikda)",
+                "E tipidagi lift statori va rotori-7,3 kVt (bitta tezlikda)",
+                "E tipidagi lift statori va rotori-7,3 kVt (bitta tezlikda)",
+                "M tipidagi lift statori va rotori-6,1 kVt (ikki tezlikli)",
+                "M tipidagi lift statori va rotori-9,2 kVt (bitta tezlikda)",
+                "M tipidagi lift statori va rotori-9,2 kVt (bitta tezlikda)",
+                "M tipidagi lift statori va rotori-6,1 kVt (bitta tezlikda)",
+                "M tipidagi lift statori va rotori-13,2 kVt (bitta tezlikda)",
+                "E tipidagi lift statori va rotori-7,3 kVt (ikki tezlikli)",
+                "E tipidagi lift statori va rotori-6,1 kVt (ikki tezlikli)",
+            ],
         }
     },
     mounted() {
@@ -252,6 +284,15 @@ export default {
         var x = window.matchMedia("(max-width: 650px)")
         if (x.matches) {
             this.mobile = true
+        }
+        for (let i = 0; i < this.massiv.length; i++) {
+            this.massiv[i].ru = {
+                title: this.ru[i],  
+            };
+            this.massiv[i].uz = {
+                title: this.uz[i],
+            };
+            console.log(this.massiv[i]);
         }
 
     },
@@ -297,21 +338,21 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("header.home") }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">Elevator Motors</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{  $t("1.3")  }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px] sm:mt-[20px]">
             <h3 class="mx-auto sm:text-[22px] w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Elevator Motors
+                {{  $t("1.3")  }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
 
 
             <div class="flex items-start gap-[25px] sm:flex-col sm:px-[20px] sm:gap-[0px]">
 
-                
+
 
                 <div v-if="!this.mobile">
                     <div @click="accordion()" v-for="item of this.filters" :key="item.id" data-accordion="false"
@@ -350,14 +391,14 @@ export default {
                     </div>
                 </div>
 
-                <div v-if="this.mobile" :class="{filterBurgeractive: this.burger}" class="filterBurger ">
+                <div v-if="this.mobile" :class="{ filterBurgeractive: this.burger }" class="filterBurger ">
                     <div class="filterBurgerwrp p-[10px]">
                         <div class="overflow-y-auto h-[100%] pb-[100px] w-[100%]">
                             <div @click="this.burger = false" class="mb-[20px] bg-[red] w-[max-content] rounded-[3px]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-6 text-white h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                            </svg>
+                                    stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
                             </div>
                             <div>
                                 <div class="w-[100%]">
@@ -393,14 +434,15 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards @click="$router.push(`/elevator-motors/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards @click="$router.push(`/elevator-motors/${item.id}`)" :title="item[$t('lang')].title" :img="item.img"
+                        v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 
 
             </div>
 
-            
+
         </div>
     </div>
 </template>

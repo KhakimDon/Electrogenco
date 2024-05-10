@@ -184,9 +184,38 @@ export default {
             ],
             mobile: false,
             burger: false,
+            ru: [
+                "Трехфазный водяной насос-3 л.с.-Два рабочих колеса (CBT310)",
+                "Трехфазный водяной насос-2 л.с.-Два рабочих колеса (CBT 210)",
+                "Трехфазный водяной насос-1,5 л.с.-Два рабочих колеса (CBT160)",
+                "Однофазный водяной насос-3 л.с.-Два рабочих колеса (CB310)",
+                "Однофазный водяной насос-2 л.с.-Два рабочих колеса (CB210)",
+                "Однофазный водяной насос-1,5 л.с. (CB160)",
+                "Однофазный водяной насос-1 л.с. (CAM100)",
+                "Однофазный водяной насос Фазный водяной насос мощностью 1 л.с. (KPM100)",
+                "Однофазный водяной насос мощностью 1 л.с. (KPM100)",
+                "Двухвинтовой трехфазный электронасос (CBT210) мощностью 2 л.с.",
+                "Однофазный водяной насос мощностью 1 л.с. (CM100)",
+            ],
+                finV: false,
+
+            uz: [
+                "Uch fazali suv nasosi-3 ot kuchi-ikkita pervanel (CBT310)",
+                "Uch fazali suv nasosi - 2 ot kuchi-ikkita pervanel (CBT 210)",
+                "Uch fazali suv nasosi - 1,5 ot kuchi-ikkita pervanel (CBT160)",
+                "Bir fazali suv nasosi - 3 ot kuchi-ikkita pervanel (CB310)",
+                "Bir fazali suv nasosi-2 ot kuchi-ikkita pervanel (CB210)",
+                "Bir fazali suv nasosi - 1,5 ot kuchi (CB160)",
+                "Bir fazali suv nasosi - 1 ot kuchi (CAM100)",
+                "Bir fazali suv nasosi 1 ot kuchiga ega fazali suv nasosi (KPM100)",
+                "1 ot kuchiga ega bir fazali suv nasosi (KPM100)",
+                "2 ot kuchiga ega ikki vintli uch fazali elektr nasos (CBT210)",
+                "1 ot kuchiga ega bir fazali suv nasosi (CM100)",
+            ],
         }
     },
     mounted() {
+        this.fin()
         var x = window.matchMedia("(max-width: 650px)")
         if (x.matches) {
             this.mobile = true
@@ -198,6 +227,18 @@ export default {
 
     },
     methods: {
+        fin(){
+            for (let i = 0; i < this.massiv.length; i++) {
+            this.massiv[i].ru = {
+                title: this.ru[i],  
+            };
+            this.massiv[i].uz = {
+                title: this.uz[i],
+            };
+            console.log(this.massiv[i]);
+        }
+        this.finV = true
+        },
         filter() {
             this.burger = false
             // console.log(event.target.dataset.filterby);
@@ -298,14 +339,14 @@ export default {
                     </div>
                 </div>
 
-                <div v-if="this.mobile" :class="{filterBurgeractive: this.burger}" class="filterBurger ">
+                <div v-if="this.mobile" :class="{ filterBurgeractive: this.burger }" class="filterBurger ">
                     <div class="filterBurgerwrp p-[10px]">
                         <div class="overflow-y-auto h-[100%] pb-[100px] w-[100%]">
                             <div @click="this.burger = false" class="mb-[20px] bg-[red] w-[max-content] rounded-[3px]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-6 text-white h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                            </svg>
+                                    stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
                             </div>
                             <div>
                                 <div class="w-[100%]">
@@ -339,9 +380,10 @@ export default {
                     </div>
                 </div>
 
-                <div class="flex-1 flex gap-[25px] flex-wrap">
+                <div v-if="this.finV" class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards @click="$router.push(`/water-pumps/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards @click="$router.push(`/water-pumps/${item.id}`)" :title="item[$t('lang')].title" :img="item.img"
+                        v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 

@@ -226,7 +226,10 @@ const router = createRouter({
       name: 'AllProductItemView',
       component: AllProductItemView
     },
-
+    {
+      path: '/:catchAll(.*)',
+      redirect: '/',
+    },
   ]
 })
 

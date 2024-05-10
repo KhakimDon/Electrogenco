@@ -6,6 +6,89 @@ export default {
     components: { Cards },
     data() {
         return {
+             ru : [
+     "Двигатель воздушной завесы-90 Вт",
+ "Двигатель воздушной завесы-45 Вт",
+ "Двигатель с разделением каналов (кондиционер)-600 Вт",
+ "Двигатель с разделением каналов (кондиционер)-360 Вт",
+ "Двигатель с разделением каналов (кондиционер)-250 Вт",
+ "Двигатель с разделением каналов (кондиционер)-187 Вт",
+  "Двигатель с разделением каналов (кондиционер)-600 Вт",
+ "Вытяжной вентилятор-AL (четырехскоростной)",
+ "Вытяжной вентилятор (четырехскоростной)",
+ "Вытяжной двигатель-одновальный-AL (четырехскоростной)",
+ "Вытяжной вентилятор (трехскоростной)",
+           "Вытяжной двигатель-одновальный (четырехскоростной)",
+ "Вытяжной двигатель-одновальный (трехскоростной)",
+ "Вытяжной двигатель-одновальный (трехскоростной)",
+ "Вытяжной двигатель-Тип K (четырехскоростной)",
+ "Двигатель вентилятора-45 Вт",
+ "Двигатель вентилятора-25 Вт",
+ "Двигатель вентилятора-30 Вт",
+ "Двигатель вентилятора-25 Вт",
+ "Двигатель вентилятора-16 Вт",
+ "Двигатель вентилятора-10 Вт-AL",
+ "Вентилятор Двигатель-10 Вт",
+ "Двигатель вентилятора-5 Вт-AL",
+ "Двигатель вентилятора-5 Вт-AL",
+           "Двигатель вентилятора отопительного агрегата-48 Вт (Helal)",
+ "Двигатель вентилятора отопительного агрегата-39 Вт (Helal)",
+ "Двигатель фанкойла-1/30 л.с.-Двойной вал",
+ "Двигатель фанкойла-1/30 л.с.-двойной вал",
+ "Двигатель фанкойла-1/25 л.с.-Двойной вал",
+ "Двигатель фанкойла-1/25 л.с.-Одиночный вал",
+ "Двигатель фанкойла-1/20 л.с.-Двойной вал",
+ "Двигатель фанкойла-1/20 л.с.-одиночный вал",
+ "Двигатель фанкойла-1/16 л.с.-двухвальный",
+ "Двигатель фанкойла-1/16 л.с.-одновальный",
+           "Двигатели промышленных вытяжных вентиляторов",
+
+    
+    
+    
+],
+ uz : [
+  
+     "havo pardasi dvigateli-90 Vt",
+     "havo pardasi dvigateli-45 Vt",
+     "kanalli Split Motor (konditsioner)-600 Vt",
+     "kanalli Split Motor (konditsioner)-360 Vt",
+     "kanalli Split Motor (konditsioner)-250 Vt",
+     "kanalli Split Motor (konditsioner)-187 Vt",
+     "kanalli Split Motor (konditsioner)-600 Vt",
+     "kaput puflagich-AL (to'rt tezlikda)",
+     "Kaputli puflagich (to'rt tezlikli)",
+     "Hood Motor-yagona mil-AL (to'rt-tezlikda)",
+     "Kaputli puflagich (uch tezlikli)",
+     "Hood Motor-yagona mil (to'rt-tezlikda)",
+     "Hood Motor-yagona mil (uch-tezlikda)",
+     "Hood Motor-yagona mil (uch-tezlikda)",
+     "Hood Motor-turi K (to'rt-tezlikda)",
+     "Fan Motor-45 Vt",
+     "Fan Motor-25 Vt",
+     "Fan Motor-30 Vt",
+     "Fan Motor-25 Vt",
+     "Fan Motor-16 Vt",
+     "Fan Motor-10 Vt-AL",
+     "Fan Motor-10 Vt",
+     "Fan Motor-5 Vt-AL",
+     "Fan Motor-5 Vt-AL",
+     "isitish birligi Fan Motor-48 Vt (Helal)",
+     "isitish birligi Fan Motor-39 Vt (Helal)",
+     "Fan halqa Motor-1/30hp-ikki mil",
+     "Fan halqa Motor-1/30hp-ikki mil",
+     "Fan halqa Motor-1/25hp-ikki mil",
+     "Fan halqa Motor-1/25hp-yagona mil",
+     "Fan halqa Motor-1/20hp-ikki mil",
+     "Fan halqa Motor-1/20hp-yagona mil",
+     "Fan halqa Motor-1/16hp-ikki mil",
+     "Fan halqa Motor-1/16hp-yagona mil",
+     "sanoat chiqarish Fan motorlar",
+
+  
+  
+  
+],
             mobile: false,
             burger: false,
             filters: [
@@ -118,7 +201,8 @@ export default {
                         },
                     ],
                 },
-            ]
+            ],
+            finV: false,
         }
     },
     mounted() {
@@ -129,8 +213,20 @@ export default {
         window.scrollTo({ top: 0, behavior: 'auto' })
         this.$i18n.locale = 'en'
         this.fallback = this.massiv[1].prod
+        this.fin()
     },
     methods: {
+        fin(){
+            for (let i = 0; i < this.massiv[1].prod.length; i++) {
+            this.massiv[1].prod[i].ru = {  
+                title: this.ru[i],  
+            };
+            this.massiv[1].prod[i].uz = {
+                title: this.uz[i],
+            };
+            this.finV = true
+        }
+        },
         filter() {
             this.burger = false
             console.log(event.target.dataset.filterby);
@@ -170,16 +266,16 @@ export default {
                     </li>
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
-                        Heating Unit Motors
+                        {{ $t("All_products") }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">Heating Unit Fan</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ $t("1.4") }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px] sm:mt-[20px]">
             <h3 class="mx-auto w-[max-content]  sm:text-[22px] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Heating Unit Fan
+                {{ $t("1.4") }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
 
@@ -264,7 +360,7 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards @click="$router.push(`/heating-unit-motors/heating-unit-fan/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards @click="$router.push(`/heating-unit-motors/heating-unit-fan/${item.id}`)" :title="item[$t('lang')].title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 
