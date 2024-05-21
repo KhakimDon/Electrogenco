@@ -1,11 +1,16 @@
 <script lang="ts">
 import Search from './Search.vue'
 import { useLangStore } from "../stores/lang"
+import axios from "axios"
 
 export default {
     components: { Search },
     data() {
         return {
+            chatId: "-4227088626",
+            token: "7010746935:AAGZLW6LyVyZJIl1q3E087e1Dvdo8ekYtec",
+            item: '',
+            item2: "+998",
             english: document.cookie == 'locale=en',
             russian: document.cookie == 'locale=ru',
             uzbek: document.cookie == 'locale=uz',
@@ -18,6 +23,12 @@ export default {
 
     },
     methods: {
+        send() {
+            let message = `Новая заявка ❗️ Имя: ${this.item} 🙂 Телефон: ${this.item2} ☎️`
+            let api = `https://api.telegram.org/bot${this.token}/sendMessage?chat_id=${this.chatId}&text=${message}`
+
+            axios.post(api)
+        },
         searchs() {
             this.$router.push('/products')
             this.search = true
@@ -40,8 +51,7 @@ export default {
         <div :class="{ burgeractive: this.burger }" class="burger">
             <div class="burgerwrp">
                 <div class="flex items-center h-[80px] justify-between px-[20px]">
-                    <img class="h-[40px]"
-                        src="https://electrogenco.com/en/wp-content/uploads/2023/01/ELECTROGEN-FA-8.png" alt="image">
+                    <img class="h-[40px]" src="../../public/logo.png" alt="image">
                     <div @click="this.burger = false" class="bg-[#133B77] rounded-[3px]">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-6 text-white h-6">
@@ -49,7 +59,7 @@ export default {
                         </svg>
                     </div>
                 </div>
-                <div @click="this.burger = false"
+                <div @click="this.burger = false" onclick="my_modal_1.showModal()"
                     class="bg-[#133B77] flex items-center gap-[20px] px-[20px] py-[15px] roboto-bold uppercase text-white">
                     {{ $t("header.customer") }}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -60,16 +70,22 @@ export default {
 
                 </div>
                 <nav class="flex flex-col px-[20px] mt-[20px] gap-[30px] roboto-regular font-[700] text-[17px]">
-                    <router-link @click="this.burger = false" class="uppercase" :to="'/'"> {{ $t("header.home") }} </router-link>
-                    <router-link @click="this.burger = false" class="uppercase" :to="'/about'">{{ $t("header.about") }}</router-link>
-                    <router-link @click="this.burger = false" class="uppercase" :to="'/products'">{{ $t("header.products") }}</router-link>
-                    <router-link @click="this.burger = false" class="uppercase" :to="'/blog'">{{ $t("header.blog") }}</router-link>
-                    <router-link @click="this.burger = false" class="uppercase" :to="'/branches'">{{ $t("header.branches") }}</router-link>
+                    <router-link @click="this.burger = false" class="uppercase" :to="'/'"> {{ $t("header.home") }}
+                    </router-link>
+                    <router-link @click="this.burger = false" class="uppercase" :to="'/about'">{{ $t("header.about")
+                        }}</router-link>
+                    <router-link @click="this.burger = false" class="uppercase" :to="'/products'">{{
+                        $t("header.products") }}</router-link>
+                    <router-link @click="this.burger = false" class="uppercase" :to="'/blog'">{{ $t("header.blog")
+                        }}</router-link>
+                    <router-link @click="this.burger = false" class="uppercase" :to="'/branches'">{{
+                        $t("header.branches") }}</router-link>
                 </nav>
             </div>
         </div>
         <Search @close="this.search = false" class="search" :class="{ searchactive: this.search == true }">
-            <div @click="this.search = false" class="searchBack absolute left-[40px] text-[16px] cursor-pointer uppercase roboto-medium top-[40px] text-white">
+            <div @click="this.search = false"
+                class="searchBack absolute left-[40px] text-[16px] cursor-pointer uppercase roboto-medium top-[40px] text-white">
                 <div></div>
                 <span class="text-white">back</span>
                 <div></div>
@@ -84,8 +100,8 @@ export default {
                 </svg>
             </div>
 
-            <img @click="$router.push('/')" class="h-[50px] sm:h-[35px] cursor-pointer"
-                src="https://electrogenco.com/en/wp-content/uploads/2023/01/ELECTROGEN-FA-8.png" alt="image">
+            <img @click="$router.push('/')" class="h-[50px] sm:h-[35px] cursor-pointer" src="../../public/logo.png"
+                alt="image">
             <nav class="sm:hidden flex gap-[30px] roboto-regular font-[700] text-[17px]">
                 <router-link class="uppercase" :to="'/'"> {{ $t("header.home") }} </router-link>
                 <router-link class="uppercase" :to="'/about'">{{ $t("header.about") }}</router-link>
@@ -121,15 +137,39 @@ export default {
                                     alt="1200px-Flag_of_Russia"></a></li>
                     </ul>
                 </div>
-                <router-link :to="'/'"
-                    class="flex sm:hidden gap-[20px] duration-[.3s] uppercase roboto-regular text-[#1B3F7B] hover:text-[#5380BE] font-[600] text-[17px]">
-                    {{ $t("header.customer") }}
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
+
+
+                <button
+                    class=" flex sm:hidden gap-[20px] duration-[.3s] uppercase roboto-regular text-[#1B3F7B] hover:text-[#5380BE] font-[600] text-[17px]"
+                    onclick="my_modal_1.showModal()">{{ $t("header.customer") }} <svg xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                    </svg>
-                </router-link>
+                    </svg></button>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <div class="flex w-[100%] justify-center items-center">
+                            <img class="h-[60px]" src="../../public/logo.png" alt="image">
+                        </div>
+                        <h3 class="font-bold text-lg text-center my-[10px]">{{ $t("z") }}
+                        </h3>
+
+                        <input required v-model="item" :placeholder="this.$t('your')"
+                            class="h-[60px] w-[100%] outline-none border-[1px] border-[#1B3F7B] mt-[30px] mb-[10px] rounded-[10px] pl-[20px] font-[600]"
+                            type="text"> <br>
+                        <input required v-model="item2"
+                            class="h-[60px] w-[100%] outline-none border-[1px] border-[#1B3F7B] mb-[10px] rounded-[10px] pl-[20px] font-[600]"
+                            type="text">
+                        <div class="modal-action w-[100%]">
+                            <form @submit="send()" method="dialog block w-[100%]">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button 
+                                    class="btn bg-[#1B3F7B] text-white roboto-medium uppercase w-[100%] block">{{ $t("sned") }}</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+
             </div>
         </div>
     </header>
@@ -223,11 +263,10 @@ header {
 }
 
 @media screen and (max-width: 650px) {
-    .searchBack{
+    .searchBack {
         top: 20px !important;
         left: 15px !important;
         transform: scale(0.6) !important;
     }
 }
-
 </style>

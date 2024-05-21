@@ -9,7 +9,7 @@
     "customer": "MIJOZLAR PORTALI"
   },
   "second": {
-    "title": "ELECTROGEN, KELAJAKGA YO'L",
+    "title": "PARSMOTOR, KELAJAKGA YO'L",
     "text": "Hozirgi vaqtda biz umumiy bilimimiz va texnologik imkoniyatlarimiz tufayli Eronda sanoat va maishiy elektr motorlarini ishlab chiqaruvchi eng yirik ishlab chiqaruvchimiz. Bizning vazifamiz sanoatimizda standartni o'rnatish va o'zimizni mintaqadagi elektr motorlarining etakchi ishlab chiqaruvchisi sifatida ko'rsatishdir.",
     "subtext": "Biz har doim innovatsiyalar va rivojlanishning oldingi saflaridamiz."
   },
@@ -38,9 +38,9 @@
   },
   "footer": {
     "address1": "No22, Guliston Som, Ahmadobod Mostofi, Azadegan shossesi, Tehron, Eron",
-    "address2": "Eron, Tehron, Saadat Abad, Kaj maydoni, Gʻarbiy Saro bulvari, 17-uy.",
-    "sublogo": "Elektrogen ish vaqti, shanbadan chorshanbagacha",
-    "time": "7:30 dan 17:00 gacha",
+    "address2": "Toshkent shahri, Olmazor tumani, M.Y. Miskin, st. Qorasaroy, 316",
+    "sublogo": "Parsmotor ish vaqti, shanbadan chorshanbagacha",
+    "time": "9:00 dan 18:00 gacha",
     "list1_title": "MAHSULOT VA XIZMATLAR",
     "list2_title": "QO'SHIMCHA MA'LUMOT",
     "contact": "BIZ BILAN BOG'LANISH",
@@ -104,5 +104,14 @@
   "1.2": "Isitish Moslamasi Nasoslari",
   "1.3": "Lift motorlari",
   "1.4": "Isitish Moslamasi Foniy",
-  "1.5": "Havo Pardasi Motori"
+  "1.5": "Havo Pardasi Motori",
+
+  
+  "branches": {
+    "title" : "Filiallar",
+    "info": "Filial haqida ma'lumot"
+  },
+  "z": "So'rov qoldiring va biz tez orada siz bilan bog'lanamiz.",
+  "your": "Ismingiz",
+  "sned": "yuborish"
 }

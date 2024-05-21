@@ -9,7 +9,7 @@
     "customer": "customer portal"
   },
   "second": {
-    "title": "ELECTROGEN, A PATH TO THE FUTURE",
+    "title": "PARSMOTOR, A PATH TO THE FUTURE",
     "text": "At present, we are the biggest manufacturer of industrial and household electric motors in Iran, thanks to our combined knowledge and technological capabilities. Our mission is to set the standard in our industry and establish ourselves as the leading producer of electric motors in the region.",
     "subtext": "We are always at the forefront of innovation and development."
   },
@@ -38,9 +38,9 @@
   },
   "footer": {
     "address1": "No. 22, Golestan Som, Ahmadabad Mostofi, Azadegan Highway, Tehran, Iran",
-    "address2": "Iran, Tehran, Saadat Abad, Kaj Square, West Saro Blvd., No. 17",
-    "sublogo": "Electrogen Working Hours, Saturday to Wednesday",
-    "time": "From 7:30 to 17:00",
+    "address2": "Tashkent city, Almazar district, M.Y. Miskin, st. Karasaray, 316",
+    "sublogo": "Parsmotor Working Hours, Saturday to Wednesday",
+    "time": "From 9:00 to 18:00",
     "list1_title": "PRODUCT AND SERVICES",
     "list2_title": "ADITIONAL INFORMATION",
     "contact": "CONTACT US",
@@ -103,5 +103,13 @@
   "1.2": "Heating Unit Pumps",
   "1.3": "Elevator motors",
   "1.4": "Heating Unit Fan",
-  "1.5": "Air Curtain Motor"
+  "1.5": "Air Curtain Motor",
+
+  "branches": {
+    "title" : "Branches",
+    "info": "Branch info"
+  },
+  "z": "Leave a request and we will contact you soon.",
+  "your": "Name",
+  "sned": "send"
 }

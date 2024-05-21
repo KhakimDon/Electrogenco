@@ -29,7 +29,7 @@ export default {
 <template>
   <div>
     <div v-if="this.preloader" class="preloader">
-      <img src="https://electrogenco.com/en/wp-content/uploads/2023/01/ELECTROGEN-FA-8.png" alt="img">
+      <img class="h-[70px]" src="../public/logo.png" alt="img">
       <span class="loading loading-dots bg-[#032055] loading-lg"></span>
     </div>
     <Header />

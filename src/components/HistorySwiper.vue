@@ -3,8 +3,8 @@
         class="mySwiper2">
         <swiper-slide>
             <div class="sm:flex-col h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px] sm:p-[20px]">
-                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden">
-                    <img class="h-[100%] group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/Group-pics-05.jpg" alt="image">
+                <div class="h-[100%] w-[100%] max-w-[50%]  rounded-[17px] sm:max-w-[100%] overflow-hidden">
+                    <img class="h-[100%]  group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/Group-pics-05.jpg" alt="image">
                 </div>
                 <div class="flex-1 sm:order-1">
                     <p class="text-[#2E4F85] mb-[10px] leading-[40px] text-[22px] sm:text-[20px] sm:leading-[30px] text-left roboto-bold">{{ $t("history.2017.title") }}</p>
@@ -15,7 +15,7 @@
         </swiper-slide>
         <swiper-slide>
             <div class="sm:flex-col h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px] sm:p-[20px]">
-                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden">
+                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden max-w-[50%] sm:max-w-[100%]">
                     <img class="h-[100%] group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/49-Copy-1.jpg" alt="image">
                 </div>
                 <div class="flex-1 sm:order-1">
@@ -27,7 +27,7 @@
         </swiper-slide>
         <swiper-slide>
             <div class="sm:flex-col h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px] sm:p-[20px]">
-                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden">
+                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden max-w-[50%] sm:max-w-[100%]">
                     <img class="h-[100%] group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/Group-pics-03.jpg" alt="image">
                 </div>
                 <div class="flex-1 sm:order-1">
@@ -39,7 +39,7 @@
         </swiper-slide>
         <swiper-slide>
             <div class="sm:flex-col h-[100%] group gap-[15px] flex w-[100%] bg-[#F8F8F8] rounded-[15px] p-[60px] sm:p-[20px]">
-                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden">
+                <div class="h-[100%] w-[100%]  rounded-[17px] overflow-hidden max-w-[50%] sm:max-w-[100%]">
                     <img class="h-[100%] group-hover:scale-[1.5] duration-[1.5s] w-[100%] object-cover" src="https://electrogenco.com/en/wp-content/uploads/2024/03/014-Copy-1.jpg" alt="image">
                 </div>
                 <div class="flex-1 sm:order-1">
