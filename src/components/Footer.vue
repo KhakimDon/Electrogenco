@@ -54,25 +54,23 @@ export default {
                 </div>
                 <div>
                     <p class="mb-[20px] roboto-bold text-white">{{ $t("footer.list1_title") }}</p>
-                    <p
+                    <p  @click="$router.push('/products')"
                         class="text-[#DDD2C2] uppercase hover:text-[#0652dd] cursor-pointer duration-[.3s] mb-[20px] roboto-regular">
                         {{ $t("header.products") }}</p>
-                    <p
+                    <p  @click="$router.push('/branches')"
                         class="text-[#DDD2C2] uppercase hover:text-[#0652dd] cursor-pointer duration-[.3s] mb-[20px] roboto-regular">
                         {{ $t("header.branches") }}</p>
-                    <p
+                    <p  @click="$router.push('/blog')"
                         class="text-[#DDD2C2] uppercase hover:text-[#0652dd] cursor-pointer duration-[.3s] mb-[20px] roboto-regular">
                         {{ $t("header.blog") }}</p>
                 </div>
                 <div>
                     <p class="mb-[20px] roboto-bold text-white">{{ $t("footer.list2_title") }}</p>
-                    <p
+                    <p @click="$router.push('/about')"
                         class="text-[#DDD2C2] uppercase hover:text-[#0652dd] duration-[.3s] cursor-pointer mb-[20px] roboto-regular">
                         {{ $t("header.about") }}</p>
-                    <p
-                        class="text-[#DDD2C2] uppercase hover:text-[#0652dd] duration-[.3s] cursor-pointer mb-[20px] roboto-regular">
-                        {{ $t("footer.faq") }}</p>
-                    <p
+                    
+                    <p @click="$router.push('/branches')"
                         class="text-[#DDD2C2] uppercase hover:text-[#0652dd] duration-[.3s] cursor-pointer mb-[20px] roboto-regular">
                         {{ $t("footer.contact") }}</p>
                 </div>
