@@ -63,7 +63,7 @@ export default {
         console.log(window.localStorage.lang);
 
         window.scrollTo({ top: 0, behavior: 'auto' })
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
         this.fallback = this.useBlogStore.blogs
     }
 }

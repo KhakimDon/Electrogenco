@@ -6,7 +6,7 @@ export default {
         }
     },
     mounted() {
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
         window.scrollTo({ top: 0, behavior: 'auto' })
     }
 }

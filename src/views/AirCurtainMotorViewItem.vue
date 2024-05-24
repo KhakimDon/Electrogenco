@@ -62,13 +62,13 @@ export default {
         }
     },
     mounted() {
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
         var x = window.matchMedia("(max-width: 650px)")
         if (x.matches) {
             this.mobile = true
         }
         window.scrollTo({ top: 0, behavior: 'auto' })
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
         console.log(window.location.pathname.split('/')[3]);
 
         setTimeout(() => {

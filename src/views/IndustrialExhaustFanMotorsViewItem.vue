@@ -44,7 +44,7 @@ export default {
             this.mobile = true
         }
         window.scrollTo({ top: 0, behavior: 'auto' })
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
         console.log(window.location.pathname.split('/')[3]);
 
         setTimeout(() => {

@@ -206,7 +206,7 @@ export default {
             this.mobile = true
         }
         window.scrollTo({ top: 0, behavior: 'auto' })
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
         setTimeout(() => {
             for (let i of this.massiv) {
                 if (i.id ==  +window.location.pathname.split('/')[2] ) {

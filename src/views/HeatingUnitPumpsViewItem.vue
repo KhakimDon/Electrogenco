@@ -71,7 +71,7 @@ export default {
     },
     mounted() {
         this.fin()
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
        
         var x = window.matchMedia("(max-width: 650px)")
         if (x.matches) {

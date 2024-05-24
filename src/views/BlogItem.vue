@@ -10,7 +10,7 @@ export default {
     },
     mounted(){
         window.scrollTo({ top: 0, behavior: 'auto' })
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
         let filter = this.useBlogStore.blogs.filter(item => item.id == window.location.pathname.split('/')[2])[0]
         this.obj = filter
     }

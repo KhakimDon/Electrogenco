@@ -495,7 +495,7 @@ export default {
         }
         setTimeout(() => {
             this.fallback = this.massiv[3].prod
-            this.$i18n.locale = 'en'
+            this.$i18n.locale = 'ru'
         }, 200);
 
     },

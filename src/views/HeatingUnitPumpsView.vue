@@ -131,7 +131,7 @@ export default {
     mounted() {
        this.fin()
         window.scrollTo({ top: 0, behavior: 'auto' })
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
     },
     methods:{
         fin(){

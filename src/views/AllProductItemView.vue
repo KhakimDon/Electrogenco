@@ -8,7 +8,9 @@ export default defineComponent({
             this.mobile = true
         }
         window.scrollTo({ top: 0, behavior: 'auto' })
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
+        this.fin()
+
         this.n = +window.location.pathname.split('/')[2] - 1
 
       
@@ -7372,7 +7374,7 @@ export default defineComponent({
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("All_products") }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">{{ this.massiv[n].en.title }}</li>
+                    <li v-if="this.finV" class="roboto-medium text-[#1A85FF]">{{ this.massiv[n][$t('lang')].title }}</li>
                 </ul>
             </div>
         </div>

@@ -150,7 +150,7 @@ export default {
         window.scrollTo({ top: 0, behavior: 'auto' })
         setTimeout(() => {
             this.fallback = this.massiv
-            this.$i18n.locale = 'en'
+            this.$i18n.locale = 'ru'
         }, 200);
 
     },

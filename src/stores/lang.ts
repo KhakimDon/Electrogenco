@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 
 export const useLangStore = defineStore('language', () => {
 
-    let lang = ref("en")
+    let lang = ref("ru")
 
   return { lang }
 })
