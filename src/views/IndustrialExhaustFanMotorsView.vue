@@ -9,13 +9,79 @@ export default {
         return {
             filters: [
                 {
-                    title: "OUTPUT POWER",
-                    items: [
-                        "165 W"
-                    ]
+                    en: "OUTPUT POWER",
+                    ru: "ВЫХОДНАЯ МОЩНОСТЬ",
+                    uz: "CHIQISH QUVVATI",
+                    items: {
+                        en: ["1.1 kW",
+                            "1.5 kW",
+                            "11 kW",
+                            "120 W",
+                            "15 kW",
+                            "18.5 kW",
+                            "180 W",
+                            "2.2 kW",
+                            "22 kW",
+                            "250 W",
+                            "3 kW",
+                            "30 kW",
+                            "37 kW",
+                            "370 W",
+                            "4 kW",
+                            "45 kW",
+                            "5.5 kW",
+                            "500 W",
+                            "55 kW",
+                            "550 W",
+                            "7.5 kW",
+                            "750 W"],
+                        ru: ["1.1 kW",
+                            "1.5 kW",
+                            "11 KW",
+                            "120 W",
+                            "15 kW",
+                            "18.5 kW",
+                            "180 W",
+                            "2.2 kW",
+                            "22 kW",
+                            "250 W",
+                            "3 kW",
+                            "30 kW",
+                            "37 kW",
+                            "370 W",
+                            "4 kW",
+                            "45 kW",
+                            "5.5 kW",
+                            "500 W",
+                            "55 kW",
+                            "550 W",
+                            "7.5 kW",
+                            "750 W"],
+                        uz: ["1.1 kW",
+                            "1.5 kW",
+                            "11 KW",
+                            "120 W",
+                            "15 kW",
+                            "18.5 kW",
+                            "180 W",
+                            "2.2 kW",
+                            "22 kW",
+                            "250 W",
+                            "3 kW",
+                            "30 kW",
+                            "37 kW",
+                            "370 W",
+                            "4 kW",
+                            "45 kW",
+                            "5.5 kW",
+                            "500 W",
+                            "55 kW",
+                            "550 W",
+                            "7.5 kW",
+                            "750 W"],
+                    }
                 },
-
-
+              
             ],
             useBlogStore: useBlogStore(),
             fallback: [],
@@ -550,7 +616,7 @@ export default {
                         class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                         <div
                             class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
+                            {{ item[$i18n.locale] }}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="w-5 h-5 duration-[.3s]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />

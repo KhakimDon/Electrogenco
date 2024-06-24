@@ -5491,7 +5491,7 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("All_products") }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
+                    <li v-if="this.finV" class="roboto-medium text-[#1A85FF]">{{ this.i[$t("lang")].title }}</li>
                 </ul>
             </div>
         </div>
@@ -5527,7 +5527,12 @@ export default {
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                                 {{ $t("fr")  }}
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}</div>
+                            <div v-if="$t('lang') == 'en' && this.i.en.appearance.FrameMaterial == 'Aluminium' " class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}</div>
+                            <div v-if="$t('lang') == 'ru' && this.i.en.appearance.FrameMaterial == 'Aluminium' " class="flex-[2] sm:flex-1 p-[25px] font-[600]">Алюминий</div>
+                            <div v-if="$t('lang') == 'uz' && this.i.en.appearance.FrameMaterial == 'Aluminium' " class="flex-[2] sm:flex-1 p-[25px] font-[600]">Alumin</div>
+                            <div v-if="$t('lang') == 'en' && this.i.en.appearance.FrameMaterial == 'Cast Iron' " class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}</div>
+                            <div v-if="$t('lang') == 'ru' && this.i.en.appearance.FrameMaterial == 'Cast Iron' " class="flex-[2] sm:flex-1 p-[25px] font-[600]">Чугун</div>
+                            <div v-if="$t('lang') == 'uz' && this.i.en.appearance.FrameMaterial == 'Cast Iron' " class="flex-[2] sm:flex-1 p-[25px] font-[600]">Chugun</div>
                         </div>
                     </div>
 

@@ -42,13 +42,13 @@ export default {
     </section>
 
     <section class="second-section sm:h-[max-content] sm:py-[100px] sm:max-w-[100%] sm:px-[20px] h-[100vh] flex items-center flex-col justify-center text-center">
-      <h3
+      <h1
         class="w-[500px] sm:max-w-[100%] border-b-[1px] border-[#003366] roboto-black pb-[15px] text-[#003366] font-[700] text-[20px]">
-        {{ $t("second.title")  }}</h3>
-      <p
+        {{ $t("second.title")  }}</h1>
+      <article
         class="max-w-[500px] border-b-[1px] border-[#003366] pb-[15px] mt-[50px] roboto-medium font-[700] text-[18px] leading-[35px] sm:leading-[28px]">
         {{ $t("second.text")  }}
-      </p>
+      </article>
       <p class="max-w-[500px] mt-[20px] roboto-medium font-[700] text-[18px]">
         {{ $t("second.subtext")  }}
       </p>

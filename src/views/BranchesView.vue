@@ -84,10 +84,7 @@ export default {
                     </div>
                 </div>
                 <div class="flex-[5]">
-                    <iframe class="w-[100%] rounded-[20px] h-[600px] sm:h-[350px]"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.3048778323655!2d69.24199953539019!3d41.36068386607082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8d0063c72827%3A0xd80f9c8b98955416!2sParsmotor!5e0!3m2!1sru!2s!4v1715779440414!5m2!1sru!2s"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d264.68906457505807!2d69.24236561879188!3d41.36072301722444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8d0063c72827%3A0xd80f9c8b98955416!2sParsmotor!5e0!3m2!1sru!2s!4v1718958876848!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 
                 

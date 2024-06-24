@@ -9,23 +9,57 @@ export default {
         return {
             filters: [
                 {
-                    title: "OUTPUT POWER",
-                    items: [
-                        "13.2 kW",
-                        "5.5 kW",
-                        "6.1 kW",
-                        "7.3 kW",
-                        "9.2 kW",
-                    ]
+                    en: "OUTPUT POWER",
+                    ru: "ВЫХОДНАЯ МОЩНОСТЬ",
+                    uz: "CHIQISH QUVVATI",
+                    items: {
+                        en: [
+                            "13.2 kW",
+                            "5.5 kW",
+                            "6.1 kW",
+                            "7.3 kW",
+                            "9.2 kW",
+                        ],
+                        ru: [
+                            "13.2 kW",
+                            "5.5 kW",
+                            "6.1 kW",
+                            "7.3 kW",
+                            "9.2 kW",
+                        ],
+                        uz: [
+                            "13.2 kW",
+                            "5.5 kW",
+                            "6.1 kW",
+                            "7.3 kW",
+                            "9.2 kW",
+                        ],
+                    }
                 },
                 {
-                    title: "NUMBER OF SPEED",
-                    items: [
-                        "Single-speed",
-                        "Single-speed (VVVF)",
-                        "Two-speed",
-                        "Two-speed (AC2)",
-                    ]
+                    en: "NUMBER OF SPEED",
+                    ru: "КОЛИЧЕСТВО СКОРОСТЕЙ",
+                    uz: "TEZLIK SONI",
+                    items: {
+                        en: [
+                            "Single-speed",
+                            "Single-speed (VVVF)",
+                            "Two-speed",
+                            "Two-speed (AC2)",
+                        ],
+                        ru: [
+                            "Односкоростной",
+                            "Односкоростной (ВВВФ)",
+                            "Двухскоростной",
+                            "Двухскоростной (АС2)",
+                        ],
+                        uz: [
+                            "Bir tezlikda",
+                            "Bir tezlikda (VVVF)",
+                            "Ikki tezlik",
+                            "Ikki tezlikli (AC2)",
+                        ],
+                    }
                 },
 
             ],
@@ -261,7 +295,7 @@ export default {
                 "Статор и ротор лифта типа E-7,3 кВт (двухскоростной)",
                 "Статор и ротор лифта типа E-6,1 кВт (двухскоростной)",
             ],
-          uz: [
+            uz: [
                 "S tipidagi lift statori va rotori-5,5 kVt (ikki tezlikli)",
                 "S tipidagi lift statori va rotori-7,3 kVt (bitta tezlikda)",
                 "S tipidagi lift statori va rotori-5,5 kVt (bitta tezlikda)",
@@ -287,12 +321,11 @@ export default {
         }
         for (let i = 0; i < this.massiv.length; i++) {
             this.massiv[i].ru = {
-                title: this.ru[i],  
+                title: this.ru[i],
             };
             this.massiv[i].uz = {
                 title: this.uz[i],
             };
-            console.log(this.massiv[i]);
         }
 
     },
@@ -303,12 +336,12 @@ export default {
             console.log(event.target.dataset.value);
             this.fallback = []
 
-            if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
+            if (event.target.dataset.filterby == "OUTPUT POWER" || event.target.dataset.filterby == "ВЫХОДНАЯ МОЩНОСТЬ" || event.target.dataset.filterby == "CHIQISH QUVVATI") {
+                let filtered = this.massiv.filter(item => item.en.specifications.Power == event.target.dataset.value)
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "NUMBER OF SPEED") {
-                let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Speed.split(' ').join('') == event.target.dataset.value.split(' ').join(''))
+            else if (event.target.dataset.filterby == "NUMBER OF SPEED" || event.target.dataset.filterby == "КОЛИЧЕСТВО СКОРОСТЕЙ" || event.target.dataset.filterby == "TEZLIK SONI") {
+                let filtered = this.massiv.filter(item => item.en.specifications.Speed.split(' ').join('') == event.target.dataset.value.split(' ').join(''))
                 this.fallback = filtered
             }
         },
@@ -338,14 +371,14 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("header.home") }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">{{  $t("1.3")  }}</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ $t("1.3") }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px] sm:mt-[20px]">
             <h3 class="mx-auto sm:text-[22px] w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                {{  $t("1.3")  }}
+                {{ $t("1.3") }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
 
@@ -359,7 +392,7 @@ export default {
                         class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                         <div
                             class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
+                            {{ item[$t('lang')] }}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="w-5 h-5 duration-[.3s]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -368,8 +401,8 @@ export default {
                         </div>
                         <div class="h-[0px] duration-[3s]">
                             <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
+                                <li @click="filter()" v-for="i of item.items[$i18n.locale]" :data-value="item.items.en[item.items[$i18n.locale].indexOf(i)]"
+                                    :data-filterby="item[$i18n.locale]" :key="i.id"
                                     class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
                                     <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
                                 </li>
@@ -434,8 +467,8 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards @click="$router.push(`/elevator-motors/${item.id}`)" :title="item[$t('lang')].title" :img="item.img"
-                        v-for="item of this.fallback" :key="item.id" />
+                    <Cards @click="$router.push(`/elevator-motors/${item.id}`)" :title="item[$t('lang')].title"
+                        :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 

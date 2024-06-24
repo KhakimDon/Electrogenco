@@ -318,7 +318,7 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("All_products")  }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
+                    <li v-if="this.finV" class="roboto-medium text-[#1A85FF]">{{ this.i[$t("lang")].title }}</li>
                 </ul>
             </div>
         </div>
@@ -420,7 +420,21 @@ export default {
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                                 {{ $t("s")  }}
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Single-speed' && this.$t('lang') == 'en'" class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Single-speed' && this.$t('lang') == 'ru'" class="flex-[2] sm:flex-1 p-[25px] font-[600]">Односкоростной</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Single-speed' && this.$t('lang') == 'uz'"  class="flex-[2] sm:flex-1 p-[25px] font-[600]">Bir tezlikda</div>
+
+                            <div v-if="this.i.en.specifications.Speed == 'Single-speed (VVVF)' && this.$t('lang') == 'en'" class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Single-speed (VVVF)' && this.$t('lang') == 'ru'" class="flex-[2] sm:flex-1 p-[25px] font-[600]">Односкоростной (VVVF)</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Single-speed (VVVF)' && this.$t('lang') == 'uz'"  class="flex-[2] sm:flex-1 p-[25px] font-[600]">Bir tezlikda (VVVF)</div>
+
+                            <div v-if="this.i.en.specifications.Speed == 'Two-speed' && this.$t('lang') == 'en'" class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Two-speed' && this.$t('lang') == 'ru'" class="flex-[2] sm:flex-1 p-[25px] font-[600]">Двухскоростной</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Two-speed' && this.$t('lang') == 'uz'"  class="flex-[2] sm:flex-1 p-[25px] font-[600]">Ikki tezlikda</div>
+
+                            <div v-if="this.i.en.specifications.Speed == 'Two-speed (AC2)' && this.$t('lang') == 'en'" class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Two-speed (AC2)' && this.$t('lang') == 'ru'" class="flex-[2] sm:flex-1 p-[25px] font-[600]">Двухскоростной (АС2)</div>
+                            <div v-if="this.i.en.specifications.Speed == 'Two-speed (AC2)' && this.$t('lang') == 'uz'"  class="flex-[2] sm:flex-1 p-[25px] font-[600]">Ikki tezlikda (AC2)</div>
                         </div>
 
                         <div v-if="this.i.en.specifications.Material" class="flex">
