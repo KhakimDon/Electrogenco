@@ -13,6 +13,10 @@ export default {
                     id: "heating-unit-pumps",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/pacage.svg",
                     title_en: "Heating Unit Pumps",
+                    title_uz: "Isitish moslamalari nasoslari",
+                    title_ru: "Насосы для отопительных агрегатов",
+                    sub_ru: "ОТОПИТЕЛЬНЫЕ АГРЕГАТЫ",
+                    sub_uz: "ISITISH MOSLAMALARI NASOSLARI",
                     sub_en: "HEATING UNIT PUMPS",
                     prod: [
                         {
@@ -41,7 +45,11 @@ export default {
                     id: "heating-unit-fan",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/pacage.svg",
                     title_en: "Heating Unit Fan",
+                    title_ru: "Вентилятор нагревательного блока",
+                    title_uz: "Isitish moslamasi",
                     sub_en: "HEATING UNIT FAN",
+                    sub_ru: "Вентилятор нагревательного блока",
+                    sub_uz: "Isitish moslamasi",
                     prod: [
                         {
                             id: 1,
@@ -77,7 +85,7 @@ export default {
                             id: 4,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                             en: {
-                                title: "Heating Unit Fan Motor-48W (Helal)",
+                                title: "Heating Unit Fan Motor-48W helal",
                                 specifications: {
                                     Power: "48 W",
                                 },
@@ -87,7 +95,7 @@ export default {
                             id: 5,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                             en: {
-                                title: "Heating Unit Fan Motor-39W (Helal)",
+                                title: "Heating Unit Fan Motor-39W helal",
                                 specifications: {
                                     Power: "39 W",
                                 },
@@ -97,7 +105,7 @@ export default {
                             id: 6,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                             en: {
-                                title: "Heating Unit Fan Motor-30W (Helal)",
+                                title: "Heating Unit Fan Motor-30W helal",
                                 specifications: {
                                     Power: "30 W",
                                 },
@@ -127,14 +135,14 @@ export default {
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-regular hover:text-[#1A85FF] duration-[.3s] text-[#1B3F7B]">
                         {{ $t("header.home") }}</li>
-                    <li class="roboto-medium text-[#1A85FF]">Heating Unit Motors</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ $t('1.6') }}</li>
                 </ul>
             </div>
         </div>
 
         <section class="mt-[50px]">
             <h3 class="mx-auto sm:text-[20px] sm:w-[300px] sm:text-center w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Heating Unit Motors
+                {{ $t('1.6') }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="max-w-[1200px] sm:flex-col sm:px-[20px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
@@ -147,9 +155,9 @@ export default {
                         </figure>
                         <div class="flex-1">
                             <h4 class="roboto-bold text-[#032055] text-[19px] leading-[35px]"> {{
-                                item.title_en }} </h4>
+                                item[$t('1.6.1')] }} </h4>
                             <p class="uppercase mt-[15px] roboto-regular tracking-[2px]	 text-[13px]">{{
-                                item.sub_en }}</p>
+                                item[$t('1.6.2')] }}</p>
                         </div>
                     </div>
                 </div>

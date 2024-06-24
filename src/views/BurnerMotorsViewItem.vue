@@ -4,11 +4,17 @@ export default {
 
     data() {
         return {
-            massiv: [
+            massiv:[
                 {
                     id: 1,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8061blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HN seriyali-750 W (uch fazali)",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HN-750 W (трехфазный)",
+                    },
                     en: {
                         title: "Burner Motor-HN series-750W (Three-phase)",
                         specifications: {
@@ -20,6 +26,12 @@ export default {
                     id: 2,
                     img: "https://electrogenco.com/en/wp-content/uploads/woocommerce-placeholder-600x600.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HN seriyasi-550 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HN-550 W",
+                    },
                     en: {
                         title: "Burner Motor-HN series-550W",
                         specifications: {
@@ -31,6 +43,12 @@ export default {
                     id: 3,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_4954.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HN seriyasi-450 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HN-450 W",
+                    },
                     en: {
                         title: "Burner Motor-HN series-450W",
                         specifications: {
@@ -42,6 +60,12 @@ export default {
                     id: 4,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_4954.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HN seriyasi-370 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HN-370 W",
+                    },
                     en: {
                         title: "Burner Motor-HN series-370W",
                         specifications: {
@@ -53,6 +77,12 @@ export default {
                     id: 5,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-175 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HA серия-175 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series-175W",
                         specifications: {
@@ -64,6 +94,12 @@ export default {
                     id: 6,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-150 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA-150 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series-150W",
                         specifications: {
@@ -75,6 +111,12 @@ export default {
                     id: 7,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-125 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA-125 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series-125W",
                         specifications: {
@@ -86,6 +128,12 @@ export default {
                     id: 8,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-100 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA- 100 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series- 100W",
                         specifications: {
@@ -97,6 +145,12 @@ export default {
                     id: 9,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-50 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA- 50 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series- 50W",
                         specifications: {
@@ -108,6 +162,12 @@ export default {
                     id: 10,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-240 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA-240 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series-240W",
                         specifications: {
@@ -123,6 +183,30 @@ export default {
                 img: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMDEtdGQtMDA4XzQuanBn.jpg",
                 // ----
                 en: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                ru: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                uz: {
                     title: "...",
                     appearance: {
                         FrameMaterial: "...",
@@ -171,7 +255,7 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         All products
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ this.i[$t('lang')].title }}</li>
                 </ul>
             </div>
         </div>
@@ -180,7 +264,7 @@ export default {
             <div class="max-w-[1250px] sm:px-[20px] gap-[20px] mx-auto flex">
                 <div class="flex-1">
                     <h3 class="text-[28px] sm:text-[22px]  text-[#1B3F7B] roboto-black">
-                        {{ this.i.en.title }}
+                        {{ this.i[$t('lang')].title }}
                     </h3>
 
                     <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">

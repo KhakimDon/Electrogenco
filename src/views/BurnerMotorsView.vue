@@ -8,9 +8,11 @@ export default {
         return {
             filters: [
                 {
-                    title: "OUTPUT POWER",
-                    items: [
-                        "100 W",
+                    en: "OUTPUT POWER",
+                    ru: "ВЫХОДНАЯ МОЩНОСТЬ",
+                    uz: "CHIQISH QUVVATI",
+                    items: {
+                        en:[ "100 W",
                         "125 W",
                         "150 W",
                         "175 W",
@@ -19,8 +21,28 @@ export default {
                         "450 W",
                         "50 W",
                         "550 W",
-                        "750 W",
-                    ]
+                        "750 W",],
+                        uz:[ "100 W",
+                        "125 W",
+                        "150 W",
+                        "175 W",
+                        "240 W",
+                        "370 W",
+                        "450 W",
+                        "50 W",
+                        "550 W",
+                        "750 W",],
+                        ru:[ "100 W",
+                        "125 W",
+                        "150 W",
+                        "175 W",
+                        "240 W",
+                        "370 W",
+                        "450 W",
+                        "50 W",
+                        "550 W",
+                        "750 W",],
+                    }
                 },
 
 
@@ -31,6 +53,12 @@ export default {
                     id: 1,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8061blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HN seriyali-750 W (uch fazali)",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HN-750 W (трехфазный)",
+                    },
                     en: {
                         title: "Burner Motor-HN series-750W (Three-phase)",
                         specifications: {
@@ -42,6 +70,12 @@ export default {
                     id: 2,
                     img: "https://electrogenco.com/en/wp-content/uploads/woocommerce-placeholder-600x600.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HN seriyasi-550 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HN-550 W",
+                    },
                     en: {
                         title: "Burner Motor-HN series-550W",
                         specifications: {
@@ -53,6 +87,12 @@ export default {
                     id: 3,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_4954.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HN seriyasi-450 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HN-450 W",
+                    },
                     en: {
                         title: "Burner Motor-HN series-450W",
                         specifications: {
@@ -64,6 +104,12 @@ export default {
                     id: 4,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_4954.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HN seriyasi-370 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HN-370 W",
+                    },
                     en: {
                         title: "Burner Motor-HN series-370W",
                         specifications: {
@@ -75,6 +121,12 @@ export default {
                     id: 5,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-175 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки серии HA серия-175 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series-175W",
                         specifications: {
@@ -86,6 +138,12 @@ export default {
                     id: 6,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-150 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA-150 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series-150W",
                         specifications: {
@@ -97,6 +155,12 @@ export default {
                     id: 7,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-125 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA-125 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series-125W",
                         specifications: {
@@ -108,6 +172,12 @@ export default {
                     id: 8,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-100 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA- 100 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series- 100W",
                         specifications: {
@@ -119,6 +189,12 @@ export default {
                     id: 9,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-50 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA- 50 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series- 50W",
                         specifications: {
@@ -130,6 +206,12 @@ export default {
                     id: 10,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8046-blur.png",
                     // ----
+                    uz:{
+                        title: "Burner Motor-HA seriyali-240 W",
+                    },
+                    ru:{
+                        title: "Двигатель горелки-серия HA-240 W",
+                    },
                     en: {
                         title: "Burner Motor-HA series-240W",
                         specifications: {
@@ -161,7 +243,7 @@ export default {
             console.log(event.target.dataset.value);
             this.fallback = []
 
-            if (event.target.dataset.filterby == "OUTPUT POWER") {
+            if (event.target.dataset.filterby == "OUTPUT POWER" || event.target.dataset.filterby == "ВЫХОДНАЯ МОЩНОСТЬ" || event.target.dataset.filterby == "CHIQISH QUVVATI") {
                 let filtered = this.massiv.filter(item => item[this.$t("lang")].specifications.Power == event.target.dataset.value)
                 this.fallback = filtered
             }
@@ -195,14 +277,14 @@ export default {
                         {{ $t("header.home") }}
                     </li>
 
-                    <li class="roboto-medium text-[#1A85FF]">Burner Motors</li>
+                    <li class="roboto-medium text-[#1A85FF]"> {{ $t("2.4") }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px]  sm:mt-[20px]">
             <h3 class="mx-auto sm:text-[22px] w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Burner Motors
+                {{ $t("2.4") }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="flex items-start gap-[25px] sm:flex-col sm:px-[20px] sm:gap-[0px]">
@@ -212,7 +294,7 @@ export default {
                         class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                         <div
                             class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
+                            {{ item[$t('lang')] }}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="w-5 h-5 duration-[.3s]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -221,8 +303,8 @@ export default {
                         </div>
                         <div class="h-[0px] duration-[3s]">
                             <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
+                                <li @click="filter()" v-for="i of item.items[$t('lang')]" :data-value="item.items.en[item.items[$i18n.locale].indexOf(i)]"
+                                :data-filterby="item[$i18n.locale]" :key="i.id"
                                     class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
                                     <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
                                 </li>
@@ -288,7 +370,7 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards @click="$router.push(`/burder-motors/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards @click="$router.push(`/burder-motors/${item.id}`)" :title="item[$t('lang')].title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 

@@ -9,6 +9,8 @@ export default {
                             id: 1,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5999.png",
                             // ----
+                            ru: {title: "Двигатель с разделением каналов (кондиционер)-600W"},
+                            uz: {title: "Kanallari ajratilgan dvigatel (konditsioner) - 600W"},
                             en: {
                                 title: "Duct Split Motor (Air-conditioner)-600W",
                                 specifications: {
@@ -20,6 +22,8 @@ export default {
                             id: 2,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5999.png",
                             // ----
+                            ru: {title: "Двигатель с разделением каналов (кондиционер)-360W"},
+                            uz: {title: "Kanallari ajratilgan dvigatel (konditsioner) - 360W"},
                             en: {
                                 title: "Duct Split Motor (Air-conditioner)-360W",
                                 specifications: {
@@ -31,6 +35,8 @@ export default {
                             id: 3,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5999.png",
                             // ----
+                            ru: {title: "Двигатель с разделением каналов (кондиционер)-250W"},
+                            uz: {title: "Kanallari ajratilgan dvigatel (konditsioner) - 250W"},
                             en: {
                                 title: "Duct Split Motor (Air-conditioner)-250W",
                                 specifications: {
@@ -42,6 +48,8 @@ export default {
                             id: 4,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5999.png",
                             // ----
+                            ru: {title: "Двигатель с разделением каналов (кондиционер)-187W"},
+                            uz: {title: "Kanallari ajratilgan dvigatel (konditsioner) - 187W"},
                             en: {
                                 title: "Duct Split Motor (Air-conditioner)-187W",
                                 specifications: {
@@ -57,6 +65,30 @@ export default {
                 img: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMDEtdGQtMDA4XzQuanBn.jpg",
                 // ----
                 en: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                ru: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                uz: {
                     title: "...",
                     appearance: {
                         FrameMaterial: "...",
@@ -106,7 +138,7 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         All products
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ this.i[$t('lang')].title }}</li>
                 </ul>
             </div>
         </div>
@@ -115,7 +147,7 @@ export default {
             <div class="max-w-[1250px] sm:px-[20px] gap-[20px] mx-auto flex">
                 <div class="flex-1">
                     <h3 class="text-[28px] sm:text-[22px] text-[#1B3F7B] roboto-black">
-                        {{ this.i.en.title }}
+                        {{ this.i[$t('lang')].title }}
                     </h3>
 
                     <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">

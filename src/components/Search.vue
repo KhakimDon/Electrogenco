@@ -1032,7 +1032,7 @@ export default {
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                     // ----
                     en: {
-                        title: "Heating Unit Fan Motor-48W (Helal)",
+                        title: "Heating Unit Fan Motor-48W helal",
                         specifications: {
                             Power: "48 W",
                         },
@@ -1043,7 +1043,7 @@ export default {
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                     // ----
                     en: {
-                        title: "Heating Unit Fan Motor-39W (Helal)",
+                        title: "Heating Unit Fan Motor-39W helal",
                         specifications: {
                             Power: "39 W",
                         },
@@ -1400,7 +1400,7 @@ export default {
                     id: 4,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                     en: {
-                        title: "Heating Unit Fan Motor-48W (Helal)",
+                        title: "Heating Unit Fan Motor-48W helal",
                         specifications: {
                             Power: "48 W",
                         },
@@ -1410,7 +1410,7 @@ export default {
                     id: 5,
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                     en: {
-                        title: "Heating Unit Fan Motor-39W (Helal)",
+                        title: "Heating Unit Fan Motor-39W helal",
                         specifications: {
                             Power: "39 W",
                         },
@@ -1420,7 +1420,7 @@ export default {
                     id: 6,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                     en: {
-                        title: "Heating Unit Fan Motor-30W (Helal)",
+                        title: "Heating Unit Fan Motor-30W helal",
                         specifications: {
                             Power: "30 W",
                         },

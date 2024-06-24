@@ -10,15 +10,21 @@ export default {
             burger: false,
             filters: [
                 {
-                    title: "NUMBER OF PHASE",
-                    items: [
-                        "1",
-                    ]
+                    en: "NUMBER OF PHASE",
+                    ru: "КОЛИЧЕСТВО ФАЗ",
+                    uz: "FAZALAR SONI",
+                    items: {
+                        en: ["1",],
+                        ru: ["1",],
+                        uz: ["1",],
+                    }
                 },
                 {
-                    title: "OUTPUT POWER",
-                    items: [
-                        "1/2 HP",
+                    en: "OUTPUT POWER",
+                    ru: "ВЫХОДНАЯ МОЩНОСТЬ",
+                    uz: "CHIQISH QUVVATI",
+                    items: {
+                        en: ["1/2 HP",
                         "1/20 HP",
                         "1/3 HP",
                         "1/4 HP",
@@ -34,39 +40,115 @@ export default {
                         "500 W",
                         "70 W",
                         "75 W",
-                        "80 W",
-                    ]
+                        "80 W",],
+                        ru: ["1/2 л.с",
+                        "1/20 л.с",
+                        "1/3 л.с",
+                        "1/4 л.с",
+                        "1/5 л.с",
+                        "1/6 л.с",
+                        "1/8 л.с",
+                        "150 W",
+                        "180 W",
+                        "187 W",
+                        "250 W",
+                        "3/4 л.с",
+                        "390 W",
+                        "500 W",
+                        "70 W",
+                        "75 W",
+                        "80 W",],
+                        uz: ["1/2 ot kuchi",
+                        "1/20 ot kuchi",
+                        "1/3 ot kuchi",
+                        "1/4 ot kuchi",
+                        "1/5 ot kuchi",
+                        "1/6 ot kuchi",
+                        "1/8 ot kuchi",
+                        "150 W",
+                        "180 W",
+                        "187 W",
+                        "250 W",
+                        "3/4 ot kuchi",
+                        "390 W",
+                        "500 W",
+                        "70 W",
+                        "75 W",
+                        "80 W",],
+                    }
                 },
                 {
-                    title: "EFFICIENCY CLASS",
-                    items: [
-                        "A",
-                        "C",
-                        "D",
-                        "E",
-                    ]
+                    en: "EFFICIENCY CLASS",
+                    ru: "КЛАСС ЭФФЕКТИВНОСТИ",
+                    uz: "SAMARADORLIK KLASSI",
+                    items: {
+                        en: ["A",
+                            "C",
+                            "D",
+                            "E",],
+                        ru: ["A",
+                            "C",
+                            "D",
+                            "E",],
+                        uz: ["A",
+                            "C",
+                            "D",
+                            "E",],
+                    }
                 },
                 {
-                    title: "CONDUCTOR MATERIAL",
-                    items: [
-                        "AL",
-                        "CU",
-
-                    ]
+                    en: "CONDUCTOR MATERIAL",
+                    uz: "O'TKAZUVCHI MATERIAL",
+                    ru: "МАТЕРИАЛ ПРОВОДНИКА",
+                    items: {
+                        en: [
+                            "AL",
+                            "CU",
+                        ],
+                        ru: [
+                            "AL",
+                            "CU",
+                        ],
+                        uz: [
+                            "AL",
+                            "CU",
+                        ],
+                    }
                 },
                 {
-                    title: "NUMBER OF SPEED",
-                    items: [
-                        "Three-speed",
-                        "Two-speed",
-
-                    ]
+                    en: "NUMBER OF SPEED",
+                    ru: "Количество скоростей",
+                    uz: "Tezlik soni",
+                    items: {
+                        en: [
+                            "Three-speed",
+                            "Two-speed",
+                        ],
+                        ru: [
+                            "Трехскоростной",
+                            "Двухскоростной",
+                        ],
+                        uz: [
+                            "Bir tezlikli",
+                            "ikki tezlikli",
+                        ],
+                    }
                 },
                 {
-                    title: "PHASE NUMBER",
-                    items: [
-                        "1",
-                    ]
+                    en: "PHASE NUMBER",
+                    ru: "Количество Фаз",
+                    uz: "Fazalar soni",
+                    items: {
+                        en: [
+                            "1",
+                        ],
+                        ru: [
+                            "1",
+                        ],
+                        uz: [
+                            "1",
+                        ],
+                    }
                 },
 
             ],
@@ -804,28 +886,41 @@ export default {
             console.log(event.target.dataset.value);
             this.fallback = []
 
-            if (event.target.dataset.filterby == "NUMBER OF PHASE") {
-                let filtered = this.massiv[0].prod.filter(item => item[this.$t("lang")].specifications.Phase == event.target.dataset.value)
+            if (event.target.dataset.filterby == "NUMBER OF PHASE" ||
+                event.target.dataset.filterby == "КОЛИЧЕСТВО ФАЗ" ||
+                event.target.dataset.filterby == "FAZALAR SONI"
+            ) {
+                let filtered = this.massiv[0].prod.filter(item => item.en.specifications.Phase == event.target.dataset.value)
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.massiv[0].prod.filter(item => item[this.$t("lang")].specifications.Power == event.target.dataset.value)
+            else if (event.target.dataset.filterby == "OUTPUT POWER" ||
+                event.target.dataset.filterby == "ВЫХОДНАЯ МОЩНОСТЬ" ||
+                event.target.dataset.filterby == "CHIQISH QUVVATI") {
+                let filtered = this.massiv[0].prod.filter(item => item.en.specifications.Power == event.target.dataset.value)
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "EFFICIENCY CLASS") {
-                let filtered = this.massiv[0].prod.filter(item => item[this.$t("lang")].specifications.Class == event.target.dataset.value)
+            else if (event.target.dataset.filterby == "EFFICIENCY CLASS"||
+                event.target.dataset.filterby == "КЛАСС ЭФФЕКТИВНОСТИ" ||
+                event.target.dataset.filterby == "SAMARADORLIK KLASSI") {
+                let filtered = this.massiv[0].prod.filter(item => item.en.specifications.Class == event.target.dataset.value)
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "CONDUCTOR MATERIAL") {
-                let filtered = this.massiv[0].prod.filter(item => item[this.$t("lang")].specifications.Material == event.target.dataset.value)
+            else if (event.target.dataset.filterby == "CONDUCTOR MATERIAL" ||
+                event.target.dataset.filterby == "O'TKAZUVCHI MATERIAL" ||
+                event.target.dataset.filterby == "МАТЕРИАЛ ПРОВОДНИКА") {
+                let filtered = this.massiv[0].prod.filter(item => item.en.specifications.Material == event.target.dataset.value)
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "NUMBER OF SPEED") {
-                let filtered = this.massiv[0].prod.filter(item => item[this.$t("lang")].specifications.Speed == event.target.dataset.value)
+            else if (event.target.dataset.filterby == "NUMBER OF SPEED"  ||
+                event.target.dataset.filterby == "Количество скоростей" ||
+                event.target.dataset.filterby == "Tezlik soni") {
+                let filtered = this.massiv[0].prod.filter(item => item.en.specifications.Speed == event.target.dataset.value)
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "PHASE NUMBER") {
-                let filtered = this.massiv[0].prod.filter(item => item[this.$t("lang")].specifications.Phase == event.target.dataset.value)
+            else if (event.target.dataset.filterby == "PHASE NUMBER"  ||
+                event.target.dataset.filterby == "Количество Фаз" ||
+                event.target.dataset.filterby == "Fazalar soni") {
+                let filtered = this.massiv[0].prod.filter(item => item.en.specifications.Phase == event.target.dataset.value)
                 this.fallback = filtered
             }
 
@@ -847,27 +942,24 @@ export default {
 </script>
 
 <template>
-    <div  id="begin" class="pt-[75px]">
+    <div id="begin" class="pt-[75px]">
         <!-- breadcrumbs  -->
-        <div  id="breadcrumbs" class="max-w-[1250px] mx-auto">
+        <div id="breadcrumbs" class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("header.home") }}
                     </li>
-                    <li @click="$router.push('/ventilation-motors')"
-                        class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
-                        Motors And Water Pumps For Desert Cooler
-                    </li>
-                    <li class="roboto-medium text-[#1A85FF]">Motors For Desert Cooler</li>
+
+                    <li class="roboto-medium text-[#8295C4]">{{ $t('2.5') }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px] sm:mt-[20px]">
             <h3 class="mx-auto sm:text-[22px] w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Motors For Desert Cooler
+                {{ $t('2.5') }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="flex items-start gap-[25px]  sm:flex-col sm:px-[20px] sm:gap-[0px]">
@@ -877,7 +969,7 @@ export default {
                         class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                         <div
                             class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
+                            {{ item[$t('lang')] }}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="w-5 h-5 duration-[.3s]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -886,8 +978,9 @@ export default {
                         </div>
                         <div class="h-[0px] duration-[3s]">
                             <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
+                                <li @click="filter()" v-for="i of item.items[$t('lang')]"
+                                    :data-value="item.items.en[item.items[$i18n.locale].indexOf(i)]"
+                                    :data-filterby="item[$i18n.locale]" :key="i.id"
                                     class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
                                     <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
                                 </li>
@@ -909,14 +1002,14 @@ export default {
                     </div>
                 </div>
 
-                <div v-if="this.mobile" :class="{filterBurgeractive: this.burger}" class="filterBurger ">
+                <div v-if="this.mobile" :class="{ filterBurgeractive: this.burger }" class="filterBurger ">
                     <div class="filterBurgerwrp p-[10px]">
                         <div class="overflow-y-auto h-[100%] pb-[100px] w-[100%]">
                             <div @click="this.burger = false" class="mb-[20px] bg-[red] w-[max-content] rounded-[3px]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-6 text-white h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                            </svg>
+                                    stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
                             </div>
                             <div>
                                 <div class="w-[100%]">
@@ -952,7 +1045,9 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards  @click="$router.push(`/motors-and-water-pumps-for-desert-cooler/motors-for-desert-cooler/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards
+                        @click="$router.push(`/motors-and-water-pumps-for-desert-cooler/motors-for-desert-cooler/${item.id}`)"
+                        :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 
@@ -963,7 +1058,6 @@ export default {
 </template>
 
 <style>
-
 .filterBurgeractive {
     background: rgba(0, 0, 0, 0.634) !important;
     pointer-events: fill !important;
@@ -994,4 +1088,5 @@ export default {
     transition-duration: .3s;
     background: white;
     transform: translateX(100%);
-}</style>
+}
+</style>

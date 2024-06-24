@@ -1202,7 +1202,7 @@ export default defineComponent({
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                     // ----
                     en: {
-                        title: "Heating Unit Fan Motor-48W (Helal)",
+                        title: "Heating Unit Fan Motor-48W helal",
                         specifications: {
                             Power: "48 W",
                         },
@@ -1213,7 +1213,7 @@ export default defineComponent({
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                     // ----
                     en: {
-                        title: "Heating Unit Fan Motor-39W (Helal)",
+                        title: "Heating Unit Fan Motor-39W helal",
                         specifications: {
                             Power: "39 W",
                         },
@@ -1570,7 +1570,7 @@ export default defineComponent({
                     id: 4,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                     en: {
-                        title: "Heating Unit Fan Motor-48W (Helal)",
+                        title: "Heating Unit Fan Motor-48W helal",
                         specifications: {
                             Power: "48 W",
                         },
@@ -1580,7 +1580,7 @@ export default defineComponent({
                     id: 5,
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                     en: {
-                        title: "Heating Unit Fan Motor-39W (Helal)",
+                        title: "Heating Unit Fan Motor-39W helal",
                         specifications: {
                             Power: "39 W",
                         },
@@ -1590,7 +1590,7 @@ export default defineComponent({
                     id: 6,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                     en: {
-                        title: "Heating Unit Fan Motor-30W (Helal)",
+                        title: "Heating Unit Fan Motor-30W helal",
                         specifications: {
                             Power: "30 W",
                         },
@@ -6745,8 +6745,8 @@ export default defineComponent({
                 "Двигатель вентилятора-10 Вт",
                 "Двигатель вентилятора-5 Вт-AL",
                 "Двигатель вентилятора-5 Вт-AL",
-                "Двигатель вентилятора отопительного агрегата-48 Вт (Helal)",
-                "Двигатель вентилятора отопительного агрегата-39 Вт (Helal)",
+                "Двигатель вентилятора отопительного агрегата-48 Вт helal",
+                "Двигатель вентилятора отопительного агрегата-39 Вт helal",
                 "Двигатель фанкойла-1/30 л.с.-Двойной вал",
                 "Двигатель фанкойла-1/30 л.с.-Двойной вал",
                 "Двигатель фанкойла -1/25 л.с.-Двойной вал",
@@ -6777,9 +6777,9 @@ export default defineComponent({
                 "Двигатель вентилятора отопительного агрегата мощностью 60 Вт (Kaman)",
                 "Двигатель вентилятора отопительного агрегата мощностью 45 Вт (Kaman)",
                 "Двигатель вентилятора отопительного агрегата мощностью 30 Вт (Kaman)",
-                "Двигатель вентилятора отопительного агрегата мощностью 48 Вт (Helal)",
-                "Двигатель вентилятора отопительного агрегата мощностью 39 Вт (Helal)",
-                "Двигатель вентилятора отопительного агрегата мощностью 30 Вт (Helal)",
+                "Двигатель вентилятора отопительного агрегата мощностью 48 Вт helal",
+                "Двигатель вентилятора отопительного агрегата мощностью 39 Вт helal",
+                "Двигатель вентилятора отопительного агрегата мощностью 30 Вт helal",
                 "Отопление Водяной насос агрегата-тип E",
                 "Водяной насос отопительного агрегата-тип A",
                 "Статор и ротор лифта-Тип S-5,5 кВт (двухскоростной)",
@@ -7158,8 +7158,8 @@ export default defineComponent({
                 "Fan dvigateli-10 Vt",
                 "Fan dvigateli - 5W-AL",
                 "Fan dvigateli - 5W-AL",
-                "Isitish moslamasining fan dvigateli-48 Vt (Helal)",
-                "Isitish moslamasining fan dvigateli-39 Vt (Helal)",
+                "Isitish moslamasining fan dvigateli-48 Vt helal",
+                "Isitish moslamasining fan dvigateli-39 Vt helal",
                 "Fan lasan dvigateli - 1/30 ot kuchi-er-xotin mil",
                 "Fan lasan dvigateli - 1/30 ot kuchi-er-xotin mil",
                 "Fan lasan dvigateli -1 / 25 ot kuchi-er-xotin mil",
@@ -7190,9 +7190,9 @@ export default defineComponent({
                 "60 Vt (Kaman) isitish moslamasining fan dvigateli",
                 "45 Vt (Kaman) isitish moslamasining fan dvigateli",
                 "30 Vt (Kaman) isitish moslamasining fan dvigateli",
-                "48 Vt (Helal) isitish moslamasining fan dvigateli",
-                "39 Vt (Helal) isitish moslamasining fan dvigateli",
-                "30 Vt (Helal) isitish moslamasining fan dvigateli",
+                "48 Vt helal isitish moslamasining fan dvigateli",
+                "39 Vt helal isitish moslamasining fan dvigateli",
+                "30 Vt helal isitish moslamasining fan dvigateli",
                 "Isitish suv nasosi birligi-e turi",
                 "Isitish moslamasining suv nasosi-a turi",
                 "Lift statori va rotori-S turi-5,5 kVt (ikki tezlikli)",

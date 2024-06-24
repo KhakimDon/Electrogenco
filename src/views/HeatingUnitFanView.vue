@@ -31,8 +31,8 @@ export default {
  "Вентилятор Двигатель-10 Вт",
  "Двигатель вентилятора-5 Вт-AL",
  "Двигатель вентилятора-5 Вт-AL",
-           "Двигатель вентилятора отопительного агрегата-48 Вт (Helal)",
- "Двигатель вентилятора отопительного агрегата-39 Вт (Helal)",
+           "Двигатель вентилятора отопительного агрегата-48 Вт helal",
+ "Двигатель вентилятора отопительного агрегата-39 Вт helal",
  "Двигатель фанкойла-1/30 л.с.-Двойной вал",
  "Двигатель фанкойла-1/30 л.с.-двойной вал",
  "Двигатель фанкойла-1/25 л.с.-Двойной вал",
@@ -73,8 +73,8 @@ export default {
      "Fan Motor-10 Vt",
      "Fan Motor-5 Vt-AL",
      "Fan Motor-5 Vt-AL",
-     "isitish birligi Fan Motor-48 Vt (Helal)",
-     "isitish birligi Fan Motor-39 Vt (Helal)",
+     "isitish birligi Fan Motor-48 Vt helal",
+     "isitish birligi Fan Motor-39 Vt helal",
      "Fan halqa Motor-1/30hp-ikki mil",
      "Fan halqa Motor-1/30hp-ikki mil",
      "Fan halqa Motor-1/25hp-ikki mil",
@@ -93,7 +93,9 @@ export default {
             burger: false,
             filters: [
                 {
-                    title: "OUTPUT POWER",
+                    en: "OUTPUT POWER",
+                    uz: "chiqish quvvati",
+                    ru: "выходная мощность",
                     items: [
                         "30 W",
                         "39 W",
@@ -173,7 +175,7 @@ export default {
                             id: 4,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                             en: {
-                                title: "Heating Unit Fan Motor-48W (Helal)",
+                                title: "Heating Unit Fan Motor-48W helal",
                                 specifications: {
                                     Power: "48 W",
                                 },
@@ -183,7 +185,7 @@ export default {
                             id: 5,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                             en: {
-                                title: "Heating Unit Fan Motor-39W (Helal)",
+                                title: "Heating Unit Fan Motor-39W helal",
                                 specifications: {
                                     Power: "39 W",
                                 },
@@ -193,7 +195,7 @@ export default {
                             id: 6,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                             en: {
-                                title: "Heating Unit Fan Motor-30W (Helal)",
+                                title: "Heating Unit Fan Motor-30W helal",
                                 specifications: {
                                     Power: "30 W",
                                 },
@@ -232,7 +234,9 @@ export default {
             console.log(event.target.dataset.filterby);
             console.log(event.target.dataset.value);
             this.fallback = []
-            if (event.target.dataset.filterby == "OUTPUT POWER") {
+            // uz: "chiqish quvvati",
+            // ru: "выходная мощность",
+            if (event.target.dataset.filterby == "OUTPUT POWER" || event.target.dataset.filterby == "выходная мощность" || event.target.dataset.filterby == "chiqish quvvati") {
                 let filtered = this.massiv[1].prod.filter(item => item.en.specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
                 this.fallback = filtered
             }
@@ -286,7 +290,7 @@ export default {
                         class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                         <div
                             class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
+                            {{ item[$t('lang')] }}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="w-5 h-5 duration-[.3s]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -296,7 +300,7 @@ export default {
                         <div class="h-[0px] duration-[3s]">
                             <ul class="pb-[10px]">
                                 <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
+                                    :data-filterby="item[$t('lang')]" :key="i.id"
                                     class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
                                     <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
                                 </li>

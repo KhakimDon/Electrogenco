@@ -10,7 +10,11 @@ export default {
                     id: "air-curtain-motor",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
                     title_en: "Air Curtain Motor",
+                    title_ru: "Двигатель воздушной завесы",
+                    title_uz: "Havo pardasi dvigateli",
                     sub_en: "",
+                    sub_ru: "",
+                    sub_uz: "",
                     prod: [
                         {
                             id: 1,
@@ -41,7 +45,11 @@ export default {
                     id: "duct-split-motors",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
                     title_en: "Duct Split Motors",
+                    title_ru: "Двигатели с раздельными воздуховодами",
+                    title_uz: "Kanallarni ajratuvchi motorlar",
                     sub_en: "",
+                    sub_ru: "",
+                    sub_uz: "",
                     prod: [
                         {
                             id: 1,
@@ -94,7 +102,11 @@ export default {
                     id: "fan-motors",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
                     title_en: "Fan Motors",
+                    title_ru: "Вентиляторные двигатели",
+                    title_uz: "Fan dvigatellari",
                     sub_en: "",
+                    sub_ru: "",
+                    sub_uz: "",
                     prod: [
                         {
                             id: 1,
@@ -319,7 +331,7 @@ export default {
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                             // ----
                             en: {
-                                title: "Heating Unit Fan Motor-48W (Helal)",
+                                title: "Heating Unit Fan Motor-48W helal",
                                 specifications: {
                                     Power: "48 W",
                                 },
@@ -330,7 +342,7 @@ export default {
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                             // ----
                             en: {
-                                title: "Heating Unit Fan Motor-39W (Helal)",
+                                title: "Heating Unit Fan Motor-39W helal",
                                 specifications: {
                                     Power: "39 W",
                                 },
@@ -343,7 +355,11 @@ export default {
                     id: "fan-coil-motors",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
                     title_en: "Fan Coil Motors",
+                    title_ru: "Двигатели с фанкойлами",
+                    title_uz: "Fankolli Dvigatellar",
                     sub_en: "FAN COIL MOTORS",
+                    sub_ru: "Двигатели с фанкойлами",
+                    sub_uz: "Fankolli Dvigatellar",
                     prod: [
                         {
                             id: 1,
@@ -447,7 +463,11 @@ export default {
                     id: "industrial-exhaust-fan-motors",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/tahviye.svg",
                     title_en: "Industrial Exhaust Fan Motors",
+                    title_ru: "Двигатели промышленных вытяжных вентиляторов",
+                    title_uz: "Sanoatli ventilayorlarning chiqarish dvigatellari",
                     sub_en: "INDUSTRIAL EXHAUST FAN MOTORS",
+                    sub_ru: "Двигатели промышленных вытяжных вентиляторов",
+                    sub_uz: "Sanoatli ventilayorlarning chiqarish dvigatellari",
                     prod: [
                         {
                             id: 1,
@@ -488,8 +508,8 @@ export default {
                 "Вентилятор Двигатель-10 Вт",
                 "Двигатель вентилятора-5 Вт-AL",
                 "Двигатель вентилятора-5 Вт-AL",
-                "Двигатель вентилятора отопительного агрегата-48 Вт (Helal)",
-                "Двигатель вентилятора отопительного агрегата-39 Вт (Helal)",
+                "Двигатель вентилятора отопительного агрегата-48 Вт helal",
+                "Двигатель вентилятора отопительного агрегата-39 Вт helal",
                 "Двигатель фанкойла-1/30 л.с.-Двойной вал",
                 "Двигатель фанкойла-1/30 л.с.-двойной вал",
                 "Двигатель фанкойла-1/25 л.с.-Двойной вал",
@@ -527,8 +547,8 @@ export default {
                 "Fan Motor-10 Vt",
                 "Fan Motor-5 Vt-AL",
                 "Fan Motor-5 Vt-AL",
-                "isitish birligi Fan Motor-48 Vt (Helal)",
-                "isitish birligi Fan Motor-39 Vt (Helal)",
+                "isitish birligi Fan Motor-48 Vt helal",
+                "isitish birligi Fan Motor-39 Vt helal",
                 "Fan halqa Motor-1/30hp-ikki mil",
                 "Fan halqa Motor-1/30hp-ikki mil",
                 "Fan halqa Motor-1/25hp-ikki mil",
@@ -578,7 +598,7 @@ export default {
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-regular hover:text-[#1A85FF] duration-[.3s] text-[#1B3F7B]">
                         {{ $t("header.home") }}</li>
-                    <li class="roboto-medium text-[#1A85FF]">Ventilation Motors</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ $t('1.8') }}</li>
                 </ul>
             </div>
         </div>
@@ -586,7 +606,7 @@ export default {
         <section class="mt-[50px]">
             <h3
                 class="mx-auto  sm:text-[20px] sm:w-[300px] sm:text-center w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Ventilation Motors
+                {{ $t('1.8') }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="max-w-[1200px] sm:flex-col sm:px-[20px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
@@ -598,9 +618,9 @@ export default {
                         </figure>
                         <div class="flex-1">
                             <h4 class="roboto-bold text-[#032055] text-[19px] leading-[35px]"> {{
-                                item.title_en }} </h4>
+                                item[$t('1.8.1')] }} </h4>
                             <p class="uppercase mt-[15px] roboto-regular tracking-[2px]	 text-[13px]">{{
-                                item.sub_en }}</p>
+                                item[$t('1.8.2')] }}</p>
                         </div>
                     </div>
                 </div>

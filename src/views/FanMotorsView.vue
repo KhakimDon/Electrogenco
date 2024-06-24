@@ -10,33 +10,67 @@ export default {
             burger: false,
             filters: [
                 {
-                    title: "OUTPUT POWER",
-                    items: [
-                        "10 W",
-                        "16 W",
-                        "25 W",
-                        "30 W",
-                        "39 W",
-                        "45 W",
-                        "48 W",
-                        "5 W",
-                    ]
+                    en: "OUTPUT POWER",
+                    ru: "ВЫХОДНАЯ МОЩНОСТЬ",
+                    uz: "CHIQISH QUVVATI",
+                    items: {
+                        en: ["10 W",
+                            "16 W",
+                            "25 W",
+                            "30 W",
+                            "39 W",
+                            "45 W",
+                            "48 W",
+                            "5 W",],
+                        ru: ["10 W",
+                            "16 W",
+                            "25 W",
+                            "30 W",
+                            "39 W",
+                            "45 W",
+                            "48 W",
+                            "5 W",],
+                        uz: ["10 W",
+                            "16 W",
+                            "25 W",
+                            "30 W",
+                            "39 W",
+                            "45 W",
+                            "48 W",
+                            "5 W",],
+                    }
                 },
                 {
-                    title: "CONDUCTOR MATERIAL",
-                    items: [
-                        "AL",
-                        "CU",
-                    ]
+                    en: "CONDUCTOR MATERIAL",
+                    ru: "МАТЕРИАЛ ПРОВОДНИКА",
+                    uz: "O'TKAZUVCHI MATERIAL",
+                    items: {
+                        en: ["AL",
+                            "CU",],
+                        ru: ["AL",
+                            "CU",],
+                        uz: ["AL",
+                            "CU",],
+                    }
                 },
                 {
-                    title: "NUMBER OF SPEED",
-                    items: [
-                        "four-speed",
-                        "Single-speed",
-                        "Three-speed",
-                        "Two-speed",
-                    ]
+                    en: "NUMBER OF SPEED",
+                    ru: "Количество скоростей",
+                    uz: "Tezlik soni",
+                    items: {
+                        en: ["four-speed",
+                            "Single-speed",
+                            "Three-speed",
+                            "Two-speed",],
+                        ru: ["Четыре скоростей",
+                            "Одна скорость",
+                            "Три скоростей",
+                            "Две скоростей",],
+                        uz: ["To'rt tezlikli",
+                            "Bir tezlikli",
+                            "Uch tezlikli",
+                            "Ikki tezlikli",],
+                    }
                 },
 
             ],
@@ -135,9 +169,20 @@ export default {
                         {
                             id: 1,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
-                            // ----
                             en: {
                                 title: "Duct Split Motor (Air-conditioner)-600W",
+                                specifications: {
+                                    Power: "45 W",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с разделением каналов (кондиционер)-600W",
+                                specifications: {
+                                    Power: "45 W",
+                                },
+                            },
+                            uz: {
+                                title: "Kanalli ajratilgan motor (konditsioner)-600W",
                                 specifications: {
                                     Power: "45 W",
                                 },
@@ -146,7 +191,6 @@ export default {
                         {
                             id: 2,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4925.jpg",
-                            // ----
                             en: {
                                 title: "Hood Blower-AL (Four-speed)",
                                 specifications: {
@@ -154,23 +198,49 @@ export default {
                                     Speed: "four-speed",
                                 },
                             },
+                            ru: {
+                                title: "Вентилятор вытяжки-AL (четырехскоростной)",
+                                specifications: {
+                                    ConductorMaterial: "AL",
+                                    Speed: "Четыре скорости",
+                                },
+                            },
+                            uz: {
+                                title: "Shamollatish ventilyatori-AL (To'rt tezlik)",
+                                specifications: {
+                                    ConductorMaterial: "AL",
+                                    Speed: "To'rt tezlik",
+                                },
+                            },
                         },
                         {
                             id: 3,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4925.jpg",
-                            // ----
                             en: {
                                 title: "Hood Blower (Four-speed)",
                                 specifications: {
                                     ConductorMaterial: "CU",
-                                    Speed: "Three-speed",
+                                    Speed: "Four-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Вентилятор вытяжкиs (четырехскоростной)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Четыре скорости",
+                                },
+                            },
+                            uz: {
+                                title: "Shamollatish ventilyatori (To'rt tezlik)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "To'rt tezlik",
                                 },
                             },
                         },
                         {
                             id: 4,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4925.jpg",
-                            // ----
                             en: {
                                 title: "Hood Motor-Single Shaft-AL (Four-speed)",
                                 specifications: {
@@ -178,23 +248,24 @@ export default {
                                     Speed: "four-speed",
                                 },
                             },
-                        },
-                        {
-                            id: 6,
-                            img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4925.jpg",
-                            // ----
-                            en: {
-                                title: "Hood Blower (Three-speed)",
+                            ru: {
+                                title: "Мотор Единый-мотор AL (четырехскоростной)",
                                 specifications: {
-                                    ConductorMaterial: "CU",
-                                    Speed: "Three-speed",
+                                    ConductorMaterial: "AL",
+                                    Speed: "Четыре скорости",
+                                },
+                            },
+                            uz: {
+                                title: "Shamollatish ventilyatori Motor-Yagona AL (To'rt tezlik)",
+                                 specifications: {
+                                    ConductorMaterial: "AL",
+                                    Speed: "To'rt tezlik",
                                 },
                             },
                         },
                         {
                             id: 5,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4925.jpg",
-                            // ----
                             en: {
                                 title: "Hood Motor-Single Shaft (Four-speed)",
                                 specifications: {
@@ -202,23 +273,74 @@ export default {
                                     Speed: "four-speed",
                                 },
                             },
+                            ru: {
+                                title: "Мотор вытяжки-один (четырехскоростной)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Четыре скорости",
+                                },
+                            },
+                            uz: {
+                                title: "Shamollatish ventilyatori Motor-Yagona (To'rt tezlik)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "To'rt tezlik",
+                                },
+                            },
+                        },
+                        {
+                            id: 6,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4925.jpg",
+                            en: {
+                                title: "Hood Blower (Three-speed)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Three-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Вентилятор вытяжки (трехскоростной)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Три скорости",
+                                },
+                            },
+                            uz: {
+                                title: "Shamollatish ventilyatori (Uch tezlik)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Uch tezlik",
+                                },
+                            },
                         },
                         {
                             id: 7,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4982.png",
-                            // ----
                             en: {
                                 title: "Hood Motor-Single Shaft (Three-speed)",
                                 specifications: {
                                     ConductorMaterial: "CU",
                                     Speed: "Three-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вытяжки единыймотор (трехскоростной)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "трехскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Shamollatish ventilyatori Motor-Yagona (Uch tezlik)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Uch tezlik",
                                 },
                             },
                         },
                         {
                             id: 8,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4979.png",
-                            // ----
                             en: {
                                 title: "Hood Motor-Single Shaft (Three-speed)",
                                 specifications: {
@@ -226,11 +348,24 @@ export default {
                                     Speed: "Three-speed",
                                 },
                             },
+                            ru: {
+                                title: "Мотор вытяжки единый мотор вал (трехскоростной)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "трехскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Shamollatish ventilyatori Motor-Yagona  (Uch tezlik)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Uch tezlik",
+                                },
+                            },
                         },
                         {
                             id: 9,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4979.png",
-                            // ----
                             en: {
                                 title: "Hood Motor-Type K (Four-speed)",
                                 specifications: {
@@ -238,11 +373,24 @@ export default {
                                     Speed: "four-speed",
                                 },
                             },
+                            ru: {
+                                title: "Мотор вытяжки-Тип К (четырехскоростной)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "четырехскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Shamollatish ventilyatori Motor-Turi K (To'rt tezlik)",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "To'rt tezlik",
+                                },
+                            },
                         },
                         {
                             id: 10,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-45W",
                                 specifications: {
@@ -251,11 +399,26 @@ export default {
                                     Power: "45 W",
                                 },
                             },
+                            ru: {
+                                title: "Мотор вентилятора-45W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Односкоросной",
+                                    Power: "45 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-45W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Bir tezlik",
+                                    Power: "45 W",
+                                },
+                            },
                         },
                         {
                             id: 11,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-25W",
                                 specifications: {
@@ -264,11 +427,26 @@ export default {
                                     Power: "25 W",
                                 },
                             },
+                            ru: {
+                                title: "Мотор вентилятора-25W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Двухскоростной",
+                                    Power: "25 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-25W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Ikki tezlik",
+                                    Power: "25 W",
+                                },
+                            },
                         },
                         {
                             id: 12,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-30W",
                                 specifications: {
@@ -277,13 +455,42 @@ export default {
                                     Power: "30 W",
                                 },
                             },
+                            ru: {
+                                title: "Мотор вентилятора-30W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Двухскоростной",
+                                    Power: "30 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-30W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Speed: "Ikki tezlik",
+                                    Power: "30 W",
+                                },
+                            },
                         },
                         {
                             id: 13,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-25W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Power: "25 W",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вентилятора-25W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Power: "25 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-25W",
                                 specifications: {
                                     ConductorMaterial: "CU",
                                     Power: "25 W",
@@ -293,10 +500,23 @@ export default {
                         {
                             id: 14,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-16W",
                                 specifications: {
+                                    ConductorMaterial: "AL",
+                                    Power: "16 W",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вентилятора-16W",
+                                 specifications: {
+                                    ConductorMaterial: "AL",
+                                    Power: "16 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-16W",
+                                 specifications: {
                                     ConductorMaterial: "AL",
                                     Power: "16 W",
                                 },
@@ -305,9 +525,22 @@ export default {
                         {
                             id: 15,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-10W-AL",
+                                specifications: {
+                                    ConductorMaterial: "AL",
+                                    Power: "10 W",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вентилятора-10W - AL",
+                                specifications: {
+                                    ConductorMaterial: "AL",
+                                    Power: "10 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-10W - AL",
                                 specifications: {
                                     ConductorMaterial: "AL",
                                     Power: "10 W",
@@ -317,9 +550,22 @@ export default {
                         {
                             id: 16,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-10W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Power: "10 W",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вентилятора-10W",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Power: "10 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-10W",
                                 specifications: {
                                     ConductorMaterial: "CU",
                                     Power: "10 W",
@@ -329,9 +575,22 @@ export default {
                         {
                             id: 17,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-5W-AL",
+                                specifications: {
+                                    ConductorMaterial: "AL",
+                                    Power: "5 W",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вентилятора-5W - AL",
+                                specifications: {
+                                    ConductorMaterial: "AL",
+                                    Power: "5 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-5W - AL",
                                 specifications: {
                                     ConductorMaterial: "AL",
                                     Power: "5 W",
@@ -341,9 +600,22 @@ export default {
                         {
                             id: 18,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8097.png",
-                            // ----
                             en: {
                                 title: "Fan Motor-5W-AL",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Power: "5 W",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вентилятора-5W - AL",
+                                specifications: {
+                                    ConductorMaterial: "CU",
+                                    Power: "5 W",
+                                },
+                            },
+                            uz: {
+                                title: "Ventilyator Motor-5W - AL",
                                 specifications: {
                                     ConductorMaterial: "CU",
                                     Power: "5 W",
@@ -353,9 +625,20 @@ export default {
                         {
                             id: 19,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
-                            // ----
                             en: {
-                                title: "Heating Unit Fan Motor-48W (Helal)",
+                                title: "Heating Unit Fan Motor-48W",
+                                specifications: {
+                                    Power: "48 W",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вентилятора отопительного блока-48W",
+                                specifications: {
+                                    Power: "48 W",
+                                },
+                            },
+                            uz: {
+                                title: "Heating Unit Fan Motor-48W",
                                 specifications: {
                                     Power: "48 W",
                                 },
@@ -364,9 +647,20 @@ export default {
                         {
                             id: 20,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
-                            // ----
                             en: {
-                                title: "Heating Unit Fan Motor-39W (Helal)",
+                                title: "Heating Unit Fan Motor-39W",
+                                specifications: {
+                                    Power: "39 W",
+                                },
+                            },
+                            ru: {
+                                title: "Мотор вентилятора отопительного блока-39W",
+                                specifications: {
+                                    Power: "39 W",
+                                },
+                            },
+                            uz: {
+                                title: "Heating Unit Fan Motor-39W",
                                 specifications: {
                                     Power: "39 W",
                                 },
@@ -520,16 +814,23 @@ export default {
             console.log(event.target.dataset.value);
             this.fallback = []
 
-            if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.massiv[2].prod.filter(item => item[this.$t("lang")].specifications.Power == event.target.dataset.value)
+            if (event.target.dataset.filterby == "OUTPUT POWER" ||
+                event.target.dataset.filterby == "ВЫХОДНАЯ МОЩНОСТЬ" ||
+                event.target.dataset.filterby == "CHIQISH QUVVATI"
+            ) {
+                let filtered = this.massiv[2].prod.filter(item => item.en.specifications.Power == event.target.dataset.value)
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "CONDUCTOR MATERIAL") {
-                let filtered = this.massiv[2].prod.filter(item => item[this.$t("lang")].specifications.ConductorMaterial == event.target.dataset.value)
+            else if (event.target.dataset.filterby == "CONDUCTOR MATERIAL" ||
+                event.target.dataset.filterby == "МАТЕРИАЛ ПРОВОДНИКА" ||
+                event.target.dataset.filterby == "O'TKAZUVCHI MATERIAL") {
+                let filtered = this.massiv[2].prod.filter(item => item.en.specifications.ConductorMaterial == event.target.dataset.value)
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "NUMBER OF SPEED") {
-                let filtered = this.massiv[2].prod.filter(item => item[this.$t("lang")].specifications.Speed == event.target.dataset.value)
+            else if (event.target.dataset.filterby == "NUMBER OF SPEED" ||
+                event.target.dataset.filterby == "Количество скоростей" ||
+                event.target.dataset.filterby == "Tezlik soni") {
+                let filtered = this.massiv[2].prod.filter(item => item.en.specifications.Speed == event.target.dataset.value)
                 this.fallback = filtered
             }
 
@@ -562,16 +863,16 @@ export default {
                     </li>
                     <li @click="$router.push('/ventilation-motors')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
-                        Ventilation Motors
+                        {{ $t("1.8") }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">Fan Motors</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ $t("2.1") }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px] sm:mt-[20px]">
             <h3 class="mx-auto w-[max-content] sm:text-[22px] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Fan Motors
+                {{ $t("2.1") }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="flex items-start gap-[25px] sm:flex-col sm:px-[20px] sm:gap-[0px]">
@@ -581,7 +882,7 @@ export default {
                         class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                         <div
                             class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
+                            {{ item[$t('lang')] }}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="w-5 h-5 duration-[.3s]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -590,8 +891,9 @@ export default {
                         </div>
                         <div class="h-[0px] duration-[3s]">
                             <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
+                                <li @click="filter()" v-for="i of item.items[$t('lang')]"
+                                    :data-value="item.items.en[item.items[$i18n.locale].indexOf(i)]"
+                                    :data-filterby="item[$i18n.locale]" :key="i.id"
                                     class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
                                     <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
                                 </li>
@@ -600,7 +902,7 @@ export default {
                     </div>
                 </div>
 
-                
+
                 <div v-if="this.mobile" @click="this.burger = true"
                     class="w-[280px] sm:w-[100%] h-[55px] sm:max-h-[45px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                     <div
@@ -614,14 +916,14 @@ export default {
                     </div>
                 </div>
 
-                <div v-if="this.mobile" :class="{filterBurgeractive: this.burger}" class="filterBurger ">
+                <div v-if="this.mobile" :class="{ filterBurgeractive: this.burger }" class="filterBurger ">
                     <div class="filterBurgerwrp p-[10px]">
                         <div class="overflow-y-auto h-[100%] pb-[100px] w-[100%]">
                             <div @click="this.burger = false" class="mb-[20px] bg-[red] w-[max-content] rounded-[3px]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-6 text-white h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                            </svg>
+                                    stroke="currentColor" class="w-6 text-white h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
                             </div>
                             <div>
                                 <div class="w-[100%]">
@@ -657,7 +959,8 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards @click="$router.push(`/ventilation-motors/fan-motors/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards @click="$router.push(`/ventilation-motors/fan-motors/${item.id}`)" :title="item[$t('lang')].title"
+                        :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 

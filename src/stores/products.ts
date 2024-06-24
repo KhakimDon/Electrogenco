@@ -5130,7 +5130,7 @@ export const useBlogStore = defineStore("blog", () => {
           id: 4,
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
           en: {
-            title: "Heating Unit Fan Motor-48W (Helal)",
+            title: "Heating Unit Fan Motor-48W helal",
             specifications: {
               Power: "48 W",
             },
@@ -5140,7 +5140,7 @@ export const useBlogStore = defineStore("blog", () => {
           id: 5,
           img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
           en: {
-            title: "Heating Unit Fan Motor-39W (Helal)",
+            title: "Heating Unit Fan Motor-39W helal",
             specifications: {
               Power: "39 W",
             },
@@ -5150,7 +5150,7 @@ export const useBlogStore = defineStore("blog", () => {
           id: 6,
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
           en: {
-            title: "Heating Unit Fan Motor-30W (Helal)",
+            title: "Heating Unit Fan Motor-30W helal",
             specifications: {
               Power: "30 W",
             },
@@ -5621,7 +5621,7 @@ export const useBlogStore = defineStore("blog", () => {
           img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
           // ----
           en: {
-            title: "Heating Unit Fan Motor-48W (Helal)",
+            title: "Heating Unit Fan Motor-48W helal",
             specifications: {
               Power: "48 W",
             },
@@ -5632,7 +5632,7 @@ export const useBlogStore = defineStore("blog", () => {
           img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
           // ----
           en: {
-            title: "Heating Unit Fan Motor-39W (Helal)",
+            title: "Heating Unit Fan Motor-39W helal",
             specifications: {
               Power: "39 W",
             },

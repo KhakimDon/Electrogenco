@@ -16,7 +16,19 @@ export default {
                             Power: "165 W",
                         },
                     },
-                }
+                    ru: {
+                        title: "Двигатели промышленных вытяжных вентиляторов",
+                        specifications: {
+                            Power: "165 W",
+                        },
+                    },
+                    uz: {
+                        title: "Sanoat chiqindiligi ventilyatori motori",
+                        specifications: {
+                            Power: "165 W",
+                        },
+                    },
+                },
             ],
             n: 1,
             i: {
@@ -24,6 +36,30 @@ export default {
                 img: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMDEtdGQtMDA4XzQuanBn.jpg",
                 // ----
                 en: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                ru: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                uz: {
                     title: "...",
                     appearance: {
                         FrameMaterial: "...",
@@ -61,7 +97,7 @@ export default {
 </script>
 
 <template>
-       <div id="begin" class="pt-[75px]">
+    <div id="begin" class="pt-[75px]">
         <div id="breadcrumbs" class="max-w-[1250px] mx-auto">
             <div class="text-sm breadcrumbs mt-[15px]">
                 <ul>
@@ -73,7 +109,7 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         All products
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ this.i[$t('lang')].title }}</li>
                 </ul>
             </div>
         </div>
@@ -82,7 +118,7 @@ export default {
             <div class="max-w-[1250px] sm:px-[20px] gap-[20px] mx-auto flex">
                 <div class="flex-1">
                     <h3 class="text-[28px] sm:text-[22px]  text-[#1B3F7B] roboto-black">
-                        {{ this.i.en.title }}
+                        {{ this.i[$t('lang')].title }}
                     </h3>
 
                     <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">
@@ -97,7 +133,8 @@ export default {
 
                     <div v-if="this.i.en.appearance" class="border-[1px] rounded-[20px] mt-[25px]">
                         <div class="flex justify-between sm:p-[20px] p-[30px] items-center border-b-[1px]">
-                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">{{ $t("app")  }}</span>
+                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">{{ $t("app")
+                                }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -105,17 +142,19 @@ export default {
 
                         </div>
                         <div v-if="this.i.en.appearance.FrameMaterial" class="flex">
-                            <div class="flex-1 sm:border-r-[0px] sm:p-[10px] p-[25px] border-r-[1px] flex items-center gap-[9px] font-[600]">
+                            <div
+                                class="flex-1 sm:border-r-[0px] sm:p-[10px] p-[25px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                {{ $t("fr")  }}
+                                {{ $t("fr") }}
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.appearance.FrameMaterial }}
+                            </div>
                         </div>
                     </div>
 
                     <div v-if="this.i.en.specifications" class="border-[1px] rounded-[20px] mt-[25px]">
                         <div class="flex justify-between sm:p-[20px] p-[30px] items-center border-b-[1px]">
-                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">{{ $t("ts")  }}</span>
+                            <span class="roboto-regular sm:text-[17px] text-[19px] text-[#1A85FF]">{{ $t("ts") }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 text-[#BDAFAF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -128,73 +167,81 @@ export default {
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                {{ $t("fs")  }}
+                                {{ $t("fs") }}
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Size }}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Size }}
+                            </div>
                         </div>
 
                         <div v-if="this.i.en.specifications.size" class="flex">
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                {{ $t("fs")  }}
+                                {{ $t("fs") }}
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.size }}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.size }}
+                            </div>
                         </div>
 
                         <div v-if="this.i.en.specifications.pole" class="flex">
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] sm:px-[10px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                {{ $t("np")  }}
+                                {{ $t("np") }}
                             </div>
-                            <div class="flex-[2]  sm:flex-1  p-[25px] font-[600]">{{ this.i.en.specifications.pole }}</div>
+                            <div class="flex-[2]  sm:flex-1  p-[25px] font-[600]">{{ this.i.en.specifications.pole }}
+                            </div>
                         </div>
                         <div v-if="this.i.en.specifications.Power" class="flex">
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                {{ $t("op")  }}
+                                {{ $t("op") }}
                             </div>
-                            <div class="flex-[2] p-[25px] sm:flex-1 font-[600]">{{ this.i.en.specifications.Power }}</div>
+                            <div class="flex-[2] p-[25px] sm:flex-1 font-[600]">{{ this.i.en.specifications.Power }}
+                            </div>
                         </div>
 
                         <div v-if="this.i.en.specifications.type" class="flex">
                             <div
                                 class="flex-1 px-[25px] py-[5px] sm:border-r-[0px] sm:px-[10px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a]  w-[6px] rounded-[50%]"></div>
-                                {{ $t("mt")  }}
+                                {{ $t("mt") }}
 
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.type }}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.type }}
+                            </div>
                         </div>
 
                         <div v-if="this.i.en.specifications.Speed" class="flex">
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                {{ $t("s")  }}
+                                {{ $t("s") }}
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Speed }}
+                            </div>
                         </div>
 
                         <div v-if="this.i.en.specifications.Material" class="flex">
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                {{ $t("cm")  }}
+                                {{ $t("cm") }}
 
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Material }}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Material }}
+                            </div>
                         </div>
 
                         <div v-if="this.i.en.specifications.Application" class="flex">
                             <div
                                 class="flex-1 px-[25px] sm:border-r-[0px] sm:px-[10px] py-[5px] border-r-[1px] flex items-center gap-[9px] font-[600]">
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
-                                {{ $t("apl")  }}
+                                {{ $t("apl") }}
                             </div>
-                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Application }}</div>
+                            <div class="flex-[2] sm:flex-1 p-[25px] font-[600]">{{ this.i.en.specifications.Application
+                                }}</div>
                         </div>
 
 
@@ -214,7 +261,7 @@ export default {
         </div>
 
     </div>
-    
+
 </template>
 
 <style></style>

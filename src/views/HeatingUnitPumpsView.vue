@@ -75,7 +75,7 @@ export default {
                                 id: 4,
                                 img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                                 en: {
-                                    title: "Heating Unit Fan Motor-48W (Helal)",
+                                    title: "Heating Unit Fan Motor-48W helal",
                                     specifications: {
                                         Power: "48 W",
                                     },
@@ -85,7 +85,7 @@ export default {
                                 id: 5,
                                 img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                                 en: {
-                                    title: "Heating Unit Fan Motor-39W (Helal)",
+                                    title: "Heating Unit Fan Motor-39W helal",
                                     specifications: {
                                         Power: "39 W",
                                     },
@@ -95,7 +95,7 @@ export default {
                                 id: 6,
                                 img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                                 en: {
-                                    title: "Heating Unit Fan Motor-30W (Helal)",
+                                    title: "Heating Unit Fan Motor-30W helal",
                                     specifications: {
                                         Power: "30 W",
                                     },
@@ -111,9 +111,9 @@ export default {
                 "isitish birligi Fan Motor-60 Vt (Kaman)",
                 "isitish birligi Fan Motor-45 Vt (Kaman)",
                 "isitish birligi Fan Motor-30 Vt (Kaman)",
-                "isitish birligi Fan Motor-48 Vt (Helal)",
-                "isitish birligi Fan Motor-39 Vt (Helal)",
-                "isitish birligi Fan Motor-30 Vt (Helal)",
+                "isitish birligi Fan Motor-48 Vt helal",
+                "isitish birligi Fan Motor-39 Vt helal",
+                "isitish birligi Fan Motor-30 Vt helal",
             ],
             ru: [
      "Водяной насос отопительного агрегата-Тип E",
@@ -121,9 +121,9 @@ export default {
      "Двигатель вентилятора отопительного агрегата-60 Вт (Kaman)",
      "Двигатель вентилятора отопительного агрегата-45 Вт (Kaman)",
      "Двигатель вентилятора отопительного агрегата-30 Вт (Kaman)",
-     "Двигатель вентилятора отопительного агрегата-48 Вт (Helal)",
-     "Двигатель вентилятора отопительного агрегата-39 Вт (Helal)",
-     "Двигатель вентилятора отопительного агрегата-30 Вт (Helal)",
+     "Двигатель вентилятора отопительного агрегата-48 Вт helal",
+     "Двигатель вентилятора отопительного агрегата-39 Вт helal",
+     "Двигатель вентилятора отопительного агрегата-30 Вт helal",
 ],
 
         }

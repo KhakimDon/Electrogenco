@@ -11,7 +11,11 @@ export default {
                     id: "motors-for-desert-cooler",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/cooler.svg",
                     title_en: "Motors For Desert Cooler",
+                    title_ru: "Двигатели для пустынных охладителей",
+                    title_uz: "Cho'l Sovutgichi Uchun Motorlar",
                     sub_en: "MOTORS FOR DESERT COOLER",
+                    sub_ru: "Двигатели для пустынных охладителей",
+                    sub_uz: "Cho'l Sovutgichi Uchun Motorlar",
                     prod: [
                         {
                             id: 1,
@@ -617,6 +621,10 @@ export default {
                     id: "water-pumps-for-desert-cooler",
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/cooler.svg",
                     title_en: "Water Pumps for Desert Cooler",
+                    title_ru: "Водяные насосы для пустынного охладителя",
+                    title_uz: "Cho'l sovutgichi uchun suv nasoslari",
+                    sub_uz: "Cho'l sovutgichi uchun suv nasoslari",
+                    sub_ru: "Водяные насосы для пустынного охладителя",
                     sub_en: "WATER PUMPS FOR DESERT COOLER",
                     prod: [
                         {
@@ -737,14 +745,14 @@ export default {
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-regular hover:text-[#1A85FF] duration-[.3s] text-[#1B3F7B]">
                         {{ $t("header.home") }}</li>
-                    <li class="roboto-medium text-[#1A85FF]">Motors And Water Pumps For Desert Cooler</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ $t("2.5") }}</li>
                 </ul>
             </div>
         </div>
 
         <section class="mt-[50px]">
             <h3 class="mx-auto w-[max-content] sm:text-[20px] sm:w-[300px] sm:text-center  text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Motors And Water Pumps For Desert Cooler
+                {{ $t("2.5") }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="max-w-[1200px] sm:flex-col sm:px-[20px] flex flex-wrap gap-[30px] min-h-[100px] mx-auto">
@@ -757,9 +765,9 @@ export default {
                         </figure>
                         <div class="flex-1">
                             <h4 class="roboto-bold text-[#032055] text-[19px] leading-[35px]"> {{
-                                item.title_en }} </h4>
+                                item[$t('2.5.1')] }} </h4>
                             <p class="uppercase mt-[15px] roboto-regular tracking-[2px]	 text-[13px]">{{
-                                item.sub_en }}</p>
+                                item[$t('2.5.2')] }} </p>
                         </div>
                     </div>
                 </div>

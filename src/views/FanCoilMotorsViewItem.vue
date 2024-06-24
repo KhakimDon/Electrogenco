@@ -5,103 +5,215 @@ export default {
     data() {
         return {
             massiv: [
-                {
-                    id: 1,
-                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
-                    // ----
-                    en: {
-                        title: "Fan Coil Motor-1/30HP-Double Shaft",
-                        specifications: {
-                            Power: "1/30 HP",
-                            Shaft: "Double-shaft",
+                        {
+                            id: 1,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
+                            // ----
+                            en: {
+                                title: "Fan Coil Motor-1/30HP-Double Shaft",
+                                specifications: {
+                                    Power: "1/30 HP",
+                                    Shaft: "Double-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/30 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/30 л.с",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/30hp-ikki mil",
+                                specifications: {
+                                    Power: "1/30 ot kuchi",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
-                    },
-                },
-                {
-                    id: 2,
-                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
-                    // ----
-                    en: {
-                        title: "Fan Coil Motor-1/30HP-Double Shaft",
-                        specifications: {
-                            Power: "1/30 HP",
-                            Shaft: "Single-shaft",
+                        {
+                            id: 2,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
+                            // ----
+                            en: {
+                                title: "Fan Coil Motor-1/30HP-Double Shaft",
+                                specifications: {
+                                    Power: "1/30 HP",
+                                    Shaft: "Single-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/30 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/30 л.с",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/30hp-ikki mil",
+                                specifications: {
+                                    Power: "1/30 ot kuchi",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
-                    },
-                },
-                {
-                    id: 3,
-                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
-                    // ----
-                    en: {
-                        title: "Fan Coil Motor-1/25HP-Double Shaft",
-                        specifications: {
-                            Power: "1/25 HP",
-                            Shaft: "Double-shaft",
+                        {
+                            id: 3,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
+                            // ----
+                            en: {
+                                title: "Fan Coil Motor-1/25HP-Double Shaft",
+                                specifications: {
+                                    Power: "1/25 HP",
+                                    Shaft: "Double-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/25 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/25 л.с",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/25hp-ikki mil",
+                                specifications: {
+                                    Power: "1/25 ot kuchi",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
-                    },
-                },
-                {
-                    id: 4,
-                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5766.png",
-                    // ----
-                    en: {
-                        title: "Fan Coil Motor-1/25HP-Single Shaft",
-                        specifications: {
-                            Power: "1/25 HP",
-                            Shaft: "Single-shaft",
+                        {
+                            id: 4,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5766.png",
+                            // ----
+                            en: {
+                                title: "Fan Coil Motor-1/25HP-Single Shaft",
+                                specifications: {
+                                    Power: "1/25 HP",
+                                    Shaft: "Single-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/25 л.с.-Одновальный",
+                                specifications: {
+                                    Power: "1/25 л.с",
+                                    Shaft: "Одновальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/25hp-yagona mil",
+                                specifications: {
+                                    Power: "1/25 ot kuchi",
+                                    Shaft: "yagona mil",
+                                },
+                            },
                         },
-                    },
-                },
-                {
-                    id: 5,
-                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
-                    // ----
-                    en: {
-                        title: "Fan Coil Motor-1/20HP-Double Shaft",
-                        specifications: {
-                            Power: "1/20 HP",
-                            Shaft: "Double-shaft",
+                        {
+                            id: 5,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
+                            // ----
+                            en: {
+                                title: "Fan Coil Motor-1/20HP-Double Shaft",
+                                specifications: {
+                                    Power: "1/20 HP",
+                                    Shaft: "Double-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/20 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/20 л.с",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/20hp-ikki mil",
+                                specifications: {
+                                    Power: "1/20 ot kuchi",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
-                    },
-                },
-                {
-                    id: 6,
-                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5766.png",
-                    // ----
-                    en: {
-                        title: "Fan Coil Motor-1/20HP-Single Shaft",
-                        specifications: {
-                            Power: "1/20 HP",
-                            Shaft: "Single-shaft",
+                        {
+                            id: 6,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5766.png",
+                            // ----
+                            en: {
+                                title: "Fan Coil Motor-1/20HP-Single Shaft",
+                                specifications: {
+                                    Power: "1/20 HP",
+                                    Shaft: "Single-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/20 л.с.-Одновальный",
+                                specifications: {
+                                    Power: "1/20 л.с",
+                                    Shaft: "Одновальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/20hp-yagona mil",
+                                specifications: {
+                                    Power: "1/20 ot kuchi",
+                                    Shaft: "yagona mil",
+                                },
+                            },
                         },
-                    },
-                },
-                {
-                    id: 7,
-                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
-                    // ----
-                    en: {
-                        title: "Fan Coil Motor-1/16HP-Double Shaft",
-                        specifications: {
-                            Power: "1/16 kW",
-                            Shaft: "Double-shaft",
+                        {
+                            id: 7,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5686.png",
+                            // ----
+                            en: {
+                                title: "Fan Coil Motor-1/16HP-Double Shaft",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "Double-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/20 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/16hp-ikki mil",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
-                    },
-                },
-                {
-                    id: 8,
-                    img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5766.png",
-                    // ----
-                    en: {
-                        title: "Fan Coil Motor-1/16HP-Single Shaft",
-                        specifications: {
-                            Power: "1/16 kW",
-                            Shaft: "Single-shaft",
+                        {
+                            id: 8,
+                            img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_5766.png",
+                            // ----
+                            en: {
+                                title: "Fan Coil Motor-1/16HP-Single Shaft",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "Single-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/16 л.с.-Одновальный",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "Одновальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/16hp-yagona val",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "yagona val",
+                                },
+                            },
                         },
-                    },
-                },
-            ],
+                    ],
             n: 1,
             mobile: false,
             i: {
@@ -109,6 +221,30 @@ export default {
                 img: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMDEtdGQtMDA4XzQuanBn.jpg",
                 // ----
                 en: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                ru: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                uz: {
                     title: "...",
                     appearance: {
                         FrameMaterial: "...",
@@ -160,7 +296,7 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         All products
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">{{ this.i.en.title }}</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ this.i[$t('lang')].title }}</li>
                 </ul>
             </div>
         </div>
@@ -169,7 +305,7 @@ export default {
             <div class="max-w-[1250px] sm:px-[20px] gap-[20px] mx-auto flex">
                 <div class="flex-1">
                     <h3 class="text-[28px] sm:text-[22px]  text-[#1B3F7B] roboto-black">
-                        {{ this.i.en.title }}
+                        {{  this.i[$t('lang')].title  }}
                     </h3>
 
                     <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">
@@ -243,7 +379,7 @@ export default {
                                 <div class="h-[6px] bg-[#b1b1b17a] w-[6px] rounded-[50%]"></div>
                                 {{ $t("op")  }}
                             </div>
-                            <div class="flex-[2] p-[25px] sm:flex-1 font-[600]">{{ this.i.en.specifications.Power }}</div>
+                            <div class="flex-[2] p-[25px] sm:flex-1 font-[600]">{{ this.i[$t('lang')].specifications.Power }}</div>
                         </div>
 
                         <div v-if="this.i.en.specifications.type" class="flex">

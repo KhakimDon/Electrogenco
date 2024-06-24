@@ -105,8 +105,23 @@
   "1.3": "Lift motorlari",
   "1.4": "Isitish Moslamasi Foniy",
   "1.5": "Havo Pardasi Motori",
+  "1.6": "Isitish moslamalarining motorlari",
+  "1.6.1": "title_uz",
+  "1.6.2": "sub_uz",
+  "1.7": "Suv nasoslari",
+  "1.8": "Ventilyatsiya motorlari",
+  "1.8.1": "title_uz",
+  "1.8.2": "sub_uz",
+  "1.9": "HAVO QUVRLARINI AJRATISH DVIGATELLARI",
+  "2.1": "Ventilyator dvigateli",
+  "2.2": "Fankolli dvigatellar",
+  "2.3": "Sanoat chiqindiligi ventilyatori motori",
+  "2.4": "Gorelka motorlari",
+  "2.5": "Cho'l Sovutgichi Uchun Motorlar Va Suv Nasoslari",
+  "2.5.1": "title_uz",
+  "2.5.2": "sub_uz",
 
-  
+
   "branches": {
     "title" : "Filiallar",
     "info": "Filial haqida ma'lumot"

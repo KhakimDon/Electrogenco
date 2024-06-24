@@ -9,8 +9,8 @@ export default {
             massiv: [
                 {
                     id: 1,
-                    ru: {title: "Двигатель вентилятора отопительного агрегата-60 Вт (Helal)"},
-                    uz: {title: "Isitish birligi Fan Motor-60 Vt (Helal)"},
+                    ru: {title: "Двигатель вентилятора отопительного агрегата-60 Вт helal"},
+                    uz: {title: "Isitish birligi Fan Motor-60 Vt helal"},
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                     en: {
                         title: "Heating Unit Fan Motor-60W (Kaman)",
@@ -20,8 +20,8 @@ export default {
                     },
                 },
                 {
-                    ru: {title: "Двигатель вентилятора отопительного агрегата-45 Вт (Helal)"},
-                    uz: {title: "Isitish birligi Fan Motor-45 Vt (Helal)"},
+                    ru: {title: "Двигатель вентилятора отопительного агрегата-45 Вт helal"},
+                    uz: {title: "Isitish birligi Fan Motor-45 Vt helal"},
                     id: 2,
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                     en: {
@@ -32,8 +32,8 @@ export default {
                     },
                 },
                 {
-                    ru: {title: "Двигатель вентилятора отопительного агрегата-30 Вт (Helal)"},
-                    uz: {title: "Isitish birligi Fan Motor-30 Vt (Helal)"},
+                    ru: {title: "Двигатель вентилятора отопительного агрегата-30 Вт helal"},
+                    uz: {title: "Isitish birligi Fan Motor-30 Vt helal"},
                     id: 3,
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                     en: {
@@ -44,12 +44,12 @@ export default {
                     },
                 },
                 {
-                    ru: {title: "Двигатель вентилятора отопительного агрегата-48 Вт (Helal)"},
-                    uz: {title: "Isitish birligi Fan Motor-48 Vt (Helal)"},
+                    ru: {title: "Двигатель вентилятора отопительного агрегата-48 Вт helal"},
+                    uz: {title: "Isitish birligi Fan Motor-48 Vt helal"},
                     id: 4,
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                     en: {
-                        title: "Heating Unit Fan Motor-48W (Helal)",
+                        title: "Heating Unit Fan Motor-48W helal",
                         specifications: {
                             Power: "48 W",
                         },
@@ -57,11 +57,11 @@ export default {
                 },
                 {
                     id: 5,
-                    ru: {title: "Двигатель вентилятора отопительного агрегата-39 Вт (Helal)"},
-                    uz: {title: "Isitish birligi Fan Motor-39 Vt (Helal)"},
+                    ru: {title: "Двигатель вентилятора отопительного агрегата-39 Вт helal"},
+                    uz: {title: "Isitish birligi Fan Motor-39 Vt helal"},
                     img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                     en: {
-                        title: "Heating Unit Fan Motor-39W (Helal)",
+                        title: "Heating Unit Fan Motor-39W helal",
                         specifications: {
                             Power: "39 W",
                         },
@@ -69,11 +69,11 @@ export default {
                 },
                 {
                     id: 6,
-                    ru: {title: "Двигатель вентилятора отопительного агрегата-30 Вт (Helal)"},
-                    uz: {title: "Isitish birligi Fan Motor-30 Vt (Helal)"},
+                    ru: {title: "Двигатель вентилятора отопительного агрегата-30 Вт helal"},
+                    uz: {title: "Isitish birligi Fan Motor-30 Vt helal"},
                     img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                     en: {
-                        title: "Heating Unit Fan Motor-30W (Helal)",
+                        title: "Heating Unit Fan Motor-30W helal",
                         specifications: {
                             Power: "30 W",
                         },
@@ -86,6 +86,30 @@ export default {
                 img: "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLXMxMDEtdGQtMDA4XzQuanBn.jpg",
                 // ----
                 en: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                ru: {
+                    title: "...",
+                    appearance: {
+                        FrameMaterial: "...",
+                    },
+                    specifications: {
+                        size: ".",
+                        pole: ".",
+                        Power: "...",
+                        type: "...",
+                    },
+                },
+                uz: {
                     title: "...",
                     appearance: {
                         FrameMaterial: "...",
@@ -138,7 +162,7 @@ export default {
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
                         {{ $t("All_products") }}
                     </li>
-                    <li  class="roboto-medium text-[#1A85FF]">{{ this.i[$t("lang")].title }}</li>
+                    <li  class="roboto-medium text-[#1A85FF]">{{ this.i[$t('lang')].title  }}</li>
                 </ul>
             </div>
         </div>
@@ -147,7 +171,7 @@ export default {
             <div class="max-w-[1250px] sm:px-[20px] gap-[20px] mx-auto flex">
                 <div class="flex-1">
                     <h3  class="text-[28px] sm:text-[22px]  text-[#1B3F7B] roboto-black">
-                        {{ this.i[$t("lang")].title }}
+                        {{ this.i[$t('lang')].title }}
                     </h3>
 
                     <hr class="bg-[#1B3F7B] w-[50px] h-[3px] mt-[20px]">

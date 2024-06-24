@@ -10,20 +10,36 @@ export default {
             burger: false,
             filters: [
                 {
-                    title: "OUTPUT POWER",
-                    items: [
-                        "1/16 kW",
+                    en: "OUTPUT POWER",
+                    ru: "ВЫХОДНАЯ МОЩНОСТЬ",
+                    uz: "CHIQISH QUVVATI",
+                    items: {
+                        en:["1/16 kW",
                         "1/20 HP",
                         "1/25 HP",
-                        "1/30 HP",
-                    ]
+                        "1/30 HP",],
+                        ru:["1/16 kW",
+                        "1/20 л.с",
+                        "1/25 л.с",
+                        "1/30 л.с",],
+                        uz:["1/16 kW",
+                        "1/20 ot kuchi",
+                        "1/25 ot kuchi",
+                        "1/30 ot kuchi",],
+                    }
                 },
                 {
-                    title: "SHAFT",
-                    items: [
-                        "Double-shaft",
-                        "Single-shaft",
-                    ]
+                    en: "SHAFT",
+                    ru: "Вал мотора",
+                    uz: "Motor Vali",
+                    items: {
+                        en:["Double-shaft",
+                        "Single-shaft",],
+                        ru:["Двойной вал",
+                        "Одновальный",],
+                        uz:["Ikki Valli",
+                        "Bir Valli",],
+                    }
                 },
 
             ],
@@ -342,7 +358,7 @@ export default {
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8136.png",
                             // ----
                             en: {
-                                title: "Heating Unit Fan Motor-48W (Helal)",
+                                title: "Heating Unit Fan Motor-48W helal",
                                 specifications: {
                                     Power: "48 W",
                                 },
@@ -353,7 +369,7 @@ export default {
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4938.png",
                             // ----
                             en: {
-                                title: "Heating Unit Fan Motor-39W (Helal)",
+                                title: "Heating Unit Fan Motor-39W helal",
                                 specifications: {
                                     Power: "39 W",
                                 },
@@ -379,6 +395,20 @@ export default {
                                     Shaft: "Double-shaft",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/30 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/30 л.с",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/30hp-ikki mil",
+                                specifications: {
+                                    Power: "1/30 ot kuchi",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
                         {
                             id: 2,
@@ -389,6 +419,20 @@ export default {
                                 specifications: {
                                     Power: "1/30 HP",
                                     Shaft: "Single-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/30 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/30 л.с",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/30hp-ikki mil",
+                                specifications: {
+                                    Power: "1/30 ot kuchi",
+                                    Shaft: "ikki mil",
                                 },
                             },
                         },
@@ -403,6 +447,20 @@ export default {
                                     Shaft: "Double-shaft",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/25 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/25 л.с",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/25hp-ikki mil",
+                                specifications: {
+                                    Power: "1/25 ot kuchi",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
                         {
                             id: 4,
@@ -413,6 +471,20 @@ export default {
                                 specifications: {
                                     Power: "1/25 HP",
                                     Shaft: "Single-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/25 л.с.-Одновальный",
+                                specifications: {
+                                    Power: "1/25 л.с",
+                                    Shaft: "Одновальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/25hp-yagona mil",
+                                specifications: {
+                                    Power: "1/25 ot kuchi",
+                                    Shaft: "yagona mil",
                                 },
                             },
                         },
@@ -427,6 +499,20 @@ export default {
                                     Shaft: "Double-shaft",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/20 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/20 л.с",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/20hp-ikki mil",
+                                specifications: {
+                                    Power: "1/20 ot kuchi",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
                         {
                             id: 6,
@@ -437,6 +523,20 @@ export default {
                                 specifications: {
                                     Power: "1/20 HP",
                                     Shaft: "Single-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/20 л.с.-Одновальный",
+                                specifications: {
+                                    Power: "1/20 л.с",
+                                    Shaft: "Одновальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/20hp-yagona mil",
+                                specifications: {
+                                    Power: "1/20 ot kuchi",
+                                    Shaft: "yagona mil",
                                 },
                             },
                         },
@@ -451,6 +551,20 @@ export default {
                                     Shaft: "Double-shaft",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/20 л.с.-Двухвальный",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "Двухвальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/16hp-ikki mil",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "ikki mil",
+                                },
+                            },
                         },
                         {
                             id: 8,
@@ -461,6 +575,20 @@ export default {
                                 specifications: {
                                     Power: "1/16 kW",
                                     Shaft: "Single-shaft",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель с фанкойлом-1/16 л.с.-Одновальный",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "Одновальный",
+                                },
+                            },
+                            uz: {
+                                title: "Fan halqa motor-1/16hp-yagona val",
+                                specifications: {
+                                    Power: "1/16 kW",
+                                    Shaft: "yagona val",
                                 },
                             },
                         },
@@ -506,15 +634,19 @@ export default {
             console.log(event.target.dataset.value);
             this.fallback = []
 
-            if (event.target.dataset.filterby == "OUTPUT POWER") {
-                let filtered = this.massiv[3].prod.filter(item => item[this.$t("lang")].specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
+            if (event.target.dataset.filterby == "OUTPUT POWER" ||
+                event.target.dataset.filterby == "ВЫХОДНАЯ МОЩНОСТЬ" ||
+                event.target.dataset.filterby == "CHIQISH QUVVATI"
+            ) {
+                let filtered = this.massiv[3].prod.filter(item => item.en.specifications.Power.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
                 this.fallback = filtered
             }
-            else if (event.target.dataset.filterby == "SHAFT") {
-                let filtered = this.massiv[3].prod.filter(item => item[this.$t("lang")].specifications.Shaft.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
+            else if (event.target.dataset.filterby == "SHAFT" ||
+                event.target.dataset.filterby == "Вал мотора" ||
+                event.target.dataset.filterby == "Motor Vali") {
+                let filtered = this.massiv[3].prod.filter(item => item.en.specifications.Shaft.toLowerCase().split(' ').join('') == event.target.dataset.value.toLowerCase().split(' ').join(''))
                 this.fallback = filtered
             }
-
         },
         accordion() {
             let a = event.currentTarget.children[1].children[0].getBoundingClientRect().height
@@ -544,16 +676,16 @@ export default {
                     </li>
                     <li @click="$router.push('/')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
-                        Ventilation Motors
+                        {{ $t('1.8') }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">Fan Coil Motors</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ $t('2.2') }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px] sm:mt-[20px]">
             <h3 class="mx-auto sm:text-[22px] w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Fan Coil Motors
+                {{ $t('2.2') }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="flex items-start gap-[25px] sm:flex-col sm:px-[20px] sm:gap-[0px]">
@@ -563,7 +695,7 @@ export default {
                         class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                         <div
                             class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
+                            {{ item[$t('lang')] }}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor" class="w-5 h-5 duration-[.3s]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
@@ -572,8 +704,8 @@ export default {
                         </div>
                         <div class="h-[0px] duration-[3s]">
                             <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
+                                <li @click="filter()" v-for="i of item.items[$t('lang')]" :data-value="item.items.en[item.items[$i18n.locale].indexOf(i)]"
+                                :data-filterby="item[$i18n.locale]" :key="i.id"
                                     class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
                                     <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
                                 </li>
@@ -639,7 +771,7 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards @click="$router.push(`/ventilation-motors/fan-coil-motors/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards @click="$router.push(`/ventilation-motors/fan-coil-motors/${item.id}`)" :title="item[$t('lang')].title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 
