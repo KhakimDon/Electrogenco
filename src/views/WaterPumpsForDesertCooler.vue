@@ -651,6 +651,20 @@ export default {
                                     Application: "Evaporative Cooler",
                                 },
                             },
+                            ru: {
+                                title: "Насос испарительного охладителя-Damavand",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Damavand",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
+                                },
+                            },
                         },
                         {
                             id: 2,
@@ -661,6 +675,20 @@ export default {
                                 specifications: {
                                     Material: "CU",
                                     Application: "Evaporative Cooler",
+                                },
+                            },
+                            ru: {
+                                title: "Насос испарительного охладителя-Sahand (погружной)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Sahand (Suv Osti)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
                                 },
                             },
                         },
@@ -675,6 +703,20 @@ export default {
                                     Application: "Evaporative Cooler",
                                 },
                             },
+                            ru: {
+                                title: "Насос испарительного охладителя-Alvand",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Alvand",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
+                                },
+                            },
                         },
                         {
                             id: 4,
@@ -685,6 +727,20 @@ export default {
                                 specifications: {
                                     Material: "CU",
                                     Application: "Evaporative Cooler",
+                                },
+                            },
+                            ru: {
+                                title: "Насос испарительного охладителя-Zagros (с низким потреблением)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich nasosi-Zagros (kam iste'mol)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
                                 },
                             },
                         },
@@ -699,6 +755,20 @@ export default {
                                     Application: "Portable Cooler",
                                 },
                             },
+                            ru: {
+                                title: "Насос испарительного охладителя-Zagros (с низким потреблением)",
+                                specifications: {
+                                    Material: "AL",
+                                    Application: "Портативный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich nasosi-Zagros (kam iste'mol)",
+                                specifications: {
+                                    Material: "AL",
+                                    Application: "Portativ Sovutgich",
+                                },
+                            },
                         },
                         {
                             id: 6,
@@ -709,6 +779,20 @@ export default {
                                 specifications: {
                                     Material: "AL",
                                     Application: "Evaporative Cooler",
+                                },
+                            },
+                            ru: {
+                                title: "Насос испарительного охладителя-Zagros (с низким потреблением)",
+                                specifications: {
+                                    Material: "AL",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich nasosi-Zagros (kam iste'mol)",
+                                specifications: {
+                                    Material: "AL",
+                                    Application: "Bug'lanish Sovutgichi",
                                 },
                             },
                         },
@@ -723,16 +807,44 @@ export default {
                                     Application: "Portable Cooler",
                                 },
                             },
+                            ru: {
+                                title: "Насос испарительного охладителя-Alborz (двухлопастной)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Переносной охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Alborz (Ikki Pervanel)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Portativ Sovutgich",
+                                },
+                            },
                         },
                         {
                             id: 8,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8080.png",
                             // ----
                             en: {
-                                title: "Evaporative Cooler Pump-Alborz (Five-Impeller",
+                                title: "Evaporative Cooler Pump-Alborz (Five-Impeller)",
                                 specifications: {
                                     Material: "CU",
                                     Application: "Evaporative Cooler",
+                                },
+                            },
+                            ru: {
+                                title: "Насос испарительного охладителя-Alborz (с пятью рабочими колесами)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Alborz (Besh Pervanel)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
                                 },
                             },
                         },
@@ -772,16 +884,7 @@ export default {
 
         },
         accordion() {
-            let a = event.currentTarget.children[1].children[0].getBoundingClientRect().height
-            if (event.currentTarget.dataset.accordion == 'false') {
-                event.currentTarget.children[0].children[0].style.transform = 'rotate(180deg)'
-                event.currentTarget.style.height = (a + 50) + 'px'
-                event.currentTarget.dataset.accordion = 'true'
-            } else {
-                event.currentTarget.children[0].children[0].style.transform = 'rotate(0deg)'
-                event.currentTarget.style.height = '55px'
-                event.currentTarget.dataset.accordion = "false"
-            }
+         
         }
     }
 }
@@ -799,43 +902,21 @@ export default {
                     </li>
                     <li @click="$router.push('/ventilation-motors')"
                         class="cursor-pointer roboto-medium hover:text-[#1A85FF] duration-[.3s] text-[#8295C4]">
-                        Motors And Water Pumps For Desert Cooler
+                        {{ $t('2.5') }}
                     </li>
-                    <li class="roboto-medium text-[#1A85FF]">Water Pumps for Desert Cooler</li>
+                    <li class="roboto-medium text-[#1A85FF]">{{ $t('2.6') }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="max-w-[1250px] mx-auto mt-[50px] sm:mt-[20px]">
             <h3 class="mx-auto sm:text-[22px] w-[max-content] text-[#032055] mb-[40px] roboto-medium text-[26px]">
-                Water Pumps for Desert Cooler
+                {{ $t('2.6') }}
                 <hr class="h-[1px] border-[#1A85FF] w-[40px] block mx-auto mt-[10px]">
             </h3>
             <div class="flex items-start gap-[25px] sm:flex-col sm:px-[20px] sm:gap-[0px]">
 
-                <div v-if="!this.mobile">
-                    <div @click="accordion()" v-for="item of this.filters" :key="item.id" data-accordion="false"
-                        class="w-[280px] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
-                        <div
-                            class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                            {{ item.title }}
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-5 h-5 duration-[.3s]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                            </svg>
-
-                        </div>
-                        <div class="h-[0px] duration-[3s]">
-                            <ul class="pb-[10px]">
-                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                    :data-filterby="item.title" :key="i.id"
-                                    class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
-                                    <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]"></div> {{ i }}
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            
                 <div v-if="this.mobile" @click="this.burger = true"
                     class="w-[280px] sm:w-[100%] h-[55px] sm:max-h-[45px] duration-[.3s] overflow-hidden border-[1px] mb-[25px] rounded-[15px]">
                     <div
@@ -859,32 +940,7 @@ export default {
                             </svg>
                             </div>
                             <div>
-                                <div class="w-[100%]">
-                                    <div @click="accordion()" v-for="item of this.filters" :key="item.id"
-                                        data-accordion="false"
-                                        class="w-[100%] h-[55px] duration-[.3s] overflow-hidden border-[1px] mb-[15px] rounded-[15px]">
-                                        <div
-                                            class="uppercase flex justify-between items-center cursor-pointer hover:bg-slate-100 duration-[.3s] roboto-bold p-[15px] text-[#1B3F7B] text-[15px]">
-                                            {{ item.title }}
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="2" stroke="currentColor" class="w-5 h-5 duration-[.3s]">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                                            </svg>
-
-                                        </div>
-                                        <div class="h-[0px] duration-[3s]">
-                                            <ul class="pb-[10px]">
-                                                <li @click="filter()" v-for="i of item.items" :data-value="i"
-                                                    :data-filterby="item.title" :key="i.id"
-                                                    class="p-[15px] flex items-center font-[600] hover:text-[#1A94FF] duration-75 cursor-pointer">
-                                                    <div class="h-[8px] mr-[8px] w-[8px] rounded-[50%] bg-[#b2d2ee]">
-                                                    </div> {{ i }}
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                              
                             </div>
                         </div>
                     </div>
@@ -892,7 +948,7 @@ export default {
 
                 <div class="flex-1 flex gap-[25px] flex-wrap">
 
-                    <Cards  @click="$router.push(`/motors-and-water-pumps-for-desert-cooler/water-pumps-for-desert-cooler/${item.id}`)" :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                    <Cards  @click="$router.push(`/motors-and-water-pumps-for-desert-cooler/water-pumps-for-desert-cooler/${item.id}`)" :title="item[$t('lang')].title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 

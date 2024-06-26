@@ -152,7 +152,8 @@ export default {
                 },
 
             ],
-            fallback: [],
+            finV: false,
+            fallback:[],
             massiv: [
                 {
                     id: "motors-for-desert-cooler",
@@ -173,6 +174,24 @@ export default {
                                     Class: "C",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Зеленый-3/4 л.с. Класс - C",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "3/4 л.с",
+                                    Material: "CU",
+                                    Class: "C",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-yashil-3/4 ot kuchi sinf - C",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "3/4 ot kuchi",
+                                    Material: "CU",
+                                    Class: "C",
+                                },
+                            },
                         },
                         {
                             id: 2,
@@ -187,18 +206,54 @@ export default {
                                     Speed: "Three-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Azarakhsh-Осевой-80 W (трехскоростной)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "80 W",
+                                    Material: "CU",
+                                    Speed: "трехскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich Motor-Azaraxsh-Eksenel-80 W (uch tezlikli)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "80 W",
+                                    Material: "CU",
+                                    Speed: "uch tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 3,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4933.png",
                             // ----
                             en: {
-                                title: "Evaporative Cooler Motor-Azarakhsh-Axial-80W (Three-speed)",
+                                title: "Evaporative Cooler Motor-Azarakhsh-Axial-75 W (Three-speed)",
                                 specifications: {
                                     Phase: "1",
                                     Power: "75 W",
                                     Material: "CU",
                                     Speed: "Three-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Azarakhsh-Осевой-75 W (трехскоростной)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "75 W",
+                                    Material: "CU",
+                                    Speed: "трехскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich dvigatel-Azaraxsh-Eksenel-75 Vt (uch tezlikli)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "75 W",
+                                    Material: "CU",
+                                    Speed: "uch tezlikli",
                                 },
                             },
                         },
@@ -216,6 +271,26 @@ export default {
                                     Speed: "Three-speed",
                                 },
                             },
+                            ru: {
+                                title:
+                                    "Двигатель испарительного охладителя-Azarakhsh-Axial-75W-AL (трехскоростной)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "75 W",
+                                    Material: "AL",
+                                    Speed: "трехскоростной",
+                                },
+                            },
+                            uz: {
+                                title:
+                                    "Bug'lantiruvchi sovutgich dvigatel-Azaraxsh-Eksenel-75 Vt-al (uch tezlikli)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "75 W",
+                                    Material: "AL",
+                                    Speed: "uch tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 5,
@@ -230,18 +305,56 @@ export default {
                                     Speed: "Three-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Azarakhsh-Осевой-70 W (трехскоростной)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "70 W",
+                                    Material: "CU",
+                                    Speed: "трехскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich dvigatel-Azaraxsh-Eksenel-70 W (uch tezlikli)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "70 W",
+                                    Material: "CU",
+                                    Speed: "uch tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 6,
                             img: "https://electrogenco.com/en/wp-content/uploads/2024/03/FAG_4962.png",
                             // ----
                             en: {
-                                title: "Evaporative Cooler Motor-Azarakhsh-Axial-70W (Three-speed)",
+                                title: "Evaporative Cooler Motor-Azarakhsh-Axial-70W (Two-speed)",
                                 specifications: {
                                     Phase: "1",
                                     Power: "3/4 HP",
                                     Material: "CU",
                                     Speed: "Two-speed",
+                                    Class: "C",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Azarakhsh-Осевой-70 W (двухскоростной)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "3/4 л.с",
+                                    Material: "CU",
+                                    Speed: "двухскоростной",
+                                    Class: "C",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich Motor-Azaraxsh-Eksenel-70 W (ikki tezlikli)",
+                                specifications: {
+                                    Phase: "1",
+                                    Power: "3/4 ot kuchi",
+                                    Material: "CU",
+                                    Speed: "ikki tezlikli",
                                     Class: "C",
                                 },
                             },
@@ -251,7 +364,23 @@ export default {
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8038.png",
                             // ----
                             en: {
-                                title: "Evaporative Cooler Motor-Azarakhsh-Axial-70W (Three-speed)",
+                                title: "Evaporative Cooler Motor-Azarakhsh-Axial-250W (Three-speed)",
+                                specifications: {
+                                    Power: "250 W",
+                                    Material: "CU",
+                                    Phase: "1",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Azarakhsh-Осевой-250 Вт (трехскоростной)",
+                                specifications: {
+                                    Power: "250 W",
+                                    Material: "CU",
+                                    Phase: "1",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich dvigatel-Azaraxsh-Eksenel-250 W (uch tezlikli)",
                                 specifications: {
                                     Power: "250 W",
                                     Material: "CU",
@@ -270,6 +399,20 @@ export default {
                                     Phase: "1",
                                 },
                             },
+                            ru: {
+                                title: "Электродвигатель охладителя мощностью 500 W модели lightning",
+                                specifications: {
+                                    Power: "500 W",
+                                    Phase: "1",
+                                },
+                            },
+                            uz: {
+                                title: "Sovutgichli elektr motor 500 W chaqmoq modeli",
+                                specifications: {
+                                    Power: "500 W",
+                                    Phase: "1",
+                                },
+                            },
                         },
                         {
                             id: 9,
@@ -277,6 +420,22 @@ export default {
                             // ----
                             en: {
                                 title: "Cooler electric motor 390W lightning model",
+                                specifications: {
+                                    Power: "390 W",
+                                    Phase: "1",
+                                    Material: "CU",
+                                },
+                            },
+                            ru: {
+                                title: "Электродвигатель охладителя мощностью 390 W модели lightning",
+                                specifications: {
+                                    Power: "390 W",
+                                    Phase: "1",
+                                    Material: "CU",
+                                },
+                            },
+                            uz: {
+                                title: "Sovutgichli elektr motor 390 W chaqmoq modeli",
                                 specifications: {
                                     Power: "390 W",
                                     Phase: "1",
@@ -296,6 +455,22 @@ export default {
                                     Material: "CU",
                                 },
                             },
+                            ru: {
+                                title: "Электродвигатель охладителя мощностью 187 W модели storm",
+                                specifications: {
+                                    Power: "187 W",
+                                    Phase: "1",
+                                    Material: "CU",
+                                },
+                            },
+                            uz: {
+                                title: "Sovutgichli elektr motor 187 W bo'ronli model",
+                                specifications: {
+                                    Power: "187 W",
+                                    Phase: "1",
+                                    Material: "CU",
+                                },
+                            },
                         },
                         {
                             id: 11,
@@ -304,7 +479,25 @@ export default {
                             en: {
                                 title: "Cooler electric motor 187W storm model",
                                 specifications: {
-                                    Power: "180 W",
+                                    Power: "187 W",
+                                    Phase: "1",
+                                    Material: "AL",
+                                    Class: "E",
+                                },
+                            },
+                            ru: {
+                                title: "Электродвигатель охладителя мощностью 187 W модели storm",
+                                specifications: {
+                                    Power: "187 W",
+                                    Phase: "1",
+                                    Material: "AL",
+                                    Class: "E",
+                                },
+                            },
+                            uz: {
+                                title: "Sovutgichli elektr motor 187 W bo'ronli model",
+                                specifications: {
+                                    Power: "187 W",
                                     Phase: "1",
                                     Material: "AL",
                                     Class: "E",
@@ -324,6 +517,24 @@ export default {
                                     Class: "D",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Raad-180 W",
+                                specifications: {
+                                    Power: "180 W",
+                                    Phase: "1",
+                                    Material: "CU",
+                                    Class: "D",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich Motor-Raad-180 W",
+                                specifications: {
+                                    Power: "180 W",
+                                    Phase: "1",
+                                    Material: "CU",
+                                    Class: "D",
+                                },
+                            },
                         },
                         {
                             id: 13,
@@ -331,6 +542,24 @@ export default {
                             // ----
                             en: {
                                 title: "Evaporative Cooler Motor-Toufan-150W",
+                                specifications: {
+                                    Power: "150 W",
+                                    Material: "AL",
+                                    Class: "E",
+                                    Phase: "1",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Toufan-150 Вт",
+                                specifications: {
+                                    Power: "150 W",
+                                    Material: "AL",
+                                    Class: "E",
+                                    Phase: "1",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich Motor-Toufan-150 Vt",
                                 specifications: {
                                     Power: "150 W",
                                     Material: "AL",
@@ -353,6 +582,26 @@ export default {
                                     Speed: "Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-3/4 л.с.-Класс E",
+                                specifications: {
+                                    Power: "3/4 л.с",
+                                    Material: "CU",
+                                    Class: "E",
+                                    Phase: "1",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler Motor -3/4 ot kuchi sinf-E",
+                                specifications: {
+                                    Power: "3/4 ot kuchi",
+                                    Material: "CU",
+                                    Class: "E",
+                                    Phase: "1",
+                                    Speed: "Ikki tezlik",
+                                },
+                            },
                         },
                         {
                             id: 15,
@@ -365,6 +614,24 @@ export default {
                                     Material: "CU",
                                     Phase: "1",
                                     Speed: "Three-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель портативного охладителя-Tochal-80 W",
+                                specifications: {
+                                    Power: "80 W",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Трехскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Portativ sovutgich Motor-Tochal-80 W",
+                                specifications: {
+                                    Power: "80 W",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Uch tezlikli",
                                 },
                             },
                         },
@@ -381,6 +648,24 @@ export default {
                                     Speed: "Three-speed",
                                 },
                             },
+                            ru: {
+                                title: "Портативный двигатель-охладитель-Tochal-75 W",
+                                specifications: {
+                                    Power: "75 W",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Трехскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Portativ sovutgich Motor-Tochal-75 W",
+                                specifications: {
+                                    Power: "75 W",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Uch tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 17,
@@ -390,6 +675,24 @@ export default {
                                 title: "Evaporative Cooler Motor-EG-3/4HP-Grade E-AL",
                                 specifications: {
                                     Power: "3/4 HP",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-3/4 л.с.-Класс ELA",
+                                specifications: {
+                                    Power: "3/4 л.с.",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler Motor-masalan-3/4 ot kuchi sinf-ELA",
+                                specifications: {
+                                    Power: "3/4 ot kuchi",
                                     Material: "AL",
                                     Phase: "1",
                                     Class: "E",
@@ -414,6 +717,26 @@ export default {
                                     Speed: "Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Tondar-1/2 л.с.-Класс E",
+                                specifications: {
+                                    Power: "1/2 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-Tondar-1/2 ot kuchi sinf-E",
+                                specifications: {
+                                    Power: "1/2 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 19,
@@ -431,6 +754,26 @@ export default {
                                     Phase: "1",
                                     Class: "C",
                                     Speed: "Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Зеленый-1/2 л.с.-Класс C",
+                                specifications: {
+                                    Power: "1/2 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "C",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-yashil-1/2 ot kuchi sinf-C",
+                                specifications: {
+                                    Power: "1/2 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "C",
+                                    Speed: "Ikki tezlikli",
                                 },
                             },
                         },
@@ -452,6 +795,26 @@ export default {
                                     Speed: "Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Tondar-1/2 л.с.-Класс D",
+                                specifications: {
+                                    Power: "1/2 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "D",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-Tondar-1/2 ot kuchi sinf-D",
+                                specifications: {
+                                    Power: "1/2 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "D",
+                                    Speed: "Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 22,
@@ -465,6 +828,26 @@ export default {
                                     Phase: "1",
                                     Class: "E",
                                     Speed: "Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-1/2 л.с.-Класс E",
+                                specifications: {
+                                    Power: "1/2 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler Motor-masalan-1/2 ot kuchi sinf-E",
+                                specifications: {
+                                    Power: "1/2 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Ikki tezlikli",
                                 },
                             },
                         },
@@ -482,6 +865,26 @@ export default {
                                     Speed: "Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-1/2 л.с.-Класс E",
+                                specifications: {
+                                    Power: "1/2 л.с.",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler Motor-masalan-1/2HP-sinf E",
+                                specifications: {
+                                    Power: "1/2 HP",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 24,
@@ -491,6 +894,24 @@ export default {
                                 title: "Evaporative Cooler Motor-EG-1/2HP-Grade E",
                                 specifications: {
                                     Power: "3/4 HP",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "A",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-1/2 л.с.-Класс E",
+                                specifications: {
+                                    Power: "3/4 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "A",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler Motor-masalan-1/2 ot kuchi sinf-E",
+                                specifications: {
+                                    Power: "3/4 ot kuchi",
                                     Material: "CU",
                                     Phase: "1",
                                     Class: "A",
@@ -510,6 +931,24 @@ export default {
                                     Class: "A",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-1/2 л.с.-Класс E",
+                                specifications: {
+                                    Power: "1/2 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "A",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler Motor-masalan-1/2 ot kuchi sinf-E",
+                                specifications: {
+                                    Power: "1/2 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "A",
+                                },
+                            },
                         },
                         {
                             id: 26,
@@ -519,6 +958,26 @@ export default {
                                 title: "Evaporative Cooler Motor-EG-1/2HP-Grade E",
                                 specifications: {
                                     Power: "1/3 HP",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "A",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-1/2 л.с.-Класс E",
+                                specifications: {
+                                    Power: "1/3 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "A",
+                                },
+                            },
+
+                            // 
+                            uz: {
+                                title: "Bug'lanish Cooler Motor-masalan-1/2HP-sinf E",
+                                specifications: {
+                                    Power: "1/3 ot kuchi",
                                     Material: "CU",
                                     Phase: "1",
                                     Class: "A",
@@ -539,6 +998,26 @@ export default {
                                     Speed: " Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-1/2 л.с.-Класс E",
+                                specifications: {
+                                    Power: "1/3 л.с",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: " двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler Motor-masalan-1/2 ot kuchi sinf-E",
+                                specifications: {
+                                    Power: "1/3 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: " ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 28,
@@ -552,6 +1031,26 @@ export default {
                                     Phase: "1",
                                     Class: "E",
                                     Speed: " Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-EG-1/3 л.с.-Класс E-A",
+                                specifications: {
+                                    Power: "1/3 л.с.",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: " Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-masalan, - 1/3 ot kuchi sinf E-A",
+                                specifications: {
+                                    Power: "1/3 ot kuchi",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: " Ikki tezlikli",
                                 },
                             },
                         },
@@ -573,6 +1072,26 @@ export default {
                                     Speed: " Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Tondar-1/3 л.с.-Класс E",
+                                specifications: {
+                                    Power: "1/3 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: " Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-Tondar-1/3 ot kuchi sinf E",
+                                specifications: {
+                                    Power: "1/3 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: " Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 30,
@@ -590,6 +1109,26 @@ export default {
                                     Phase: "1",
                                     Class: "C",
                                     Speed: " Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Зеленый-1/3 л.с.-Класс C",
+                                specifications: {
+                                    Power: "1/3 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "C",
+                                    Speed: " Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-yashil-1/3 ot kuchi sinf-C",
+                                specifications: {
+                                    Power: "1/3 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "C",
+                                    Speed: " Ikki tezlikli",
                                 },
                             },
                         },
@@ -611,6 +1150,26 @@ export default {
                                     Speed: " Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Tondar-1/3 л.с.-Класс D",
+                                specifications: {
+                                    Power: "1/3 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "D",
+                                    Speed: " Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-Tondar-1/3 ot kuchi sinf-D",
+                                specifications: {
+                                    Power: "1/3 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "D",
+                                    Speed: " Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 32,
@@ -628,6 +1187,26 @@ export default {
                                     Phase: "1",
                                     Class: "E",
                                     Speed: " Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Tondar-1/3 л.с.-Класс ELA",
+                                specifications: {
+                                    Power: "1/3 л.с.",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: " Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-Tondar-1/3 ot kuchi-sinf ELA",
+                                specifications: {
+                                    Power: "1/3 ot kuchi",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: " Ikki tezlikli",
                                 },
                             },
                         },
@@ -649,6 +1228,26 @@ export default {
                                     Speed: "Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Tondar-1/3 л.с., класс ELA",
+                                specifications: {
+                                    Power: "1/4 л.с.",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-Tondar-1/3 ot kuchi-sinf ELA",
+                                specifications: {
+                                    Power: "1/4 ot kuchi",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 34,
@@ -666,6 +1265,26 @@ export default {
                                     Phase: "1",
                                     Class: "D",
                                     Speed: "Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Tondar-1/4 л.с.-Класс D",
+                                specifications: {
+                                    Power: "1/4 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "D",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-Tondar-1/4 ot kuchi-sinf D",
+                                specifications: {
+                                    Power: "1/4 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "D",
+                                    Speed: "Ikki tezlikli",
                                 },
                             },
                         },
@@ -687,6 +1306,26 @@ export default {
                                     Speed: "Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель испарительного охладителя-Tondar-1/4 л.с.-Класс E",
+                                specifications: {
+                                    Power: "1/4 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lanish Cooler motor-Tondar-1/4 ot kuchi-sinf E",
+                                specifications: {
+                                    Power: "1/4 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Class: "E",
+                                    Speed: "Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 36,
@@ -699,6 +1338,24 @@ export default {
                                     Material: "CU",
                                     Phase: "1",
                                     Speed: "Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель портативного охладителя-Точильный-1/5 л.с.",
+                                specifications: {
+                                    Power: "1/5 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Portativ sovutgich Motor-Tochal-1/5 ot kuchi",
+                                specifications: {
+                                    Power: "1/5 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Ikki tezlikli",
                                 },
                             },
                         },
@@ -715,6 +1372,24 @@ export default {
                                     Speed: "Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель портативного охладителя-Точильный-1/6 л.с.",
+                                specifications: {
+                                    Power: "1/6 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Portativ sovutgich Motor-Tochal-1/6 ot kuchi",
+                                specifications: {
+                                    Power: "1/6 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 38,
@@ -727,6 +1402,24 @@ export default {
                                     Material: "CU",
                                     Phase: "1",
                                     Speed: "Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Двигатель портативного охладителя-Точильный-1/8 л.с.",
+                                specifications: {
+                                    Power: "1/8 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Portativ sovutgich Motor-Tochal-1/8 ot kuchi",
+                                specifications: {
+                                    Power: "1/8 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Ikki tezlikli",
                                 },
                             },
                         },
@@ -743,6 +1436,24 @@ export default {
                                     Speed: "Two-speed",
                                 },
                             },
+                            ru: {
+                                title: "Двигатель для портативного холодильника-Tochal-1/8 л.с.-AL",
+                                specifications: {
+                                    Power: "1/8 л.с.",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Portativ sovutgich-Tochal-1/8 ot kuchi AL",
+                                specifications: {
+                                    Power: "1/8 ot kuchi",
+                                    Material: "AL",
+                                    Phase: "1",
+                                    Speed: "Ikki tezlikli",
+                                },
+                            },
                         },
                         {
                             id: 40,
@@ -755,6 +1466,24 @@ export default {
                                     Material: "CU",
                                     Phase: "1",
                                     Speed: "Two-speed",
+                                },
+                            },
+                            ru: {
+                                title: "Портативный двигатель-охладитель-Точал-1/20 л.с.",
+                                specifications: {
+                                    Power: "1/20 л.с.",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Двухскоростной",
+                                },
+                            },
+                            uz: {
+                                title: "Portativ sovutgich Motor-Tochal-1/20 ot kuchi",
+                                specifications: {
+                                    Power: "1/20 ot kuchi",
+                                    Material: "CU",
+                                    Phase: "1",
+                                    Speed: "Ikki tezlikli",
                                 },
                             },
                         },
@@ -777,6 +1506,20 @@ export default {
                                     Application: "Evaporative Cooler",
                                 },
                             },
+                            ru: {
+                                title: "Насос испарительного охладителя-Damavand",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Damavand",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
+                                },
+                            },
                         },
                         {
                             id: 2,
@@ -787,6 +1530,20 @@ export default {
                                 specifications: {
                                     Material: "CU",
                                     Application: "Evaporative Cooler",
+                                },
+                            },
+                            ru: {
+                                title: "Насос испарительного охладителя-Sahand (погружной)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Sahand (Suv Osti)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
                                 },
                             },
                         },
@@ -801,6 +1558,20 @@ export default {
                                     Application: "Evaporative Cooler",
                                 },
                             },
+                            ru: {
+                                title: "Насос испарительного охладителя-Alvand",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Alvand",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
+                                },
+                            },
                         },
                         {
                             id: 4,
@@ -811,6 +1582,20 @@ export default {
                                 specifications: {
                                     Material: "CU",
                                     Application: "Evaporative Cooler",
+                                },
+                            },
+                            ru: {
+                                title: "Насос испарительного охладителя-Zagros (с низким потреблением)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich nasosi-Zagros (kam iste'mol)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
                                 },
                             },
                         },
@@ -825,6 +1610,20 @@ export default {
                                     Application: "Portable Cooler",
                                 },
                             },
+                            ru: {
+                                title: "Насос испарительного охладителя-Zagros (с низким потреблением)",
+                                specifications: {
+                                    Material: "AL",
+                                    Application: "Портативный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich nasosi-Zagros (kam iste'mol)",
+                                specifications: {
+                                    Material: "AL",
+                                    Application: "Portativ Sovutgich",
+                                },
+                            },
                         },
                         {
                             id: 6,
@@ -835,6 +1634,20 @@ export default {
                                 specifications: {
                                     Material: "AL",
                                     Application: "Evaporative Cooler",
+                                },
+                            },
+                            ru: {
+                                title: "Насос испарительного охладителя-Zagros (с низким потреблением)",
+                                specifications: {
+                                    Material: "AL",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi sovutgich nasosi-Zagros (kam iste'mol)",
+                                specifications: {
+                                    Material: "AL",
+                                    Application: "Bug'lanish Sovutgichi",
                                 },
                             },
                         },
@@ -849,16 +1662,44 @@ export default {
                                     Application: "Portable Cooler",
                                 },
                             },
+                            ru: {
+                                title: "Насос испарительного охладителя-Alborz (двухлопастной)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Переносной охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Alborz (Ikki Pervanel)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Portativ Sovutgich",
+                                },
+                            },
                         },
                         {
                             id: 8,
                             img: "https://electrogenco.com/en/wp-content/uploads/2023/09/FAG_8080.png",
                             // ----
                             en: {
-                                title: "Evaporative Cooler Pump-Alborz (Five-Impeller",
+                                title: "Evaporative Cooler Pump-Alborz (Five-Impeller)",
                                 specifications: {
                                     Material: "CU",
                                     Application: "Evaporative Cooler",
+                                },
+                            },
+                            ru: {
+                                title: "Насос испарительного охладителя-Alborz (с пятью рабочими колесами)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Испарительный охладитель",
+                                },
+                            },
+                            uz: {
+                                title: "Bug'lantiruvchi Sovutgich Nasosi-Alborz (Besh Pervanel)",
+                                specifications: {
+                                    Material: "CU",
+                                    Application: "Bug'lanish Sovutgichi",
                                 },
                             },
                         },
@@ -868,6 +1709,7 @@ export default {
         }
     },
     mounted() {
+        this.$i18n.locale = 'ru'
         var x = window.matchMedia("(max-width: 650px)")
         if (x.matches) {
             this.mobile = true
@@ -876,6 +1718,7 @@ export default {
         setTimeout(() => {
             this.fallback = this.massiv[0].prod
             this.$i18n.locale = 'ru'
+            this.finV = true
         }, 200);
 
     },
@@ -1043,11 +1886,11 @@ export default {
                     </div>
                 </div>
 
-                <div class="flex-1 flex gap-[25px] flex-wrap">
+                <div v-if="this.finV" class="flex-1 flex gap-[25px] flex-wrap">
 
                     <Cards
                         @click="$router.push(`/motors-and-water-pumps-for-desert-cooler/motors-for-desert-cooler/${item.id}`)"
-                        :title="item.en.title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
+                        :title="item[$t('lang')].title" :img="item.img" v-for="item of this.fallback" :key="item.id" />
 
                 </div>
 

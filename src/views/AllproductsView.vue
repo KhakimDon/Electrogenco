@@ -7506,7 +7506,7 @@ export default defineComponent({
             this.mobile = true
         }
         window.scrollTo({ top: 0, behavior: 'auto' })
-        this.$i18n.locale = 'en'
+        this.$i18n.locale = 'ru'
         for (let i = 0; i < this.massiv.length; i += 6) {
             this.massiv[i].id = i + 1
             this.fallback.push(this.massiv.slice(i, i + 6));
